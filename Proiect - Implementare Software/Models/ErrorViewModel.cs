@@ -1,4 +1,4 @@
-namespace Proiect___Implementare_Software.Models
+namespace Proiect_Implementare_Software.Models
 {
     public class ErrorViewModel
     {

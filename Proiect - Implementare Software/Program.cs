@@ -1,3 +1,6 @@
+using Proiect_Implementare_Software.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
