@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PVS270yGkbbYaV9pUJz2kItFnM5Fu82HcNyaGgnjIK0=",
+  "Hash": "gx84vw33//N5lMPTnLEvbBXb+iwS5iHTNkmL15nw5OM=",
   "Source": "Proiect - Implementare Software",
   "BasePath": "_content/Proiect - Implementare Software",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Proiect - Implementare Software\\wwwroot",
       "Source": "Proiect - Implementare Software",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "Proiect - Implementare Software#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "IHGrhqvkempF1utd8YWl/8A9Jj2XeEtqdsQlbhM2xUY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "Proiect - Implementare Software#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "IHGrhqvkempF1utd8YWl/8A9Jj2XeEtqdsQlbhM2xUY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "css/home#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,31 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\rides.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
+      "BasePath": "_content/Proiect - Implementare Software",
+      "RelativePath": "css/rides#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "csnudim7xt",
+      "Integrity": "7KhGWmLbPVEMmnXlgGp3BbDM+rEWhPdghrAbGROR1+A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\rides.css"
+    },
+    {
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\site.css",
+      "SourceId": "Proiect - Implementare Software",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -122,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "js/home#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -143,10 +164,31 @@
       "OriginalItemSpec": "wwwroot\\js\\home.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\rides.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
+      "BasePath": "_content/Proiect - Implementare Software",
+      "RelativePath": "js/rides#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "92vt7rpm7t",
+      "Integrity": "f/qKYvVf5wvbqMuVcwEsivmKvVdzZP75xih8VRspmu4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\rides.js"
+    },
+    {
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\site.js",
+      "SourceId": "Proiect - Implementare Software",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -164,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -206,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -290,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -332,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -353,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -374,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -395,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -416,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -437,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -458,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -815,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -857,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -899,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -941,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -983,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1025,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1067,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1088,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1109,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1130,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1151,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1172,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1193,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1298,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1319,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1340,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
       "BasePath": "_content/Proiect - Implementare Software",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1364,7 +1406,7 @@
   "Endpoints": [
     {
       "Route": "css/home.5pukfgqagu.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1385,7 +1427,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 17:14:07 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1409,7 +1451,7 @@
     },
     {
       "Route": "css/home.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1430,7 +1472,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 17:14:07 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1445,8 +1487,90 @@
       ]
     },
     {
+      "Route": "css/rides.csnudim7xt.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\rides.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7KhGWmLbPVEMmnXlgGp3BbDM+rEWhPdghrAbGROR1+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 19:17:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "csnudim7xt"
+        },
+        {
+          "Name": "label",
+          "Value": "css/rides.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7KhGWmLbPVEMmnXlgGp3BbDM+rEWhPdghrAbGROR1+A="
+        }
+      ]
+    },
+    {
+      "Route": "css/rides.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\rides.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7KhGWmLbPVEMmnXlgGp3BbDM+rEWhPdghrAbGROR1+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 19:17:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7KhGWmLbPVEMmnXlgGp3BbDM+rEWhPdghrAbGROR1+A="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1467,7 +1591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1491,7 +1615,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1512,7 +1636,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1528,7 +1652,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1549,7 +1673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1573,7 +1697,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1594,7 +1718,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1610,7 +1734,7 @@
     },
     {
       "Route": "js/home.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1631,7 +1755,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 17:18:47 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1647,7 +1771,7 @@
     },
     {
       "Route": "js/home.vrvovp6azl.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1668,7 +1792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 17:18:47 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1691,8 +1815,90 @@
       ]
     },
     {
+      "Route": "js/rides.92vt7rpm7t.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\rides.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/qKYvVf5wvbqMuVcwEsivmKvVdzZP75xih8VRspmu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 19:17:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "92vt7rpm7t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/rides.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/qKYvVf5wvbqMuVcwEsivmKvVdzZP75xih8VRspmu4="
+        }
+      ]
+    },
+    {
+      "Route": "js/rides.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\rides.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/qKYvVf5wvbqMuVcwEsivmKvVdzZP75xih8VRspmu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 19:17:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/qKYvVf5wvbqMuVcwEsivmKvVdzZP75xih8VRspmu4="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1713,7 +1919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1729,7 +1935,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1750,7 +1956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1774,7 +1980,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1795,7 +2001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1811,7 +2017,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1832,7 +2038,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1856,7 +2062,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1877,7 +2083,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1893,7 +2099,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1914,7 +2120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1938,7 +2144,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1959,7 +2165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1975,7 +2181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1996,7 +2202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2020,7 +2226,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2041,7 +2247,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2057,7 +2263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.ozu22stjof.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2078,7 +2284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2102,7 +2308,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2123,7 +2329,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2139,7 +2345,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2160,7 +2366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2184,7 +2390,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2205,7 +2411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2221,7 +2427,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.gjcw7pocpk.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2242,7 +2448,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2266,7 +2472,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.6l4ir0ityv.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2287,7 +2493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2311,7 +2517,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2332,7 +2538,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2348,7 +2554,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2369,7 +2575,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2393,7 +2599,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2414,7 +2620,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2430,7 +2636,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2451,7 +2657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2467,7 +2673,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2488,7 +2694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2504,7 +2710,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2525,7 +2731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2549,7 +2755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.5p029spbuu.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2570,7 +2776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2594,7 +2800,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2615,7 +2821,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2631,7 +2837,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2652,7 +2858,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2676,7 +2882,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2697,7 +2903,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2713,7 +2919,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.nakmwdwsxp.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2734,7 +2940,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2758,7 +2964,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2779,7 +2985,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2795,7 +3001,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2816,7 +3022,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2840,7 +3046,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2861,7 +3067,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2877,7 +3083,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.e6q6xbwqzk.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2898,7 +3104,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2922,7 +3128,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2943,7 +3149,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2959,7 +3165,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2980,7 +3186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2996,7 +3202,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3017,7 +3223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3041,7 +3247,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.dy6jgresuo.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3062,7 +3268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3086,7 +3292,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3107,7 +3313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3123,7 +3329,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3144,7 +3350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3168,7 +3374,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3189,7 +3395,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3205,7 +3411,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3226,7 +3432,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3242,7 +3448,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3263,7 +3469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3279,7 +3485,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3300,7 +3506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3324,7 +3530,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.z7kmom2977.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3345,7 +3551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3369,7 +3575,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.mk8rdyw69w.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3390,7 +3596,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3414,7 +3620,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.97yrjpyf9r.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3435,7 +3641,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3459,7 +3665,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3480,7 +3686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3496,7 +3702,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3517,7 +3723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3541,7 +3747,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3562,7 +3768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3578,7 +3784,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3599,7 +3805,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3615,7 +3821,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3636,7 +3842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3652,7 +3858,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3673,7 +3879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3697,7 +3903,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.y53cy5s2zj.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3718,7 +3924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3742,7 +3948,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3763,7 +3969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3779,7 +3985,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3800,7 +4006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3824,7 +4030,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3845,7 +4051,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3861,7 +4067,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.2yn17lgxub.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3882,7 +4088,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3906,7 +4112,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3927,7 +4133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3943,7 +4149,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3964,7 +4170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3980,7 +4186,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4001,7 +4207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4025,7 +4231,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4046,7 +4252,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4062,7 +4268,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4083,7 +4289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4107,7 +4313,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4128,7 +4334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4144,7 +4350,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4165,7 +4371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4181,7 +4387,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4202,7 +4408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4226,7 +4432,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4247,7 +4453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4263,7 +4469,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.ik6i2hrs65.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4284,7 +4490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4308,7 +4514,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.ophe14yye5.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4329,7 +4535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4353,7 +4559,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.z9shlbduue.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4374,7 +4580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4398,7 +4604,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.1piudyfv7h.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4419,7 +4625,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4443,7 +4649,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.f6zq8v6eb3.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4464,7 +4670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4488,7 +4694,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4509,7 +4715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4525,7 +4731,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4546,7 +4752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4570,7 +4776,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4591,7 +4797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4607,7 +4813,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.89qbw8ngem.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4628,7 +4834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4652,7 +4858,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4673,7 +4879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4689,7 +4895,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4710,7 +4916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4734,7 +4940,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4755,7 +4961,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4771,7 +4977,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4792,7 +4998,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4808,7 +5014,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4829,7 +5035,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4853,7 +5059,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4874,7 +5080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4890,7 +5096,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jqwzsa9uv6.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4911,7 +5117,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4935,7 +5141,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4956,7 +5162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4972,7 +5178,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4993,7 +5199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5009,7 +5215,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5030,7 +5236,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5054,7 +5260,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.n5w6o92d9r.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5075,7 +5281,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5099,7 +5305,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5120,7 +5326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5136,7 +5342,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5157,7 +5363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5181,7 +5387,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5202,7 +5408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5218,7 +5424,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.4908xmbfjr.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5239,7 +5445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5263,7 +5469,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5284,7 +5490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5300,7 +5506,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5321,7 +5527,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5337,7 +5543,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5358,7 +5564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5382,7 +5588,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5403,7 +5609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5419,7 +5625,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5440,7 +5646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5464,7 +5670,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.7s2n0ol71w.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5485,7 +5691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5509,7 +5715,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5530,7 +5736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5546,7 +5752,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5567,7 +5773,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5591,7 +5797,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ehgnz7f14e.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5612,7 +5818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5636,7 +5842,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5657,7 +5863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5673,7 +5879,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5694,7 +5900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5710,7 +5916,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5731,7 +5937,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5755,7 +5961,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5776,7 +5982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5792,7 +5998,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5813,7 +6019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5837,7 +6043,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5858,7 +6064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5874,7 +6080,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5895,7 +6101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5919,7 +6125,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5940,7 +6146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5956,7 +6162,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.6d0lkjaslc.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5977,7 +6183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6001,7 +6207,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6022,7 +6228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6038,7 +6244,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6059,7 +6265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6075,7 +6281,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.l1zq2mitth.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6096,7 +6302,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6120,7 +6326,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6141,7 +6347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6157,7 +6363,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6178,7 +6384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6202,7 +6408,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.03hjc8e09r.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6223,7 +6429,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6247,7 +6453,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6268,7 +6474,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6284,7 +6490,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.48y08845bh.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6305,7 +6511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6329,7 +6535,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6350,7 +6556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6366,7 +6572,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6387,7 +6593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6411,7 +6617,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6432,7 +6638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 19:37:15 GMT"
+          "Value": "Tue, 15 Apr 2025 19:40:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6448,7 +6654,7 @@
     },
     {
       "Route": "Proiect - Implementare Software.bundle.scp.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6469,7 +6675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 20:52:08 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6485,7 +6691,7 @@
     },
     {
       "Route": "Proiect - Implementare Software.clel4c0weg.bundle.scp.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6506,7 +6712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 20:52:08 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6530,7 +6736,7 @@
     },
     {
       "Route": "Proiect - Implementare Software.clel4c0weg.styles.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6551,7 +6757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 20:52:08 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6575,7 +6781,7 @@
     },
     {
       "Route": "Proiect - Implementare Software.styles.css",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Proiect - Implementare Software.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6596,7 +6802,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 20:52:08 GMT"
+          "Value": "Sat, 26 Apr 2025 19:01:18 GMT"
         },
         {
           "Name": "Cache-Control",

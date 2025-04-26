@@ -4723,23 +4723,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sebyy\\.nuget\\packages\\": {},
-    "D:\\VisualStudioTools\\NuGetPackages": {}
+    "C:\\Users\\Darius\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\Proiect - Implementare Software.csproj",
+      "projectUniqueName": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\Proiect - Implementare Software.csproj",
       "projectName": "Proiect - Implementare Software",
-      "projectPath": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\Proiect - Implementare Software.csproj",
-      "packagesPath": "C:\\Users\\sebyy\\.nuget\\packages\\",
-      "outputPath": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\obj\\",
+      "projectPath": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\Proiect - Implementare Software.csproj",
+      "packagesPath": "C:\\Users\\Darius\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\VisualStudioTools\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sebyy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Darius\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4748,6 +4748,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4812,7 +4813,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
