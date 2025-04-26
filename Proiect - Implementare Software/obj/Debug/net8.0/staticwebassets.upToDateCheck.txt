@@ -1,7 +1,9 @@
 wwwroot\css\home.css
+wwwroot\css\rides.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\home.js
+wwwroot\js\rides.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
