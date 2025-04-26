@@ -170,3 +170,4 @@ D:\An3Sem2\Proiect\CraiovaRideV3\Proiect - Implementare Software\obj\Debug\net8.
 D:\An3Sem2\Proiect\CraiovaRideV3\Proiect - Implementare Software\obj\Debug\net8.0\Proiect - Implementare Software.pdb
 D:\An3Sem2\Proiect\CraiovaRideV3\Proiect - Implementare Software\obj\Debug\net8.0\Proiect - Implementare Software.genruntimeconfig.cache
 D:\An3Sem2\Proiect\CraiovaRideV3\Proiect - Implementare Software\obj\Debug\net8.0\ref\Proiect - Implementare Software.dll
+D:\An3Sem2\Proiect\CraiovaRideV3\Proiect - Implementare Software\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

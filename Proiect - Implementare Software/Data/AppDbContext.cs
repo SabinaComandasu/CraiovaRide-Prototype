@@ -73,7 +73,6 @@ namespace Proiect_Implementare_Software.Data
                 .HasForeignKey(r => r.DriverID)
                 .OnDelete(DeleteBehavior.NoAction);
 
-            // ADAUGĂ ASTA:
             modelBuilder.Entity<Ride>()
                 .HasOne(r => r.Driver)
                 .WithMany(p => p.Drives)
