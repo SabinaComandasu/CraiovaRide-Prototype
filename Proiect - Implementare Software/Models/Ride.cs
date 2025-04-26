@@ -18,8 +18,7 @@
 
         public Payment Payment { get; set; }
 
-        // Relație corectă spre entitatea intermediară
-        public ICollection<UserOrdersRide> UsersOrdered { get; set; } // important!
+        public ICollection<UserOrdersRide> UsersOrdered { get; set; }
     }
 
 }

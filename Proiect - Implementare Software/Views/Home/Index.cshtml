@@ -1,8 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CraiovaRide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/home.js" defer></script>
+</head>
+<body>
+    <!-- Buton de meniu -->
+    <button id="toggleBtn" class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- Search Bar plutitor -->
+    <div class="search-bar">
+        <input type="text" class="form-control" placeholder="Find destination...">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <img src="/images/avatar.png" class="img-thumbnail mb-3" alt="Profile photo">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="/Account" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="/Ratings" class="nav-link">Rating</a></li>
+            <li class="nav-item"><a href="/Payments" class="nav-link">Payments</a></li>
+            <li class="nav-item"><a href="/PromoCodes" class="nav-link">Promo Codes</a></li>
+            <li class="nav-item"><a href="/Rides/History" class="nav-link">History of Rides</a></li>
+            <li class="nav-item"><a href="/About" class="nav-link">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+    <!-- Harta -->
+    <div id="map" class="map-container"></div>
+
+    <!-- Bara de navigare jos -->
+    <div class="bottom-nav">
+        <a href="/Home" class="btn btn-outline-secondary mx-2">Home</a>
+        <a href="/Rides" class="btn btn-outline-primary mx-2">Rides</a>
+        <a href="/Account" class="btn btn-outline-success mx-2">Account</a>
+    </div>
+</body>
+</html>
