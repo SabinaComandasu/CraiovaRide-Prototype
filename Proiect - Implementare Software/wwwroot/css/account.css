@@ -1,0 +1,87 @@
+﻿.account-bolt {
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 16px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.avatar-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.avatar-edit-btn {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    background: white;
+    border: none;
+    color: #198754;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.username {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.rating {
+    font-size: 15px;
+}
+
+.account-tip {
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.section {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+    .section-item i {
+        font-size: 20px;
+        margin-right: 12px;
+        color: #666;
+    }
+
+    .section-item:hover {
+        background-color: #f8f9fa;
+        border-radius: 6px;
+    }
+
+    .section-item.disabled {
+        color: #aaa;
+        pointer-events: none;
+    }
