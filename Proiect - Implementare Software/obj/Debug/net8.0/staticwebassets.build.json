@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gx84vw33//N5lMPTnLEvbBXb+iwS5iHTNkmL15nw5OM=",
+  "Hash": "37OET/uryRSgJBj6k6i1PpEZPpZTTV6UwJ94X0PBycM=",
   "Source": "Proiect - Implementare Software",
   "BasePath": "_content/Proiect - Implementare Software",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Proiect - Implementare Software.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\account.css",
+      "SourceId": "Proiect - Implementare Software",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
+      "BasePath": "_content/Proiect - Implementare Software",
+      "RelativePath": "css/account#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fi73crlvac",
+      "Integrity": "Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\account.css"
     },
     {
       "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
@@ -141,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\account.js",
+      "SourceId": "Proiect - Implementare Software",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\",
+      "BasePath": "_content/Proiect - Implementare Software",
+      "RelativePath": "js/account#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fvo2yn3yjm",
+      "Integrity": "lUe12bJA5BDTmeOtzCI0JEgNdwRsYdJbtEa7YjOXPV0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\account.js"
     },
     {
       "Identity": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
@@ -1405,6 +1447,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/account.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 12:51:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE="
+        }
+      ]
+    },
+    {
+      "Route": "css/account.fi73crlvac.css",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 12:51:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fi73crlvac"
+        },
+        {
+          "Name": "label",
+          "Value": "css/account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE="
+        }
+      ]
+    },
+    {
       "Route": "css/home.5pukfgqagu.css",
       "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
       "Selectors": [],
@@ -1729,6 +1853,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/account.fvo2yn3yjm.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\account.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lUe12bJA5BDTmeOtzCI0JEgNdwRsYdJbtEa7YjOXPV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 11:53:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fvo2yn3yjm"
+        },
+        {
+          "Name": "label",
+          "Value": "js/account.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lUe12bJA5BDTmeOtzCI0JEgNdwRsYdJbtEa7YjOXPV0="
+        }
+      ]
+    },
+    {
+      "Route": "js/account.js",
+      "AssetFile": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\account.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lUe12bJA5BDTmeOtzCI0JEgNdwRsYdJbtEa7YjOXPV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 11:53:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lUe12bJA5BDTmeOtzCI0JEgNdwRsYdJbtEa7YjOXPV0="
         }
       ]
     },

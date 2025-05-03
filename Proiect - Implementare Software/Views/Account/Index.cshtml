@@ -1,0 +1,62 @@
+﻿@model Proiect_Implementare_Software.Models.Person
+@{
+    ViewData["Title"] = "Contul meu";
+    ViewData["ShowMainNav"] = true;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/account.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<div class="account-bolt container">
+
+    <!-- Header profil -->
+    <div class="text-center profile-header">
+        <div class="avatar-wrapper">
+            <img src="@Model.Avatar" alt="Avatar" class="avatar-img" />
+            <button class="avatar-edit-btn"><i class="bi bi-plus-circle-fill"></i></button>
+        </div>
+        <h4 class="username">@Model.FullName</h4>
+        <p class="rating text-success"><i class="bi bi-star-fill"></i> @Model.Rating.ToString("0.00") Rating</p>
+    </div>
+
+
+    <!-- Opțiuni cont -->
+    <div class="section">
+        <a href="/Account/EditInfo" class="section-item">
+            <i class="bi bi-person-lines-fill"></i> Informații personale
+        </a>
+        <a href="/Account/TripSafety" class="section-item">
+            <i class="bi bi-shield-lock-fill"></i> Siguranță
+        </a>
+        <a href="#" class="section-item disabled">
+            <i class="bi bi-lock-fill"></i> Login & Securitate
+        </a>
+        <a href="#" class="section-item disabled">
+            <i class="bi bi-shield-slash-fill"></i> Confidențialitate
+        </a>
+    </div>
+
+    <!-- Locații salvate -->
+    <div class="section">
+        <div class="section-title">Locații salvate</div>
+        <a href="/Account/SavedPlaces/AddHome" class="section-item">
+            <i class="bi bi-house-door"></i> Adresă acasă
+        </a>
+        <a href="/Account/SavedPlaces/AddWork" class="section-item">
+            <i class="bi bi-briefcase"></i> Adresă muncă
+        </a>
+        <a href="#" class="section-item">
+            <i class="bi bi-plus-circle"></i> Adaugă alt loc
+        </a>
+    </div>
+
+    <!-- Setări finale -->
+    <div class="section">
+        <a href="/Account/Logout" class="section-item text-danger">
+            <i class="bi bi-box-arrow-right"></i> Deconectare
+        </a>
+        <a href="/Account/Delete" class="section-item text-danger">
+            <i class="bi bi-trash"></i> Șterge contul
+        </a>
+    </div>
+</div>

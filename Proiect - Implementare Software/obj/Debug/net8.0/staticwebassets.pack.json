@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Proiect - Implementare Software.clel4c0weg.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
       "Id": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\account.js",
+      "PackagePath": "staticwebassets\\js\\account.js"
     },
     {
       "Id": "C:\\Users\\Darius\\Documents\\FACULTATE_ACE_LICENTA\\FACULTATE_ANUL_III_SEM_II\\PROIECT_RIDE-SHARING\\CRAIOVA_RIDE_IMPLEMENTATION\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
