@@ -15,9 +15,14 @@
     <button id="toggleBtn" class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
 
     <!-- Search Bar plutitor -->
-    <div class="search-bar">
-        <input type="text" class="form-control" placeholder="Find destination...">
+    <div class="search-bar d-flex align-items-start gap-2 mb-3">
+        <div class="flex-grow-1 position-relative">
+            <input id="searchInput" type="text" class="form-control" placeholder="Find destination...">
+            <div id="suggestions" class="autocomplete-container"></div>
+        </div>
+        <button class="btn btn-primary" onclick="searchLocation()">Search</button>
     </div>
+
 
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">

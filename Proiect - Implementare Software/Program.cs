@@ -1,6 +1,7 @@
 using Proiect_Implementare_Software.Data;
 using Microsoft.EntityFrameworkCore;
 using Proiect_Implementare_Software.Services;
+using Proiect_Implementare_Software.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IRideService, RideService>();
+builder.Services.AddScoped<IHomeRepository, HomeRepository>();
+builder.Services.AddScoped<IHomeService, HomeService>();
+
 
 var app = builder.Build();
 
