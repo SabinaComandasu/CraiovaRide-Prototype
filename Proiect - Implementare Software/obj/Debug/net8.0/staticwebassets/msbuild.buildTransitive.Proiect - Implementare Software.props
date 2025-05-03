@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Proiect - Implementare Software.props" />
-</Project>
