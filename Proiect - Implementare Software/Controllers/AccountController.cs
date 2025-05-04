@@ -19,5 +19,19 @@ namespace Proiect_Implementare_Software.Controllers
 
             return View(user);
         }
+
+        public IActionResult EditInfo()
+        {
+            var user = new Person
+            {
+                FullName = "Sebastian-Valentin Sion",
+                PhoneNumber = "0712345678",
+                Avatar = "/images/default-avatar.png"
+            };
+
+            return View(user);
+        }
+
+
     }
 }
