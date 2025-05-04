@@ -14,13 +14,13 @@
 }
 
 .search-bar {
-    position: fixed;
+    position: relative;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
     max-width: 400px;
-    z-index: 1300;
+    z-index: 9999;
 }
 
     .search-bar input {
@@ -136,4 +136,43 @@
 
         .autocomplete-list li:hover {
             background-color: #f0f0f0;
+        }
+.ride-option {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+    .ride-option:hover {
+        transform: scale(1.03);
+        border-color: #007bff;
+    }
+
+    .ride-option.selected {
+        border-color: #198754;
+        background-color: #e6f4ea;
+    }
+#rideOptions {
+    display: none;
+    /* your layout/padding/margins here */
+}
+
+.autocomplete-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+    .autocomplete-list li {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+        .autocomplete-list li:hover {
+            background: #f0f0f0;
         }

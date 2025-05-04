@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\images\\target.png",
+      "PackagePath": "staticwebassets\\images\\target.png"
+    },
+    {
       "Id": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\account.js",
       "PackagePath": "staticwebassets\\js\\account.js"
     },
