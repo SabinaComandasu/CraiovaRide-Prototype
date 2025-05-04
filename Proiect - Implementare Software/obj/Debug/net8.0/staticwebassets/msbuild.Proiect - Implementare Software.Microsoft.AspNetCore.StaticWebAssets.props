@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5pukfgqagu</Fingerprint>
-      <Integrity>aafXfHMZZyAQhCBhIdiJeYdccYD6UAwqRsT1YkAmsYE=</Integrity>
+      <Fingerprint>nypw9hwxe9</Fingerprint>
+      <Integrity>kefSitsnrOHAHY1kpEmfx1Lqmjn4Ud6WtVz8wVy5m44=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\home.css'))</OriginalItemSpec>
@@ -90,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\target.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Proiect - Implementare Software</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Proiect - Implementare Software</BasePath>
+      <RelativePath>images/target.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kri3rbyr3l</Fingerprint>
+      <Integrity>QJc8MjS5qKy3cX6VYeO0fpI7w8B/D3KbYeyoc0bY+gM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\target.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\account.js'))">
       <SourceType>Package</SourceType>
       <SourceId>Proiect - Implementare Software</SourceId>
@@ -120,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vrvovp6azl</Fingerprint>
-      <Integrity>Jeb577OhrNj7Cg56WG7YHKNFbDYdt21QWNnVTly0KI0=</Integrity>
+      <Fingerprint>8h43zo47m5</Fingerprint>
+      <Integrity>lGPzCbKuKSyG+tyVZWuoJdWY6EDKCLX1CBX3GYCbv1Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\home.js'))</OriginalItemSpec>

@@ -3,6 +3,7 @@ wwwroot\css\home.css
 wwwroot\css\rides.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\target.png
 wwwroot\js\account.js
 wwwroot\js\home.js
 wwwroot\js\rides.js
