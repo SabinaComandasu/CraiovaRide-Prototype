@@ -85,3 +85,16 @@
         color: #aaa;
         pointer-events: none;
     }
+
+.avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #198754;
+}
+
+.info-item label {
+    font-weight: 500;
+    font-size: 15px;
+}
