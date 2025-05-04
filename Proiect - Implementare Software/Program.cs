@@ -14,6 +14,10 @@ builder.Services.AddScoped<IRideService, RideService>();
 builder.Services.AddScoped<IHomeRepository, HomeRepository>();
 builder.Services.AddScoped<IHomeService, HomeService>();
 
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+
+
 
 var app = builder.Build();
 
