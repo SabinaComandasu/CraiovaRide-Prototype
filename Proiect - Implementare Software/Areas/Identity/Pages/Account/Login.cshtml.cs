@@ -1,8 +1,4 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -104,38 +100,39 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
-
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    return new JsonResult(new { success = true, redirectUrl = returnUrl });
                 }
                 if (result.RequiresTwoFactor)
                 {
-                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                    return new JsonResult(new { success = true, redirectUrl = Url.Page("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe }) });
                 }
                 if (result.IsLockedOut)
                 {
                     _logger.LogWarning("User account locked out.");
-                    return RedirectToPage("./Lockout");
+                    return new JsonResult(new { success = true, redirectUrl = Url.Page("./Lockout") });
                 }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return Page();
-                }
+
+                // Custom error message for invalid login attempts
+                ModelState.AddModelError(string.Empty, "Seems like the username or password is incorrect. Please enter the correct credentials.");
             }
 
-            // If we got this far, something failed, redisplay form
-            return Page();
+            var errors = ModelState
+                .Where(ms => ms.Value.Errors.Count > 0)
+                .SelectMany(ms => ms.Value.Errors)
+                .Select(e => e.ErrorMessage)
+                .ToList();
+
+            return new JsonResult(new { success = false, errors });
         }
+
 
     }
 }
