@@ -1,49 +1,34 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
-
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using Proiect___Implementare_Software.Services;  // Assuming you are using your custom EmailService
 
 namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
 {
     public class ForgotPasswordModel : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly IEmailSender _emailSender;
+        private readonly IEmailService _emailService;
+        private readonly ILogger<ForgotPasswordModel> _logger;  // Add this field for logging
 
-        public ForgotPasswordModel(UserManager<IdentityUser> userManager, IEmailSender emailSender)
+        public ForgotPasswordModel(UserManager<IdentityUser> userManager, IEmailService emailService, ILogger<ForgotPasswordModel> logger)
         {
             _userManager = userManager;
-            _emailSender = emailSender;
+            _emailService = emailService;
+            _logger = logger;  // This works ONLY if logger is passed into the constructor parameters
         }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         [BindProperty]
         public InputModel Input { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public class InputModel
         {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [Required]
             [EmailAddress]
             public string Email { get; set; }
@@ -54,31 +39,55 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(Input.Email);
+
                 if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
                 {
                     // Don't reveal that the user does not exist or is not confirmed
                     return RedirectToPage("./ForgotPasswordConfirmation");
                 }
 
-                // For more information on how to enable account confirmation and password reset please
-                // visit https://go.microsoft.com/fwlink/?LinkID=532713
+                // Generate the password reset token
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
                 code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+
+                // Generate the callback URL for resetting the password
                 var callbackUrl = Url.Page(
                     "/Account/ResetPassword",
                     pageHandler: null,
                     values: new { area = "Identity", code },
                     protocol: Request.Scheme);
 
-                await _emailSender.SendEmailAsync(
-                    Input.Email,
-                    "Reset Password",
-                    $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                // Create the email message
+                var message = $@"
+<p>Bună,</p>
+<p>Ai solicitat resetarea parolei pentru contul tău. Poți reseta parola apăsând pe linkul de mai jos:</p>
+<p><a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>Resetează parola</a></p>
+<p>Dacă nu tu ai solicitat această acțiune, îți recomandăm să ignori acest email. Dacă observi activități suspecte în contul tău, te rugăm să contactezi imediat un administrator sau echipa de suport.</p>
+<p>Îți mulțumim,<br/>Echipa CraiovaRide</p>
+";
 
+                try
+                {
+                    // Send the reset password email using the custom EmailService
+                    await _emailService.SendEmailAsync(Input.Email, "Reset Password", message);
+                }
+                catch (Exception ex)
+                {
+                    // Log the error using your logging framework
+                    _logger.LogError(ex, "Error sending reset password email to {Email}", Input.Email);
+
+                    // Optionally, add the exception message to the model state for debugging
+                    ModelState.AddModelError(string.Empty, $"An error occurred: {ex.Message}");
+                    return Page();
+                }
+
+                // Redirect to the confirmation page after sending the email
                 return RedirectToPage("./ForgotPasswordConfirmation");
             }
 
+            // If model state is invalid, return the same page with validation messages
             return Page();
         }
+
     }
 }

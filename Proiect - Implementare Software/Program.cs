@@ -3,9 +3,13 @@ using Microsoft.EntityFrameworkCore;
 using Proiect_Implementare_Software.Services;
 using Proiect_Implementare_Software.Repositories;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Proiect___Implementare_Software.Repositories;
+using Proiect___Implementare_Software.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IEmailRepository, EmailRepository>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
