@@ -4,35 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - CraiovaRide</title>
-    <!-- 1. Leaflet CSS -->
-    <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
 
-    <!-- 2. Leaflet JS (trebuie să vină ÎNAINTE de orice script care folosește Leaflet) -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- 3. Leaflet Routing Machine CSS și JS -->
+    <!-- Leaflet CSS & Routing -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+    <!-- Custom CSS -->
+    <link href="/css/home.css" rel="stylesheet">
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
 
-    <!-- 4. Scriptul tău custom (care folosește L) -->
+    <!-- Your JS -->
     <script src="/js/home.js" defer></script>
-
-    <link href="/css/home.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Buton de meniu -->
+    <!-- Toggle Sidebar -->
     <button id="toggleBtn" class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
 
-    <!-- Search Bar plutitor -->
+    <!-- Search Bar -->
     <div class="search-bar d-flex align-items-start gap-2 mb-3">
         <div class="flex-grow-1 position-relative">
             <input id="searchInput" type="text" class="form-control" placeholder="Find destination...">
             <div id="suggestions" class="autocomplete-container"></div>
         </div>
         <button class="btn btn-primary" onclick="searchLocation()">Search</button>
-
     </div>
-
 
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
@@ -52,6 +50,8 @@
 
     <!-- Harta -->
     <div id="map" class="map-container"></div>
+
+    <!-- Ride Options -->
     <div id="rideOptions" class="container mt-4" style="display: none;">
         <h5>Choose your ride</h5>
         <div class="row g-3">
@@ -79,11 +79,31 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="card ride-option" onclick="selectRide('Deluxe Ride')">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">🚘 Deluxe Ride</h6>
+                        <p class="card-text">Premium experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card ride-option" onclick="selectRide('Women for Women')">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">👩‍🦰 Women for Women</h6>
+                        <p class="card-text">Female-only option</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cancel Ride -->
+        <div class="text-center mt-3">
+            <button id="cancelRideBtn" class="btn btn-danger" onclick="cancelRide()">Cancel Ride</button>
         </div>
     </div>
 
-
-    <!-- Bara de navigare jos -->
+    <!-- Bottom Nav -->
     <div class="bottom-nav">
         <a href="/Home" class="btn btn-outline-secondary mx-2">Home</a>
         <a href="/Rides" class="btn btn-outline-primary mx-2">Rides</a>
