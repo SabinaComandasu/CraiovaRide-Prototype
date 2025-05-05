@@ -1,9 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Proiect_Implementare_Software.Models;
 
 namespace Proiect_Implementare_Software.Data
 {
-    public class AppDbContext : DbContext
+    // Schimbăm DbContext în IdentityDbContext<IdentityUser>
+    public class AppDbContext : IdentityDbContext<IdentityUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
@@ -20,6 +23,7 @@ namespace Proiect_Implementare_Software.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // IMPORTANT: apelăm întâi baza pentru a configura Identity
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<UserOrdersRide>()
@@ -79,7 +83,5 @@ namespace Proiect_Implementare_Software.Data
                 .HasForeignKey(r => r.DriverID)
                 .OnDelete(DeleteBehavior.Restrict);
         }
-
-
     }
 }

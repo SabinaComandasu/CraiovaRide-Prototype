@@ -1,0 +1,224 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<style>
+    /* Style for the body */
+    body {
+        background: linear-gradient(135deg, #40E0D0, #2f8f9d);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden; /* Prevent scrolling during the splash screen */
+    }
+
+    /* Splash Screen styles */
+    #splash-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent; /* REMOVE white haze */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1000; /* Make sure it’s on top */
+    }
+
+    /* Animation for the logo in the splash screen */
+    @@keyframes logoAnimation {
+        0% {
+            transform: scale(0.8);
+        }
+
+        50% {
+            transform: scale(2.2);
+        }
+
+        100% {
+            transform: scale(1.7);
+        }
+    }
+
+    #splash-screen img {
+        width: 250px;
+        height: auto;
+        animation: logoAnimation 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    }
+
+    /* Add loading spinner animation */
+    .loading-spinner {
+        border: 7px solid #f3f3f3;
+        border-top: 4px solid #2f8f9d;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+        margin-top: 80px; /* Adjust top margin for positioning */
+        margin-left: -15px; /* Move spinner more to the left */
+    }
+
+    @@keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    /* Add loading text */
+    .loading-text {
+        color: #2f8f9d;
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    /* Login card styles */
+    .login-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(30px); /* Start shifted down */
+        transition: opacity 1s ease-in, transform 1s ease-in; /* Smooth transition */
+    }
+
+    /* New class that triggers fade/slide-in */
+    .login-card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    h1 {
+        text-align: center;
+        color: #2f8f9d;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .btn-primary {
+        background-color: #40E0D0;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #2f8f9d;
+        transform: translateY(-2px);
+    }
+
+    .btn-outline-primary {
+        border-color: #40E0D0;
+        color: #2f8f9d;
+        transition: all 0.3s ease;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #40E0D0;
+        color: white;
+    }
+
+    a {
+        color: #2f8f9d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #135e67;
+    }
+
+    .form-floating > label {
+        color: #2f8f9d;
+    }
+
+    .form-check-input:checked {
+        background-color: #40E0D0;
+        border-color: #40E0D0;
+    }
+</style>
+
+<!-- Splash Screen HTML -->
+<div id="splash-screen">
+    <img src="~/images/logo.png" alt="Logo" />
+    <!-- Loading Spinner -->
+    <div class="loading-spinner"></div>
+    <!-- Loading Text -->
+    <div class="loading-text">Loading, please wait...</div>
+</div>
+
+<!-- Login Form -->
+<div class="login-card">
+    <h1>@ViewData["Title"]</h1>
+
+    <form id="account" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+            <label asp-for="Input.Email">Email</label>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+            <label asp-for="Input.Password">Password</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" asp-for="Input.RememberMe" />
+            <label class="form-check-label" asp-for="Input.RememberMe">
+                @Html.DisplayNameFor(m => m.Input.RememberMe)
+            </label>
+        </div>
+
+        <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary mb-3">Log in</button>
+
+        <div class="text-center">
+            <p><a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a></p>
+            <p><a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a></p>
+            <p><a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a></p>
+        </div>
+    </form>
+
+    @if (Model.ExternalLogins?.Count > 0)
+    {
+        <hr />
+        <div class="text-center mb-2"><strong>Or login with</strong></div>
+        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div class="d-grid gap-2">
+                @foreach (var provider in Model.ExternalLogins!)
+                {
+                    <button type="submit" class="btn btn-outline-primary" name="provider" value="@provider.Name">
+                        @provider.DisplayName
+                    </button>
+                }
+            </div>
+        </form>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                // Hide the splash screen
+                document.getElementById('splash-screen').style.display = 'none';
+                // Smoothly show the login card
+                document.querySelector('.login-card').classList.add('show');
+            }, 3000);  // Show after 3 seconds
+        };
+    </script>
+}
