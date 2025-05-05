@@ -1,8 +1,6 @@
-﻿let map, marker, userLocationMarker, userCoords = null, polyline = null;
+﻿let map, marker, userLocationMarker, userCoords = null, routingControl = null;
 
-// -------------------------------------
-// SIDEBAR TOGGLE
-// -------------------------------------
+// SIDEBAR
 function toggleSidebar() {
     document.getElementById('sidebar').classList.add('show');
     document.getElementById('overlay').classList.add('show');
@@ -14,9 +12,7 @@ function closeSidebar() {
     document.getElementById('toggleBtn').style.display = 'block';
 }
 
-// -------------------------------------
-// INITIALIZE MAP ON LOAD
-// -------------------------------------
+// INIT MAP
 document.addEventListener('DOMContentLoaded', () => {
     map = L.map('map', { zoomControl: false }).setView([44.3302, 23.7949], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -27,25 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     locateUserAutomatically();
 
-    // GLOBAL CLICK → hide only suggestions (NOT rideOptions)
     document.addEventListener('click', e => {
         const input = document.getElementById('searchInput');
         const suggestions = document.getElementById('suggestions');
         const rideOptions = document.getElementById('rideOptions');
-
-        const clickedInside = input.contains(e.target)
-            || suggestions.contains(e.target)
-            || rideOptions.contains(e.target);
-
-        if (!clickedInside) {
-            suggestions.innerHTML = '';
-        }
+        const clickedInside = input.contains(e.target) || suggestions.contains(e.target) || rideOptions.contains(e.target);
+        if (!clickedInside) suggestions.innerHTML = '';
     });
 });
 
-// -------------------------------------
-// USER LOCATION
-// -------------------------------------
+// LOCALIZARE
 function locateUserAutomatically() {
     if (!navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(pos => {
@@ -67,24 +54,20 @@ function locateUserAutomatically() {
     });
 }
 
-// -------------------------------------
-// SEARCH & UPDATE MAP
-// -------------------------------------
+// CĂUTARE
 function searchLocation() {
     const q = document.getElementById("searchInput").value.trim();
     if (!q) return;
 
-    const bboxUrl = `https://nominatim.openstreetmap.org/search?format=json&` +
-        `q=${encodeURIComponent(q)}&bounded=1&viewbox=23.75,44.35,23.85,44.28&limit=1`;
+    const bboxUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&bounded=1&viewbox=23.75,44.35,23.85,44.28&limit=1`;
 
     fetch(bboxUrl).then(r => r.json()).then(data => {
         if (data.length) {
             updateMap(data[0]);
             saveSearchToHistory(data[0].display_name, data[0].lat, data[0].lon);
         } else {
-            const url = `https://nominatim.openstreetmap.org/search?format=json&` +
-                `q=${encodeURIComponent(q)}&limit=1`;
-            fetch(url).then(r => r.json()).then(d => {
+            const fallbackUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=1`;
+            fetch(fallbackUrl).then(r => r.json()).then(d => {
                 if (d.length) {
                     updateMap(d[0]);
                     saveSearchToHistory(d[0].display_name, d[0].lat, d[0].lon);
@@ -99,8 +82,10 @@ function searchLocation() {
     });
 }
 
+// ACTUALIZARE HARTĂ CU TRASEU
 function updateMap(loc) {
-    const lat = parseFloat(loc.lat), lon = parseFloat(loc.lon);
+    const lat = parseFloat(loc.lat);
+    const lon = parseFloat(loc.lon);
 
     if (marker) map.removeLayer(marker);
     marker = L.marker([lat, lon])
@@ -109,14 +94,15 @@ function updateMap(loc) {
         .openPopup();
     map.setView([lat, lon], 15);
 
-    if (polyline) map.removeLayer(polyline);
-    if (userCoords) {
-        polyline = L.polyline([userCoords, [lat, lon]], {
-            color: 'blue', weight: 4, opacity: 0.7
-        }).addTo(map);
+    if (routingControl) {
+        map.removeControl(routingControl);
+        routingControl = null;
     }
 
-    // show ride options
+    if (userCoords) {
+        createRoute(userCoords, [lat, lon]);
+    }
+
     const rideOptions = document.getElementById('rideOptions');
     rideOptions.style.display = 'block';
     rideOptions.style.opacity = '1';
@@ -127,9 +113,7 @@ function updateMap(loc) {
     rideOptions.style.overflow = 'visible';
 }
 
-// -------------------------------------
 // AUTOCOMPLETE
-// -------------------------------------
 let autocompleteTimer;
 document.getElementById("searchInput").addEventListener("input", function () {
     const q = this.value.trim();
@@ -139,16 +123,14 @@ document.getElementById("searchInput").addEventListener("input", function () {
         return;
     }
 
-    const bboxUrl = `https://nominatim.openstreetmap.org/search?format=json&` +
-        `q=${encodeURIComponent(q)}&bounded=1&viewbox=23.75,44.35,23.85,44.28&limit=5`;
+    const bboxUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&bounded=1&viewbox=23.75,44.35,23.85,44.28&limit=5`;
 
     autocompleteTimer = setTimeout(() => {
         fetch(bboxUrl).then(r => r.json()).then(data => {
             if (data.length) {
                 showSuggestions(data);
             } else {
-                fetch(`https://nominatim.openstreetmap.org/search?format=json&` +
-                    `q=${encodeURIComponent(q)}&limit=5`)
+                fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(q)}&limit=5`)
                     .then(r => r.json()).then(d2 => showSuggestions(d2));
             }
         });
@@ -157,9 +139,7 @@ document.getElementById("searchInput").addEventListener("input", function () {
 
 function showSuggestions(list) {
     const html = list.map(i =>
-        `<li onclick="selectSuggestion('${i.display_name.replace(/'/g, "\\'")}',${i.lat},${i.lon})">
-       ${i.display_name}
-     </li>`
+        `<li onclick="selectSuggestion('${i.display_name.replace(/'/g, "\\'")}', ${i.lat}, ${i.lon})">${i.display_name}</li>`
     ).join("");
     document.getElementById("suggestions").innerHTML = `<ul class="autocomplete-list">${html}</ul>`;
 }
@@ -171,9 +151,7 @@ function selectSuggestion(name, lat, lon) {
     saveSearchToHistory(name, lat, lon);
 }
 
-// -------------------------------------
-// SEARCH HISTORY
-// -------------------------------------
+// ISTORIC
 const SEARCH_HISTORY_KEY = "craiovaRideSearchHistory";
 const MAX_HISTORY = 5;
 
@@ -197,3 +175,100 @@ function showSearchHistory() {
 document.getElementById("searchInput").addEventListener("focus", function () {
     if (!this.value.trim()) showSearchHistory();
 });
+
+// CANCEL RIDE
+function cancelRide() {
+    document.getElementById('rideOptions').style.display = 'none';
+
+    if (marker) {
+        map.removeLayer(marker);
+        marker = null;
+    }
+
+    if (routingControl) {
+        map.removeControl(routingControl);
+        routingControl = null;
+    }
+
+    document.getElementById("searchInput").value = "";
+}
+
+// Tarife per km (în lei)
+const RIDE_PRICES = {
+    "Standard Ride": 2.5,
+    "Eco Ride": 2.0,
+    "Luggage": 3.0,
+    "Deluxe Ride": 4.5,
+    "Women for Women": 2.8
+};
+
+// Creează ruta + calculează distanța
+function createRoute(startCoords, endCoords) {
+    routingControl = L.Routing.control({
+        waypoints: [L.latLng(startCoords[0], startCoords[1]), L.latLng(endCoords[0], endCoords[1])],
+        routeWhileDragging: false,
+        show: false,
+        addWaypoints: false,
+        draggableWaypoints: false,
+        fitSelectedRoutes: true,
+        createMarker: () => null,
+    })
+        .on('routesfound', function (e) {
+            const distanceInKm = e.routes[0].summary.totalDistance / 1000;
+            updateRidePrices(distanceInKm.toFixed(2));
+        })
+        .addTo(map);
+}
+
+// Actualizează prețurile în carduri
+function updateRidePrices(distanceKm) {
+    document.querySelectorAll('.ride-option').forEach(card => {
+        const title = card.querySelector('h6').innerText.replace(/^[^\w]+/, '').trim();
+        const pricePerKm = RIDE_PRICES[title];
+        if (pricePerKm) {
+            const total = (pricePerKm * distanceKm).toFixed(2);
+            const existingPrice = card.querySelector('.card-price');
+            if (existingPrice) {
+                existingPrice.innerText = `Price: ${total} lei`;
+            } else {
+                const priceLine = `<p class="card-text text-success fw-bold card-price">Price: ${total} lei</p>`;
+                card.querySelector('.card-body').insertAdjacentHTML('beforeend', priceLine);
+            }
+        }
+    });
+}
+function selectRide(rideType) {
+    document.querySelectorAll('.ride-option').forEach(card => {
+        card.classList.remove('selected');
+    });
+
+    const selectedCard = Array.from(document.querySelectorAll('.ride-option')).find(card =>
+        card.innerText.includes(rideType)
+    );
+
+    if (selectedCard) {
+        selectedCard.classList.add('selected');
+    }
+
+    // Afișează mesaj de confirmare
+    alert(`Ai selectat ${rideType}. Șoferul va ajunge în cel mai scurt timp.`);
+
+    // Resetare interfață
+    document.getElementById('rideOptions').style.display = 'none';
+    document.getElementById("searchInput").value = "";
+
+    if (marker) {
+        map.removeLayer(marker);
+        marker = null;
+    }
+
+    if (routingControl) {
+        map.removeControl(routingControl);
+        routingControl = null;
+    }
+
+    if (userCoords) {
+        map.setView(userCoords, 13);
+    }
+}
+

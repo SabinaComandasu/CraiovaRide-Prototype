@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6zpYaYM3B79L9OjBfGo9vAgYNyHnYqgfexjSFzKfiy4=",
+  "Hash": "Wbq+Dg65KW0uLct207a3iToeVQr+J9eFeR8FCNea928=",
   "Source": "Proiect - Implementare Software",
   "BasePath": "_content/Proiect - Implementare Software",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fi73crlvac",
-      "Integrity": "Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE=",
+      "Fingerprint": "m5n4rfj5hc",
+      "Integrity": "OlXtgSgc0Aw4Uvo+YC9rpcTYDUoPif8C6Q3VQIXPy+s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\account.css"
@@ -206,6 +206,27 @@
       "OriginalItemSpec": "wwwroot\\js\\account.js"
     },
     {
+      "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\editinfo.js",
+      "SourceId": "Proiect - Implementare Software",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\",
+      "BasePath": "_content/Proiect - Implementare Software",
+      "RelativePath": "js/editinfo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3ohpmwolnj",
+      "Integrity": "TcRN+39mbL3a/brWvdF5Hg4c4XLGUbVrdxMCljd5bZk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\editinfo.js"
+    },
+    {
       "Identity": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
       "SourceId": "Proiect - Implementare Software",
       "SourceType": "Discovered",
@@ -220,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8h43zo47m5",
-      "Integrity": "lGPzCbKuKSyG+tyVZWuoJdWY6EDKCLX1CBX3GYCbv1Y=",
+      "Fingerprint": "3y9zva4b7z",
+      "Integrity": "GwSq3Mdjs1INws3OuTrMjWOTKCeHdtO/X3XqIRcEl70=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\home.js"
@@ -1478,7 +1499,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1470"
+          "Value": "1680"
         },
         {
           "Name": "Content-Type",
@@ -1486,11 +1507,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE=\""
+          "Value": "\"OlXtgSgc0Aw4Uvo+YC9rpcTYDUoPif8C6Q3VQIXPy+s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 13:27:14 GMT"
+          "Value": "Sun, 04 May 2025 21:13:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1500,12 +1521,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE="
+          "Value": "sha256-OlXtgSgc0Aw4Uvo+YC9rpcTYDUoPif8C6Q3VQIXPy+s="
         }
       ]
     },
     {
-      "Route": "css/account.fi73crlvac.css",
+      "Route": "css/account.m5n4rfj5hc.css",
       "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\css\\account.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1515,7 +1536,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1470"
+          "Value": "1680"
         },
         {
           "Name": "Content-Type",
@@ -1523,11 +1544,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE=\""
+          "Value": "\"OlXtgSgc0Aw4Uvo+YC9rpcTYDUoPif8C6Q3VQIXPy+s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 13:27:14 GMT"
+          "Value": "Sun, 04 May 2025 21:13:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1537,7 +1558,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fi73crlvac"
+          "Value": "m5n4rfj5hc"
         },
         {
           "Name": "label",
@@ -1545,7 +1566,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Oc8KFZtzjOTQUNyIu3uc2on4Ukv9AtjQgmA2TSUdeJE="
+          "Value": "sha256-OlXtgSgc0Aw4Uvo+YC9rpcTYDUoPif8C6Q3VQIXPy+s="
         }
       ]
     },
@@ -1572,7 +1593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 20:09:16 GMT"
+          "Value": "Sun, 04 May 2025 21:11:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1609,7 +1630,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 20:09:16 GMT"
+          "Value": "Sun, 04 May 2025 21:11:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1900,7 +1921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:51:52 GMT"
+          "Value": "Sun, 04 May 2025 21:11:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1945,7 +1966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:51:52 GMT"
+          "Value": "Sun, 04 May 2025 21:11:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2042,8 +2063,8 @@
       ]
     },
     {
-      "Route": "js/home.8h43zo47m5.js",
-      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
+      "Route": "js/editinfo.3ohpmwolnj.js",
+      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\editinfo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2052,7 +2073,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7128"
+          "Value": "430"
         },
         {
           "Name": "Content-Type",
@@ -2060,11 +2081,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lGPzCbKuKSyG+tyVZWuoJdWY6EDKCLX1CBX3GYCbv1Y=\""
+          "Value": "\"TcRN+39mbL3a/brWvdF5Hg4c4XLGUbVrdxMCljd5bZk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 21:00:47 GMT"
+          "Value": "Sun, 04 May 2025 21:13:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2074,7 +2095,89 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8h43zo47m5"
+          "Value": "3ohpmwolnj"
+        },
+        {
+          "Name": "label",
+          "Value": "js/editinfo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TcRN+39mbL3a/brWvdF5Hg4c4XLGUbVrdxMCljd5bZk="
+        }
+      ]
+    },
+    {
+      "Route": "js/editinfo.js",
+      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\editinfo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TcRN+39mbL3a/brWvdF5Hg4c4XLGUbVrdxMCljd5bZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 21:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TcRN+39mbL3a/brWvdF5Hg4c4XLGUbVrdxMCljd5bZk="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.3y9zva4b7z.js",
+      "AssetFile": "D:\\An3Sem2\\Proiect\\CraiovaRideV3\\Proiect - Implementare Software\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9336"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GwSq3Mdjs1INws3OuTrMjWOTKCeHdtO/X3XqIRcEl70=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 18:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3y9zva4b7z"
         },
         {
           "Name": "label",
@@ -2082,7 +2185,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lGPzCbKuKSyG+tyVZWuoJdWY6EDKCLX1CBX3GYCbv1Y="
+          "Value": "sha256-GwSq3Mdjs1INws3OuTrMjWOTKCeHdtO/X3XqIRcEl70="
         }
       ]
     },
@@ -2097,7 +2200,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7128"
+          "Value": "9336"
         },
         {
           "Name": "Content-Type",
@@ -2105,11 +2208,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lGPzCbKuKSyG+tyVZWuoJdWY6EDKCLX1CBX3GYCbv1Y=\""
+          "Value": "\"GwSq3Mdjs1INws3OuTrMjWOTKCeHdtO/X3XqIRcEl70=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 21:00:47 GMT"
+          "Value": "Mon, 05 May 2025 18:19:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2119,7 +2222,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lGPzCbKuKSyG+tyVZWuoJdWY6EDKCLX1CBX3GYCbv1Y="
+          "Value": "sha256-GwSq3Mdjs1INws3OuTrMjWOTKCeHdtO/X3XqIRcEl70="
         }
       ]
     },
@@ -6984,7 +7087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:34:40 GMT"
+          "Value": "Sun, 04 May 2025 21:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7021,7 +7124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:34:40 GMT"
+          "Value": "Sun, 04 May 2025 21:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7066,7 +7169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:34:40 GMT"
+          "Value": "Sun, 04 May 2025 21:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7111,7 +7214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:34:40 GMT"
+          "Value": "Sun, 04 May 2025 21:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
