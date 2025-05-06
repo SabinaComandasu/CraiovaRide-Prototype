@@ -30,10 +30,10 @@
         transition: opacity 1s ease-in, transform 1s ease-in;
     }
 
-    .register-card.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
+        .register-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
     h1 {
         text-align: center;
@@ -48,10 +48,10 @@
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .btn-primary:hover {
-        background-color: #2f8f9d;
-        transform: translateY(-2px);
-    }
+        .btn-primary:hover {
+            background-color: #2f8f9d;
+            transform: translateY(-2px);
+        }
 
     .btn-outline-primary {
         border-color: #40E0D0;
@@ -59,10 +59,10 @@
         transition: all 0.3s ease;
     }
 
-    .btn-outline-primary:hover {
-        background-color: #40E0D0;
-        color: white;
-    }
+        .btn-outline-primary:hover {
+            background-color: #40E0D0;
+            color: white;
+        }
 
     a {
         color: #2f8f9d;
@@ -70,9 +70,9 @@
         transition: color 0.3s ease;
     }
 
-    a:hover {
-        color: #135e67;
-    }
+        a:hover {
+            color: #135e67;
+        }
 
     .form-floating > label {
         color: #2f8f9d;
@@ -85,11 +85,25 @@
     }
 
     @@keyframes shake {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(-5px); }
-        50% { transform: translateX(5px); }
-        75% { transform: translateX(-5px); }
-        100% { transform: translateX(0); }
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 
     .register-card.shake {
@@ -108,13 +122,13 @@
         color: #2f8f9d;
     }
 
-    .toggle-password:hover {
-        color: #135e67;
-    }
+        .toggle-password:hover {
+            color: #135e67;
+        }
 
-    .toggle-password i {
-        font-size: 1.4rem;
-    }
+        .toggle-password i {
+            font-size: 1.4rem;
+        }
 
 </style>
 
@@ -124,12 +138,28 @@
     <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
 
+        <!-- ✅ Full Name -->
+        <div class="form-floating mb-3">
+            <input asp-for="Input.FullName" class="form-control" aria-required="true" placeholder="John Doe" />
+            <label asp-for="Input.FullName">Full Name</label>
+            <span asp-validation-for="Input.FullName" class="text-danger"></span>
+        </div>
+
+        <!-- ✅ Phone Number -->
+        <div class="form-floating mb-3">
+            <input asp-for="Input.PhoneNumber" class="form-control" aria-required="true" placeholder="123-456-7890" />
+            <label asp-for="Input.PhoneNumber">Phone Number</label>
+            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <!-- Email -->
         <div class="form-floating mb-3">
             <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
             <label asp-for="Input.Email">Email</label>
             <span asp-validation-for="Input.Email" class="text-danger"></span>
         </div>
 
+        <!-- Password -->
         <div class="form-floating mb-3 position-relative">
             <input asp-for="Input.Password" class="form-control" id="password-input" autocomplete="new-password" aria-required="true" placeholder="password" />
             <label asp-for="Input.Password">Password</label>
@@ -139,6 +169,7 @@
             <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
 
+        <!-- Confirm Password -->
         <div class="form-floating mb-3 position-relative">
             <input asp-for="Input.ConfirmPassword" class="form-control" id="confirm-password-input" autocomplete="new-password" aria-required="true" placeholder="Confirm password" />
             <label asp-for="Input.ConfirmPassword">Confirm Password</label>
@@ -178,21 +209,17 @@
     <partial name="_ValidationScriptsPartial" />
 
     <script>
-        // Animate card appearance on page load
         window.onload = function () {
             document.querySelector('.register-card').classList.add('show');
         };
 
-        // Spinner on submit
         document.getElementById('registerForm').addEventListener('submit', function () {
             const button = document.getElementById('registerSubmit');
             const buttonText = document.getElementById('register-button-text');
-
             button.disabled = true;
             buttonText.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Registering...';
         });
 
-        // Toggle password visibility (for both fields)
         document.querySelectorAll('.toggle-password').forEach(button => {
             button.addEventListener('click', function () {
                 const targetId = this.getAttribute('data-target');

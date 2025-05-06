@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Proiect_Implementare_Software.Data;
 
@@ -11,9 +12,11 @@ using Proiect_Implementare_Software.Data;
 namespace Proiect___Implementare_Software.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250506134817_IdentityUser")]
+    partial class IdentityUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -266,6 +269,7 @@ namespace Proiect___Implementare_Software.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Avatar")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DriverStatus")
@@ -278,7 +282,11 @@ namespace Proiect___Implementare_Software.Migrations
 
                     b.Property<string>("IdentityUserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -299,8 +307,6 @@ namespace Proiect___Implementare_Software.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("PersonID");
-
-                    b.HasIndex("IdentityUserId");
 
                     b.HasIndex("VehicleID");
 
@@ -529,12 +535,6 @@ namespace Proiect___Implementare_Software.Migrations
 
             modelBuilder.Entity("Proiect_Implementare_Software.Models.Person", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
-                        .WithMany()
-                        .HasForeignKey("IdentityUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Proiect_Implementare_Software.Models.Vehicle", "Vehicle")
                         .WithMany()
                         .HasForeignKey("VehicleID");
