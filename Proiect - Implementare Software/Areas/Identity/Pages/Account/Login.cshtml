@@ -1,0 +1,295 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #40E0D0, #2f8f9d);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+    #splash-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    @@keyframes logoAnimation {
+        0% {
+            transform: scale(0.8);
+        }
+
+        50% {
+            transform: scale(2.2);
+        }
+
+        100% {
+            transform: scale(1.7);
+        }
+    }
+
+    #splash-screen img {
+        width: 250px;
+        height: auto;
+        animation: logoAnimation 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    }
+
+    .loading-spinner {
+        border: 7px solid #f3f3f3;
+        border-top: 4px solid #2f8f9d;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+        margin-top: 80px;
+        margin-left: -15px;
+    }
+
+    @@keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .loading-text {
+        color: #2f8f9d;
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .login-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-in, transform 1s ease-in;
+    }
+
+    .login-card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    h1 {
+        text-align: center;
+        color: #2f8f9d;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .btn-primary {
+        background-color: #40E0D0;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #2f8f9d;
+        transform: translateY(-2px);
+    }
+
+    .btn-outline-primary {
+        border-color: #40E0D0;
+        color: #2f8f9d;
+        transition: all 0.3s ease;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #40E0D0;
+        color: white;
+    }
+
+    a {
+        color: #2f8f9d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #135e67;
+    }
+
+    .form-floating > label {
+        color: #2f8f9d;
+    }
+
+    .form-check-input:checked {
+        background-color: #40E0D0;
+        border-color: #40E0D0;
+    }
+
+    /* Shake animation */
+    @@keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .login-card.shake {
+        animation: shake 0.4s;
+    }
+
+    .spinner-border-sm {
+        width: 1rem;
+        height: 1rem;
+        border-width: 0.2em;
+    }
+</style>
+
+<div id="splash-screen">
+    <img src="~/images/logo.png" alt="Logo" />
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading, please wait...</div>
+</div>
+
+<div class="login-card">
+    <h1>@ViewData["Title"]</h1>
+
+    <form id="account" method="post">
+        <!-- Error message container -->
+        <div id="login-error-summary" class="text-danger mb-3" role="alert"></div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+            <label asp-for="Input.Email">Email</label>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+            <label asp-for="Input.Password">Password</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" asp-for="Input.RememberMe" />
+            <label class="form-check-label" asp-for="Input.RememberMe">
+                @Html.DisplayNameFor(m => m.Input.RememberMe)
+            </label>
+        </div>
+
+        <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary mb-3">
+            <span id="login-button-text">Log in</span>
+        </button>
+
+        <div class="text-center">
+            <p><a id="forgot-password" asp-page="./ForgotPassword" class="text-primary">Forgot your password?</a></p>
+            <p><a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a></p>
+            <p><a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a></p>
+        </div>
+    </form>
+
+    @if (Model.ExternalLogins?.Count > 0)
+    {
+        <hr />
+        <div class="text-center mb-2"><strong>Or login with</strong></div>
+        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div class="d-grid gap-2">
+                @foreach (var provider in Model.ExternalLogins!)
+                {
+                    <button type="submit" class="btn btn-outline-primary" name="provider" value="@provider.Name">
+                        @provider.DisplayName
+                    </button>
+                }
+            </div>
+        </form>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('splash-screen').style.display = 'none';
+                document.querySelector('.login-card').classList.add('show');
+            }, 3000);
+        };
+
+        document.getElementById('account').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const alertBox = document.getElementById('login-error-summary');  // Fixed: Referencing the new error container
+            const button = document.getElementById('login-submit');
+            const buttonText = document.getElementById('login-button-text');
+
+            alertBox.innerHTML = ''; // Clear previous errors
+
+            // Show spinner on button
+            button.disabled = true;
+            buttonText.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Logging in...';
+
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                window.location.href = result.redirectUrl;
+            } else {
+                // Display errors
+                result.errors.forEach(err => {
+                    const div = document.createElement('div');
+                    div.textContent = err;
+                    alertBox.appendChild(div);
+                });
+
+                const card = document.querySelector('.login-card');
+                card.classList.add('shake');
+                setTimeout(() => card.classList.remove('shake'), 500);
+
+                // Reset button
+                button.disabled = false;
+                buttonText.textContent = 'Log in';
+            }
+        });
+    </script>
+}
