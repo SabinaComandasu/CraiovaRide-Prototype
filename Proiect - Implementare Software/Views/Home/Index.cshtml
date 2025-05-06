@@ -33,15 +33,18 @@
     </div>
 
     <!-- Sidebar -->
-    <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
-        <img src="/images/avatar.png" class="img-thumbnail mb-2" alt="Profile photo">
 
-        <!-- Rating-ul utilizatorului -->
-        <div class="text-center mb-3">
-            <strong>⭐ Rating:</strong> <span id="userRating">4.8</span>/5
+        <!-- ✅ Avatar, Name, and Rating -->
+        <div class="d-flex align-items-start gap-3 mb-3">
+            <img src="@ViewBag.AvatarPath" class="avatar-img" alt="Profile photo">
+            <div class="text-start">
+                <div class="fw-bold">@ViewBag.FullName</div>
+                <div>⭐ @ViewBag.Rating</div>
+            </div>
         </div>
 
+        <!-- Sidebar Navigation -->
         <ul class="nav flex-column">
             <li class="nav-item"><a href="/Account#profile" class="nav-link">Profile</a></li>
             <li class="nav-item"><a href="/Payments" class="nav-link">Payments</a></li>
@@ -49,13 +52,19 @@
             <li class="nav-item"><a href="/Rides#completed" class="nav-link">History of Rides</a></li>
             <li class="nav-item"><a href="/About" class="nav-link">About</a></li>
         </ul>
-    </div>
 
+        <!-- Log Out Button -->
+        <form method="post" asp-area="Identity" asp-page="/Account/Logout" class="logout-form px-3">
+            <button type="submit" class="nav-link logout-link w-100 text-start">
+                <strong>Log Out</strong>
+            </button>
+        </form>
+    </div>
 
     <!-- Overlay -->
     <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
 
-    <!-- Harta -->
+    <!-- Map -->
     <div id="map" class="map-container"></div>
 
     <!-- Ride Options -->
@@ -116,5 +125,65 @@
         <a href="/Rides" class="btn btn-outline-primary mx-2">Rides</a>
         <a href="/Account" class="btn btn-outline-success mx-2">Account</a>
     </div>
+
+    <!-- Custom Sidebar Avatar Style -->
+    <style>
+        /* Sidebar layout */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Avatar */
+        .avatar-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #2f8f9d;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation links (turquoise, oval) */
+        .nav-link {
+            background-color: #f0f0f0;
+            border-radius: 25px;
+            margin: 5px 0;
+            padding: 10px 15px;
+            font-weight: 500;
+            color: #2f8f9d;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            text-decoration: none;
+        }
+
+            .nav-link:hover {
+                background-color: #e0e0e0;
+                color: #135e67;
+            }
+
+        /* Logout form container pinned to bottom */
+        .logout-form {
+            margin-top: auto;
+            padding: 1rem;
+        }
+
+            /* Logout button styled identically to nav-link */
+            .logout-form button {
+                display: block;
+                width: 100%;
+                background-color: #f0f0f0;
+                border-radius: 25px;
+                padding: 10px 15px;
+                margin: 5px 0;
+                font-weight: 500;
+                color: #dc3545; /* red */
+                text-align: left; /* ✅ aligns text to the left */
+                border: none;
+                transition: background-color 0.2s ease, color 0.2s ease;
+                text-decoration: none !important;
+            }
+
+    </style>
 </body>
 </html>
