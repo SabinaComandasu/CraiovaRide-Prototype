@@ -13,12 +13,11 @@
     <div class="text-center profile-header">
         <div class="avatar-wrapper">
             <img src="@Model.Avatar" alt="Avatar" class="avatar-img" />
-            <button class="avatar-edit-btn"><i class="bi bi-plus-circle-fill"></i></button>
+            <button class="avatar-edit-btn" aria-label="Schimbă avatar"><i class="bi bi-plus-circle-fill"></i></button>
         </div>
         <h4 class="username">@Model.FullName</h4>
         <p class="rating text-success"><i class="bi bi-star-fill"></i> @Model.Rating.ToString("0.00") Rating</p>
     </div>
-
 
     <!-- Opțiuni cont -->
     <div class="section">
@@ -52,11 +51,17 @@
 
     <!-- Setări finale -->
     <div class="section">
-        <a href="/Account/Logout" class="section-item text-danger">
-            <i class="bi bi-box-arrow-right"></i> Deconectare
-        </a>
+
+        <!-- Logout button as a POST form -->
+        <form method="post" asp-area="Identity" asp-page="/Account/Logout" class="d-inline">
+            <button type="submit" class="section-item text-danger btn btn-link p-0 m-0 align-baseline">
+                <i class="bi bi-box-arrow-right"></i> Deconectare
+            </button>
+        </form>
+
         <a href="/Account/Delete" class="section-item text-danger">
             <i class="bi bi-trash"></i> Șterge contul
         </a>
     </div>
+
 </div>
