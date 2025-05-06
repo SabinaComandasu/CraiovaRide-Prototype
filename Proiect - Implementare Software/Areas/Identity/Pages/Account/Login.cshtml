@@ -144,7 +144,6 @@
         border-color: #40E0D0;
     }
 
-    /* Shake animation */
     @@keyframes shake {
         0% {
             transform: translateX(0);
@@ -194,9 +193,10 @@
         }
 
         .toggle-password i {
-            font-size: 1.4rem; /* Adjust size here */
+            font-size: 1.4rem;
         }
 </style>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 <div id="splash-screen">
@@ -209,14 +209,12 @@
     <h1>@ViewData["Title"]</h1>
 
     <form id="account" method="post">
-        <!-- Error message container -->
         <div id="login-error-summary" class="text-danger mb-3" role="alert">
             @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
             {
                 <p>@error.ErrorMessage</p>
             }
         </div>
-
 
         <div class="form-floating mb-3">
             <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
@@ -228,16 +226,9 @@
             <input asp-for="Input.Password" class="form-control" id="password-input" autocomplete="current-password" aria-required="true" placeholder="password" />
             <label asp-for="Input.Password">Password</label>
             <button type="button" class="btn btn-outline-secondary btn-sm toggle-password" tabindex="-1" aria-label="Toggle password visibility">
-                <i class="bi bi-eye"></i> <!-- Bootstrap icon (eye) -->
+                <i class="bi bi-eye"></i>
             </button>
             <span asp-validation-for="Input.Password" class="text-danger"></span>
-        </div>
-
-        <div class="form-check mb-3">
-            <input class="form-check-input" asp-for="Input.RememberMe" />
-            <label class="form-check-label" asp-for="Input.RememberMe">
-                @Html.DisplayNameFor(m => m.Input.RememberMe)
-            </label>
         </div>
 
         <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary mb-3">
@@ -268,6 +259,8 @@
     }
 </div>
 
+<audio id="splash-audio" src="~/audio/tethys.mp3" preload="auto"></audio>
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 
@@ -284,13 +277,12 @@
 
             const form = e.target;
             const formData = new FormData(form);
-            const alertBox = document.getElementById('login-error-summary');  // Referencing the new error container
+            const alertBox = document.getElementById('login-error-summary');
             const button = document.getElementById('login-submit');
             const buttonText = document.getElementById('login-button-text');
 
-            alertBox.innerHTML = ''; // Clear previous errors
+            alertBox.innerHTML = '';
 
-            // Show spinner on button
             button.disabled = true;
             buttonText.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Logging in...';
 
@@ -302,17 +294,32 @@
 
             const result = await response.json();
 
+            const successAudio = new Audio('/audio/tethys.mp3');
+            const errorAudio = new Audio('/audio/error.mp3');
+
             if (result.success) {
-                window.location.href = result.redirectUrl;
+                try {
+                    await successAudio.play();
+                } catch (err) {
+                    console.log('Autoplay blocked for success sound:', err);
+                }
+
+                setTimeout(() => {
+                    window.location.href = result.redirectUrl;
+                }, 800);
             } else {
-                // Display errors
+                try {
+                    await errorAudio.play();
+                } catch (err) {
+                    console.log('Autoplay blocked for error sound:', err);
+                }
+
                 result.errors.forEach(err => {
                     const div = document.createElement('div');
                     div.textContent = err;
                     alertBox.appendChild(div);
                 });
 
-                // If there's a lockout error, specifically handle it
                 if (result.errors.some(error => error.includes("locked out"))) {
                     alertBox.innerHTML += "<div class='text-warning'>Your account is temporarily locked. Please try again later.</div>";
                 }
@@ -321,7 +328,6 @@
                 card.classList.add('shake');
                 setTimeout(() => card.classList.remove('shake'), 500);
 
-                // Reset button
                 button.disabled = false;
                 buttonText.textContent = 'Log in';
             }
@@ -342,5 +348,4 @@
             }
         });
     </script>
-
 }

@@ -1,9 +1,6 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
-
-using System;
+﻿using System;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +8,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using Proiect___Implementare_Software.Services;  // Assuming you are using your custom EmailService
 
 namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
 {
@@ -18,30 +16,18 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
     public class RegisterConfirmationModel : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly IEmailSender _sender;
+        private readonly IEmailService _emailService;  // Custom Email service
+        private readonly ILogger<RegisterConfirmationModel> _logger;
 
-        public RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailSender sender)
+        public RegisterConfirmationModel(UserManager<IdentityUser> userManager, IEmailService emailService, ILogger<RegisterConfirmationModel> logger)
         {
             _userManager = userManager;
-            _sender = sender;
+            _emailService = emailService;
+            _logger = logger;
         }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public string Email { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public bool DisplayConfirmAccountLink { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public string EmailConfirmationUrl { get; set; }
 
         public async Task<IActionResult> OnGetAsync(string email, string returnUrl = null)
@@ -59,8 +45,8 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
             }
 
             Email = email;
-            // Once you add a real email sender, you should remove this code that lets you confirm the account
             DisplayConfirmAccountLink = true;
+
             if (DisplayConfirmAccountLink)
             {
                 var userId = await _userManager.GetUserIdAsync(user);
@@ -71,6 +57,28 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
                     pageHandler: null,
                     values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                     protocol: Request.Scheme);
+
+                // Send the confirmation email
+                var message = $@"
+                    <p>Welcome!</p>
+                    <p>You have successfully registered. Please confirm your account by clicking the link below:</p>
+                    <p><a href='{HtmlEncoder.Default.Encode(EmailConfirmationUrl)}'>Confirm your email</a></p>
+                    <p>If you did not register for this account, please ignore this email.</p>
+                    <p>Thank you,<br/>The CraiovaRide Team</p>
+                ";
+
+                try
+                {
+                    // Send the confirmation email
+                    await _emailService.SendEmailAsync(Email, "Confirm Your Registration", message);
+                }
+                catch (Exception ex)
+                {
+                    // Log any error that occurs while sending the email
+                    _logger.LogError(ex, "Error sending confirmation email to {Email}", Email);
+                    ModelState.AddModelError(string.Empty, $"An error occurred while sending the email: {ex.Message}");
+                    return Page();
+                }
             }
 
             return Page();

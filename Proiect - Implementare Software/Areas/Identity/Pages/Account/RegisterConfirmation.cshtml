@@ -4,20 +4,141 @@
     ViewData["Title"] = "Register confirmation";
 }
 
-<h1>@ViewData["Title"]</h1>
-@{
-    if (@Model.DisplayConfirmAccountLink)
+<style>
+    body {
+        background: linear-gradient(135deg, #40E0D0, #2f8f9d);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+    #splash-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    @@keyframes logoAnimation {
+        0% {
+            transform: scale(0.8);
+        }
+
+        50% {
+            transform: scale(2.2);
+        }
+
+        100% {
+            transform: scale(1.7);
+        }
+    }
+
+    #splash-screen img {
+        width: 250px;
+        height: auto;
+        animation: logoAnimation 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    }
+
+    .confirmation-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-in, transform 1s ease-in;
+    }
+
+        .confirmation-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    h1 {
+        text-align: center;
+        color: #2f8f9d;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    p {
+        text-align: center;
+        color: #333;
+    }
+
+    a {
+        color: #2f8f9d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #135e67;
+        }
+
+    .btn-primary {
+        background-color: #40E0D0;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #2f8f9d;
+            transform: translateY(-2px);
+        }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .mt-3 {
+        margin-top: 1rem;
+    }
+</style>
+
+<div id="splash-screen">
+    <img src="~/images/logo.png" alt="Logo" />
+</div>
+
+<div class="confirmation-card">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (Model.DisplayConfirmAccountLink)
     {
-<p>
-    This app does not currently have a real email sender registered, see <a href="https://aka.ms/aspaccountconf">these docs</a> for how to configure a real email sender.
-    Normally this would be emailed: <a id="confirm-link" href="@Model.EmailConfirmationUrl">Click here to confirm your account</a>
-</p>
+        <p>
+            A confirmation email has been sent to your address. Please check your inbox (or spam folder) to confirm your account.
+        </p>
     }
     else
     {
-<p>
-        Please check your email to confirm your account.
-</p>
+        <p>
+            Please check your email to confirm your account.
+        </p>
     }
-}
 
+    <a asp-page="/Account/Login" asp-route-area="Identity" class="btn btn-primary w-100 mt-3">Return to Log In</a>
+</div>
+
+@section Scripts {
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('splash-screen').style.display = 'none';
+                document.querySelector('.confirmation-card').classList.add('show');
+            }, 3000);
+        };
+    </script>
+}

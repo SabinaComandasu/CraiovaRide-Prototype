@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Proiect - Implementare Software.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\audio\\error.mp3",
+      "PackagePath": "staticwebassets\\audio\\error.mp3"
+    },
+    {
+      "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\audio\\loginsound.mp3",
+      "PackagePath": "staticwebassets\\audio\\loginsound.mp3"
+    },
+    {
+      "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\audio\\tethys.mp3",
+      "PackagePath": "staticwebassets\\audio\\tethys.mp3"
+    },
+    {
       "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\css\\account.css",
       "PackagePath": "staticwebassets\\css\\account.css"
     },
@@ -23,6 +35,10 @@
     {
       "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
       "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\images\\target.png",

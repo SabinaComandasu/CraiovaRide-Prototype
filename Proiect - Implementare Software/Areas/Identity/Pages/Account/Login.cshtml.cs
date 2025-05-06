@@ -100,7 +100,7 @@ public class LoginModel : PageModel
                     _logger.LogWarning($"User {userEmail} has exceeded maximum login attempts. Locking out for 5 minutes.");
                 }
 
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                ModelState.AddModelError(string.Empty, "Incorrect username or password. Please enter your correct credentials.");
 
                 var errors = ModelState
                     .Where(ms => ms.Value.Errors.Count > 0)
