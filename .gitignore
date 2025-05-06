@@ -4,7 +4,13 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 .vs/
-
+bin/
+obj/
+*.dll
+*.pdb
+*.json
+*.exe
+*.log
 # Node artifact files
 node_modules/
 dist/
