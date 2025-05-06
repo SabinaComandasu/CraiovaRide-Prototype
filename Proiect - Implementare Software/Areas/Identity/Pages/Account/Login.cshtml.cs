@@ -1,138 +1,126 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.Security.Policy;
 
-namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
+public class LoginModel : PageModel
 {
-    public class LoginModel : PageModel
+    private readonly SignInManager<IdentityUser> _signInManager;
+    private readonly ILogger<LoginModel> _logger;
+    private static Dictionary<string, (int failedAttempts, DateTime? lockoutEnd)> _failedLoginAttempts = new();
+
+    public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger)
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly ILogger<LoginModel> _logger;
-
-        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger)
-        {
-            _signInManager = signInManager;
-            _logger = logger;
-        }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        [BindProperty]
-        public InputModel Input { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        public IList<AuthenticationScheme> ExternalLogins { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        public string ReturnUrl { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        [TempData]
-        public string ErrorMessage { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        public class InputModel
-        {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
-            [EmailAddress]
-            public string Email { get; set; }
-
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Required]
-            [DataType(DataType.Password)]
-            public string Password { get; set; }
-
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
-            [Display(Name = "Remember me?")]
-            public bool RememberMe { get; set; }
-        }
-
-        public async Task OnGetAsync(string returnUrl = null)
-        {
-            if (!string.IsNullOrEmpty(ErrorMessage))
-            {
-                ModelState.AddModelError(string.Empty, ErrorMessage);
-            }
-
-            returnUrl ??= Url.Content("~/");
-
-            // Clear the existing external cookie to ensure a clean login process
-            await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
-
-            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
-            ReturnUrl = returnUrl;
-        }
-
-        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
-        {
-            returnUrl ??= Url.Content("~/");
-            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
-            if (ModelState.IsValid)
-            {
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
-                if (result.Succeeded)
-                {
-                    _logger.LogInformation("User logged in.");
-                    return new JsonResult(new { success = true, redirectUrl = returnUrl });
-                }
-                if (result.RequiresTwoFactor)
-                {
-                    return new JsonResult(new { success = true, redirectUrl = Url.Page("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe }) });
-                }
-                if (result.IsLockedOut)
-                {
-                    _logger.LogWarning("User account locked out.");
-                    return new JsonResult(new { success = true, redirectUrl = Url.Page("./Lockout") });
-                }
-
-                // Custom error message for invalid login attempts
-                ModelState.AddModelError(string.Empty, "Seems like the username or password is incorrect. Please enter the correct credentials.");
-            }
-
-            var errors = ModelState
-                .Where(ms => ms.Value.Errors.Count > 0)
-                .SelectMany(ms => ms.Value.Errors)
-                .Select(e => e.ErrorMessage)
-                .ToList();
-
-            return new JsonResult(new { success = false, errors });
-        }
-
-
+        _signInManager = signInManager;
+        _logger = logger;
     }
+
+    // BindProperty and other properties...
+    [BindProperty]
+    public InputModel Input { get; set; }
+
+    public IList<AuthenticationScheme> ExternalLogins { get; set; }
+    public string ReturnUrl { get; set; }
+    [TempData]
+    public string ErrorMessage { get; set; }
+
+    public class InputModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        [Display(Name = "Remember me?")]
+        public bool RememberMe { get; set; }
+    }
+
+    // Add rate-limiting logic in the OnPostAsync method
+    public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+    {
+        returnUrl ??= Url.Content("~/");
+        ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
+        if (ModelState.IsValid)
+        {
+            var userEmail = Input.Email.ToLower();
+
+            if (_failedLoginAttempts.ContainsKey(userEmail) && _failedLoginAttempts[userEmail].failedAttempts >= 5)
+            {
+                var lockoutEnd = _failedLoginAttempts[userEmail].lockoutEnd;
+                if (lockoutEnd.HasValue && lockoutEnd.Value > DateTime.UtcNow)
+                {
+                    var remainingLockoutTime = lockoutEnd.Value - DateTime.UtcNow;
+                    var remainingMinutes = (int)remainingLockoutTime.TotalMinutes;
+                    var remainingSeconds = (int)remainingLockoutTime.TotalSeconds % 60;
+
+                    ModelState.AddModelError(string.Empty, $"You have exceeded the maximum login attempts. Please try again in {remainingMinutes} minutes and {remainingSeconds} seconds.");
+                    var errors = ModelState
+                        .Where(ms => ms.Value.Errors.Count > 0)
+                        .SelectMany(ms => ms.Value.Errors)
+                        .Select(e => e.ErrorMessage)
+                        .ToList();
+
+                    return new JsonResult(new { success = false, errors });
+                }
+                else
+                {
+                    _failedLoginAttempts[userEmail] = (0, null);
+                }
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+
+            if (result.Succeeded)
+            {
+                if (_failedLoginAttempts.ContainsKey(userEmail))
+                {
+                    _failedLoginAttempts.Remove(userEmail);
+                }
+                return new JsonResult(new { success = true, redirectUrl = returnUrl });
+            }
+            else
+            {
+                if (!_failedLoginAttempts.ContainsKey(userEmail))
+                {
+                    _failedLoginAttempts[userEmail] = (0, null);
+                }
+
+                var (failedAttempts, _) = _failedLoginAttempts[userEmail];
+                _failedLoginAttempts[userEmail] = (failedAttempts + 1, null);
+
+                if (_failedLoginAttempts[userEmail].failedAttempts >= 5)
+                {
+                    _failedLoginAttempts[userEmail] = (_failedLoginAttempts[userEmail].failedAttempts, DateTime.UtcNow.AddMinutes(5));
+                    _logger.LogWarning($"User {userEmail} has exceeded maximum login attempts. Locking out for 5 minutes.");
+                }
+
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+
+                var errors = ModelState
+                    .Where(ms => ms.Value.Errors.Count > 0)
+                    .SelectMany(ms => ms.Value.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+                return new JsonResult(new { success = false, errors });
+            }
+        }
+
+        var errorMessages = ModelState
+            .Where(ms => ms.Value.Errors.Count > 0)
+            .SelectMany(ms => ms.Value.Errors)
+            .Select(e => e.ErrorMessage)
+            .ToList();
+
+        return new JsonResult(new { success = false, errors = errorMessages });
+    }
+
+
+
 }

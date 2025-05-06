@@ -6,7 +6,11 @@
 .vs/
 bin/
 obj/
-
+*.dll
+*.pdb
+*.json
+*.exe
+*.log
 # Node artifact files
 node_modules/
 dist/
