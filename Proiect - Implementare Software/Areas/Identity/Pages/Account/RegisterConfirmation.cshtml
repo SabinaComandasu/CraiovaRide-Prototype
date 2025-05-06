@@ -50,34 +50,6 @@
         animation: logoAnimation 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
     }
 
-    .loading-spinner {
-        border: 7px solid #f3f3f3;
-        border-top: 4px solid #2f8f9d;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        animation: spin 1s linear infinite;
-        margin-top: 80px;
-        margin-left: -15px;
-    }
-
-    @@keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .loading-text {
-        color: #2f8f9d;
-        font-size: 24px;
-        margin-top: 10px;
-        font-weight: bold;
-    }
-
     .confirmation-card {
         background: white;
         border-radius: 20px;
@@ -102,6 +74,11 @@
         font-weight: 700;
     }
 
+    p {
+        text-align: center;
+        color: #333;
+    }
+
     a {
         color: #2f8f9d;
         text-decoration: none;
@@ -123,56 +100,23 @@
             transform: translateY(-2px);
         }
 
-    .btn-outline-primary {
-        border-color: #40E0D0;
-        color: #2f8f9d;
-        transition: all 0.3s ease;
+    .w-100 {
+        width: 100%;
     }
 
-        .btn-outline-primary:hover {
-            background-color: #40E0D0;
-            color: white;
-        }
-
-    .form-floating > label {
-        color: #2f8f9d;
-    }
-
-    .form-check-input:checked {
-        background-color: #40E0D0;
-        border-color: #40E0D0;
-    }
-
-    /* Animation for fade-in */
-    @@keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .spinner-border-sm {
-        width: 1rem;
-        height: 1rem;
-        border-width: 0.2em;
+    .mt-3 {
+        margin-top: 1rem;
     }
 </style>
 
 <div id="splash-screen">
     <img src="~/images/logo.png" alt="Logo" />
-    <div class="loading-spinner"></div>
-    <div class="loading-text">Loading, please wait...</div>
 </div>
 
 <div class="confirmation-card">
     <h1>@ViewData["Title"]</h1>
 
-    @if (@Model.DisplayConfirmAccountLink)
+    @if (Model.DisplayConfirmAccountLink)
     {
         <p>
             A confirmation email has been sent to your address. Please check your inbox (or spam folder) to confirm your account.
@@ -185,7 +129,7 @@
         </p>
     }
 
-
+    <a asp-page="/Account/Login" asp-route-area="Identity" class="btn btn-primary w-100 mt-3">Return to Log In</a>
 </div>
 
 @section Scripts {
