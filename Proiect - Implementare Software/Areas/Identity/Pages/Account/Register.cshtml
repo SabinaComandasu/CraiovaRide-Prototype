@@ -4,6 +4,8 @@
     ViewData["Title"] = "Register";
 }
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 <style>
     body {
         background: linear-gradient(135deg, #40E0D0, #2f8f9d);
@@ -28,10 +30,10 @@
         transition: opacity 1s ease-in, transform 1s ease-in;
     }
 
-        .register-card.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .register-card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     h1 {
         text-align: center;
@@ -46,10 +48,10 @@
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-        .btn-primary:hover {
-            background-color: #2f8f9d;
-            transform: translateY(-2px);
-        }
+    .btn-primary:hover {
+        background-color: #2f8f9d;
+        transform: translateY(-2px);
+    }
 
     .btn-outline-primary {
         border-color: #40E0D0;
@@ -57,10 +59,10 @@
         transition: all 0.3s ease;
     }
 
-        .btn-outline-primary:hover {
-            background-color: #40E0D0;
-            color: white;
-        }
+    .btn-outline-primary:hover {
+        background-color: #40E0D0;
+        color: white;
+    }
 
     a {
         color: #2f8f9d;
@@ -68,9 +70,9 @@
         transition: color 0.3s ease;
     }
 
-        a:hover {
-            color: #135e67;
-        }
+    a:hover {
+        color: #135e67;
+    }
 
     .form-floating > label {
         color: #2f8f9d;
@@ -83,30 +85,37 @@
     }
 
     @@keyframes shake {
-        0% {
-            transform: translateX(0);
-        }
-
-        25% {
-            transform: translateX(-5px);
-        }
-
-        50% {
-            transform: translateX(5px);
-        }
-
-        75% {
-            transform: translateX(-5px);
-        }
-
-        100% {
-            transform: translateX(0);
-        }
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
     }
 
     .register-card.shake {
         animation: shake 0.4s;
     }
+
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        padding: 2px 6px;
+        border-radius: 50%;
+        background: none;
+        border: none;
+        color: #2f8f9d;
+    }
+
+    .toggle-password:hover {
+        color: #135e67;
+    }
+
+    .toggle-password i {
+        font-size: 1.4rem;
+    }
+
 </style>
 
 <div class="register-card">
@@ -121,15 +130,21 @@
             <span asp-validation-for="Input.Email" class="text-danger"></span>
         </div>
 
-        <div class="form-floating mb-3">
-            <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+        <div class="form-floating mb-3 position-relative">
+            <input asp-for="Input.Password" class="form-control" id="password-input" autocomplete="new-password" aria-required="true" placeholder="password" />
             <label asp-for="Input.Password">Password</label>
+            <button type="button" class="btn btn-outline-secondary btn-sm toggle-password" data-target="password-input" tabindex="-1" aria-label="Toggle password visibility">
+                <i class="bi bi-eye"></i>
+            </button>
             <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
 
-        <div class="form-floating mb-3">
-            <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm password" />
+        <div class="form-floating mb-3 position-relative">
+            <input asp-for="Input.ConfirmPassword" class="form-control" id="confirm-password-input" autocomplete="new-password" aria-required="true" placeholder="Confirm password" />
             <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+            <button type="button" class="btn btn-outline-secondary btn-sm toggle-password" data-target="confirm-password-input" tabindex="-1" aria-label="Toggle confirm password visibility">
+                <i class="bi bi-eye"></i>
+            </button>
             <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
         </div>
 
@@ -168,18 +183,32 @@
             document.querySelector('.register-card').classList.add('show');
         };
 
-        // Optionally handle AJAX submission like login (optional enhancement)
-        document.getElementById('registerForm').addEventListener('submit', async function (e) {
-            // OPTIONAL: If you want same button spinner + error handling like login form:
-            const form = e.target;
+        // Spinner on submit
+        document.getElementById('registerForm').addEventListener('submit', function () {
             const button = document.getElementById('registerSubmit');
             const buttonText = document.getElementById('register-button-text');
 
-            // Show spinner
             button.disabled = true;
             buttonText.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Registering...';
+        });
 
-            // Let normal form submission continue
+        // Toggle password visibility (for both fields)
+        document.querySelectorAll('.toggle-password').forEach(button => {
+            button.addEventListener('click', function () {
+                const targetId = this.getAttribute('data-target');
+                const input = document.getElementById(targetId);
+                const icon = this.querySelector('i');
+
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.remove('bi-eye');
+                    icon.classList.add('bi-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.remove('bi-eye-slash');
+                    icon.classList.add('bi-eye');
+                }
+            });
         });
     </script>
 }
