@@ -3,7 +3,6 @@ using Proiect_Implementare_Software.Models;
 using Proiect_Implementare_Software.Services;
 using System.Diagnostics;
 
-namespace Proiect_Implementare_Software.Controllers
 {
     public class HomeController : Controller
     {
