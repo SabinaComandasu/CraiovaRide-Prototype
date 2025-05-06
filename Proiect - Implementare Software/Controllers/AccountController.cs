@@ -1,37 +1,47 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using Proiect_Implementare_Software.Models;
+using Proiect_Implementare_Software.Data;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Proiect_Implementare_Software.Controllers
 {
     public class AccountController : Controller
     {
-        public IActionResult Index()
-        {
-            var user = new Person
-            {
-                Username = "regele",
-                FullName = "Sebastian-Valentin Sion",
-                PhoneNumber = "0712345678",
-                Avatar = "/images/default-avatar.png",
-                Role = "Pasager",
-                Rating = 4.8f
-            };
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly AppDbContext _context;
 
-            return View(user);
+        public AccountController(UserManager<IdentityUser> userManager, AppDbContext context)
+        {
+            _userManager = userManager;
+            _context = context;
         }
 
-        public IActionResult EditInfo()
+        // GET: /Account/Index
+        public async Task<IActionResult> Index()
         {
-            var user = new Person
+            var user = await _userManager.GetUserAsync(User); // Get the logged-in user
+            if (user == null)
             {
-                FullName = "Sebastian-Valentin Sion",
-                PhoneNumber = "0712345678",
-                Avatar = "/images/default-avatar.png"
-            };
+                return RedirectToAction("Login", "Account"); // Redirect to login if the user is not found
+            }
 
-            return View(user);
+            // Fetch additional user info from the Person table
+            var person = _context.Persons.FirstOrDefault(p => p.IdentityUserId == user.Id);
+            if (person == null)
+            {
+                return RedirectToAction("Error"); // Handle error if Person not found
+            }
+
+            // Pass the user data, including avatar, to the view
+            ViewBag.AvatarPath = "/images/" + person.Avatar; // Avatar image path stored in 'wwwroot/images/'
+            ViewBag.FullName = person.FullName;
+            ViewBag.Rating = person.Rating.ToString("0.0") ?? "N/A"; // Provide a default if rating is null
+
+            return View(person); // Pass the person data to the view
         }
 
-
+        // Other actions like EditInfo(), etc.
     }
 }

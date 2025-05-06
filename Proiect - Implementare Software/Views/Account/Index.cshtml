@@ -12,11 +12,12 @@
     <!-- Header profil -->
     <div class="text-center profile-header">
         <div class="avatar-wrapper">
-            <img src="@Model.Avatar" alt="Avatar" class="avatar-img" />
+            <!-- Use the Avatar from the database -->
+            <img src="@ViewBag.AvatarPath" alt="Avatar" class="avatar-img" />
             <button class="avatar-edit-btn" aria-label="Schimbă avatar"><i class="bi bi-plus-circle-fill"></i></button>
         </div>
-        <h4 class="username">@Model.FullName</h4>
-        <p class="rating text-success"><i class="bi bi-star-fill"></i> @Model.Rating.ToString("0.00") Rating</p>
+        <h4 class="username">@ViewBag.FullName</h4>
+        <p class="rating text-success"><i class="bi bi-star-fill"></i> @ViewBag.Rating Rating</p>
     </div>
 
     <!-- Opțiuni cont -->
