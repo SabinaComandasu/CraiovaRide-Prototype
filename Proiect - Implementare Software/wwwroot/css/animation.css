@@ -1,0 +1,254 @@
+﻿/* ANIMATION BACKGROUND AND SCENE */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.country-wrap {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, #d1e4ea 0%, #bae4f4 100%);
+    z-index: 0;
+}
+
+.mountain-1, .mountain-2 {
+    position: absolute;
+    bottom: -150px;
+    transform: rotate(45deg);
+    border-radius: 40px;
+}
+
+.mountain-1 {
+    background: #cea392;
+    width: 500px;
+    height: 500px;
+}
+
+.mountain-2 {
+    background: #e4dbd2;
+    width: 800px;
+    height: 800px;
+    left: 250px;
+    opacity: 0.6;
+    z-index: -1;
+    box-shadow: 0 0 25px #e4dbd2;
+}
+
+.sun {
+    background: #ff9944;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 153, 68, 0.7);
+    position: absolute;
+    left: 80%;
+    top: 40px;
+}
+
+.grass {
+    height: 50px;
+    width: 100%;
+    background-color: #93cc3a;
+    position: absolute;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.street {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 50px;
+    background: #505050;
+    box-shadow: 0 1px 16px rgba(111, 35, 51, 0.4) inset;
+    z-index: 2;
+}
+
+.street-stripe {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(to right, white, white 40px, transparent 40px, transparent 80px);
+    z-index: 3;
+}
+
+/* CAR ANIMATION */
+.car {
+    position: absolute;
+    bottom: 55px;
+    left: -200px;
+    animation: drive 10s linear infinite;
+    z-index: 4;
+}
+
+@keyframes drive {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+.car-body {
+    width: 150px;
+    height: 40px;
+    background: #0078d4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tyre {
+    width: 30px;
+    height: 30px;
+    background: #111;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+}
+
+    .tyre.front {
+        left: 110px;
+    }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gap {
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+/* TREES AND HILL */
+.tree-1 {
+    position: absolute;
+    bottom: 130px;
+    width: 20px;
+    height: 70px;
+    z-index: 0;
+}
+
+    .tree-1 .trunk {
+        background: #8b4513;
+        height: 30px;
+        width: 8px;
+        margin: 0 auto;
+    }
+
+    .tree-1 .branch {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 30px solid green;
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+
+.hill {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 160%;
+    border-top-left-radius: 100%;
+    background-color: #adde60;
+    z-index: -1;
+}
+
+    .hill:after {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        right: -400px;
+        width: 120%;
+        height: 110%;
+        border-top-right-radius: 100%;
+        border-top-left-radius: 0%;
+        background-color: #94c943;
+        transform: rotate(-12deg);
+        box-shadow: 0 0 25px #cbf191 inset;
+    }
+
+    .hill:before {
+        background-color: #93cc3a;
+        border-top-left-radius: 0;
+        border-top-right-radius: 100%;
+        bottom: -70px;
+        content: "";
+        height: 110%;
+        left: -54px;
+        position: absolute;
+        transform: rotate(4deg);
+        width: 120%;
+    }
+
+.cloud {
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    width: 120px;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+    animation: moveCloud 40s linear infinite;
+    box-shadow: 30px 0 white, 60px 0 white;
+}
+
+@keyframes moveCloud {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+.car-body::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 25px;
+    height: 10px;
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    box-shadow: 50px 0 #e6e6e6, 100px 0 #e6e6e6;
+}
+
+.car-headlight {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #ffff66;
+    border-radius: 50%;
+    right: -5px;
+    top: 12px;
+    box-shadow: 0 0 8px #ffff66;
+}
+.car-headlight.second-light {
+        top: 20px;
+        right: -5px;
+        background: #ffff66;
+        box-shadow: 0 0 8px #ffff66;
+}
