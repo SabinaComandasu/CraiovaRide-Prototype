@@ -19,6 +19,26 @@ namespace Proiect_Implementare_Software.Controllers
         }
 
         // GET: /Account/Index
+        // GET: /Account/EditInfo
+        public IActionResult EditInfo()
+        {
+            var user = _userManager.GetUserAsync(User).Result; // Get the logged-in user
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account"); // Redirect to login if the user is not found
+            }
+
+            // Fetch the user's information from the database
+            var person = _context.Persons.FirstOrDefault(p => p.IdentityUserId == user.Id);
+            if (person == null)
+            {
+                return RedirectToAction("Error"); // Handle error if Person not found
+            }
+
+            // Return the EditInfo view with the user data
+            return View(person);
+        }
+
         public async Task<IActionResult> Index()
         {
             var user = await _userManager.GetUserAsync(User); // Get the logged-in user
