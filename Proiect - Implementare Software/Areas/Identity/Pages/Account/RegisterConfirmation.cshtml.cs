@@ -64,7 +64,7 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
                     <p>You have successfully registered. Please confirm your account by clicking the link below:</p>
                     <p><a href='{HtmlEncoder.Default.Encode(EmailConfirmationUrl)}'>Confirm your email</a></p>
                     <p>If you did not register for this account, please ignore this email.</p>
-                    <p>Thank you,<br/>The Team</p>
+                    <p>Thank you,<br/>The CraiovaRide Team</p>
                 ";
 
                 try

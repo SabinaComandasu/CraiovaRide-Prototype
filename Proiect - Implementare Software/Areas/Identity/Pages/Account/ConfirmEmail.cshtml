@@ -4,5 +4,120 @@
     ViewData["Title"] = "Confirm email";
 }
 
-<h1>@ViewData["Title"]</h1>
-<partial name="_StatusMessage" model="Model.StatusMessage" />
+<style>
+    body {
+        background: linear-gradient(135deg, #40E0D0, #2f8f9d);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+    #splash-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    @@keyframes logoAnimation {
+        0% {
+            transform: scale(0.8);
+        }
+
+        50% {
+            transform: scale(2.2);
+        }
+
+        100% {
+            transform: scale(1.7);
+        }
+    }
+
+    #splash-screen img {
+        width: 250px;
+        height: auto;
+        animation: logoAnimation 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    }
+
+    .confirmation-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-in, transform 1s ease-in;
+    }
+
+        .confirmation-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    h1 {
+        text-align: center;
+        color: #2f8f9d;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .status-message {
+        text-align: center;
+        padding: 15px 20px;
+        border-radius: 10px;
+        background-color: #e0f7f6;
+        color: #2f8f9d;
+        margin-top: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+        color: #2f8f9d;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #135e67;
+        }
+
+</style>
+
+<div id="splash-screen">
+    <img src="~/images/logo.png" alt="Logo" />
+</div>
+
+<div class="confirmation-card">
+    <h1>@ViewData["Title"]</h1>
+    <partial name="_StatusMessage" model="Model.StatusMessage" />
+</div>
+@section Scripts {
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('splash-screen').style.display = 'none';
+                document.querySelector('.confirmation-card').classList.add('show');
+            }, 3000);
+
+            const loginUrl = '@Url.Page("/Account/Login", null, new { area = "Identity" })';
+
+            setTimeout(function () {
+                window.location.href = loginUrl;
+            }, 4500);
+        };
+    </script>
+}
+
