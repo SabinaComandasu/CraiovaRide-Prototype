@@ -82,6 +82,12 @@ namespace Proiect_Implementare_Software.Data
                 .WithMany(p => p.Drives)
                 .HasForeignKey(r => r.DriverID)
                 .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Person>()
+                .HasOne<IdentityUser>()
+                .WithMany()
+                .HasForeignKey(p => p.IdentityUserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }
