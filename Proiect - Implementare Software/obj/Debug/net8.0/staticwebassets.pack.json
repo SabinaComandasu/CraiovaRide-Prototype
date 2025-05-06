@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\images\\target.png",
       "PackagePath": "staticwebassets\\images\\target.png"
     },
@@ -275,6 +279,10 @@
     {
       "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\SABINA\\Desktop\\LaboratoareSem2\\Proiect - Implementare Software\\Proiect - Implementare Software\\Proiect - Implementare Software\\wwwroot\\sounds\\loginsound.mp3",
+      "PackagePath": "staticwebassets\\sounds\\loginsound.mp3"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Proiect - Implementare Software.Microsoft.AspNetCore.StaticWebAssets.props",

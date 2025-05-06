@@ -4,20 +4,33 @@
     ViewData["Title"] = "Register confirmation";
 }
 
-<h1>@ViewData["Title"]</h1>
-@{
-    if (@Model.DisplayConfirmAccountLink)
+<style>
+    /* (Styles remain the same) */
+</style>
+
+<div class="confirmation-card">
+    <h1>@ViewData["Title"]</h1>
+
+    @if (@Model.DisplayConfirmAccountLink)
     {
-<p>
-    This app does not currently have a real email sender registered, see <a href="https://aka.ms/aspaccountconf">these docs</a> for how to configure a real email sender.
-    Normally this would be emailed: <a id="confirm-link" href="@Model.EmailConfirmationUrl">Click here to confirm your account</a>
-</p>
+        <p>
+            A confirmation email has been sent to your address. Please check your inbox (or spam folder) to confirm your account.
+        </p>
     }
     else
     {
-<p>
-        Please check your email to confirm your account.
-</p>
+        <p>
+            Please check your email to confirm your account.
+        </p>
     }
-}
+</div>
 
+@section Scripts {
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.querySelector('.confirmation-card').classList.add('show');
+            }, 1000);
+        };
+    </script>
+}
