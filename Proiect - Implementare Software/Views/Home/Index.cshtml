@@ -8,6 +8,8 @@
     <!-- Leaflet CSS & Routing -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 
     <!-- Custom CSS -->
     <link href="/css/home.css" rel="stylesheet">
@@ -59,56 +61,90 @@
     <div id="map" class="map-container"></div>
 
     <!-- Ride Options -->
-    <div id="rideOptions" class="container mt-4" style="display: none;">
-        <h5>Choose your ride</h5>
-        <div class="row g-3">
-            <div class="col-md-4">
-                <div class="card ride-option" onclick="selectRide('Standard Ride')">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">🚗 Standard Ride</h6>
-                        <p class="card-text">Affordable everyday rides</p>
-                    </div>
+    <div id="rideOptions" class="ride-options-container" style="display: none;">
+
+        <div class="ride-options-scroll d-flex justify-content-start align-items-center gap-3 px-3 py-2">
+            <div class="card ride-option" onclick="selectRide('Standard Ride')">
+                <div class="card-body text-center">
+                    <h6 class="card-title">🚗 Standard Ride</h6>
+                    <p class="card-text">Affordable everyday rides</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card ride-option" onclick="selectRide('Eco Ride')">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">🚕 Eco Ride</h6>
-                        <p class="card-text">Electric vehicle</p>
-                    </div>
+            <div class="card ride-option" onclick="selectRide('Eco Ride')">
+                <div class="card-body text-center">
+                    <h6 class="card-title">🚕 Eco Ride</h6>
+                    <p class="card-text">Electric vehicle</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card ride-option" onclick="selectRide('Luggage')">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">🧳 Luggage</h6>
-                        <p class="card-text">Extra trunk space</p>
-                    </div>
+            <div class="card ride-option" onclick="selectRide('Luggage')">
+                <div class="card-body text-center">
+                    <h6 class="card-title">🧳 Luggage</h6>
+                    <p class="card-text">Extra trunk space</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card ride-option" onclick="selectRide('Deluxe Ride')">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">🚘 Deluxe Ride</h6>
-                        <p class="card-text">Premium experience</p>
-                    </div>
+            <div class="card ride-option" onclick="selectRide('Deluxe Ride')">
+                <div class="card-body text-center">
+                    <h6 class="card-title">🚘 Deluxe Ride</h6>
+                    <p class="card-text">Premium experience</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card ride-option" onclick="selectRide('Women for Women')">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">👩‍🦰 Women for Women</h6>
-                        <p class="card-text">Female-only option</p>
-                    </div>
+            <div class="card ride-option" onclick="selectRide('Women for Women')">
+                <div class="card-body text-center">
+                    <h6 class="card-title">👩‍🦰 Women for Women</h6>
+                    <p class="card-text">Female-only option</p>
                 </div>
             </div>
         </div>
-
-        <!-- Cancel Ride -->
-        <div class="text-center mt-3">
+        <div class="ride-cancel-btn-container">
             <button id="cancelRideBtn" class="btn btn-danger" onclick="cancelRide()">Cancel Ride</button>
         </div>
+
     </div>
+
+    <!-- Modal pentru eroare de plată -->
+    <div id="paymentErrorModal" class="custom-modal" onclick="closePaymentModal(event)">
+        <div class="custom-modal-content">
+            <span class="close-btn" onclick="closePaymentModal(event)">&times;</span>
+            <p class="modal-text">❌ Please select a payment method (Cash or Card) before choosing a ride.</p>
+        </div>
+    </div>
+
+
+    <!-- Payment Options -->
+    <div id="paymentOptions" class="payment-options-container" style="display: none;">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="paymentMethod" id="cashOption" value="cash">
+            <label class="form-check-label" for="cashOption">💵 Cash</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="paymentMethod" id="cardOption" value="card">
+            <label class="form-check-label" for="cardOption">💳 Card</label>
+        </div>
+    </div>
+    <!-- Modal Confirmare Ride -->
+    <div id="rideConfirmationModal" class="custom-modal" onclick="closeRideModal(event)">
+        <div class="custom-modal-content">
+            <span class="close-btn" onclick="closeRideModal(event)">&times;</span>
+            <p id="rideConfirmText" class="modal-text"></p>
+        </div>
+    </div>
+
+    <!-- Modal Rating -->
+    <div id="rideRatingModal" class="custom-modal" onclick="closeRatingModal(event)">
+        <div class="custom-modal-content">
+            <p class="modal-text">🟢 The ride has ended. Please rate your experience:</p>
+            <div id="ratingStars" class="rating-stars"></div>
+            <button id="submitRatingBtn" class="btn btn-success mt-3" style="display: none;" onclick="submitRating()">Submit Rating</button>
+        </div>
+    </div>
+    <!-- Modal - Out of Service Area -->
+    <div id="serviceAreaModal" class="custom-modal" onclick="closeServiceAreaModal(event)">
+        <div class="custom-modal-content">
+            <span class="close-btn" onclick="closeServiceAreaModal(event)">&times;</span>
+            <p class="modal-text">⚠️ Sorry, our service is currently not available for this location.</p>
+        </div>
+    </div>
+
 
     <!-- Bottom Nav -->
     <div class="bottom-nav">

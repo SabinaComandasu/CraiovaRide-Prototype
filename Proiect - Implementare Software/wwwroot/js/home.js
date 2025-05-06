@@ -1,4 +1,14 @@
-﻿let map, marker, userLocationMarker, userCoords = null, routingControl = null;
+﻿let rideTimeoutId = null;
+let rideInProgress = false;
+const SERVICE_AREA = {
+    minLat: 44.25,
+    maxLat: 44.40,
+    minLon: 23.70,
+    maxLon: 23.93
+};
+
+
+let map, marker, userLocationMarker, userCoords = null, routingControl = null;
 
 // SIDEBAR
 function toggleSidebar() {
@@ -87,6 +97,12 @@ function updateMap(loc) {
     const lat = parseFloat(loc.lat);
     const lon = parseFloat(loc.lon);
 
+    if (!isWithinServiceArea(lat, lon)) {
+        showServiceAreaError();
+        return;
+    }
+
+
     if (marker) map.removeLayer(marker);
     marker = L.marker([lat, lon])
         .addTo(map)
@@ -104,6 +120,7 @@ function updateMap(loc) {
     }
 
     const rideOptions = document.getElementById('rideOptions');
+    document.getElementById('paymentOptions').style.display = 'flex';
     rideOptions.style.display = 'block';
     rideOptions.style.opacity = '1';
     rideOptions.style.visibility = 'visible';
@@ -179,6 +196,8 @@ document.getElementById("searchInput").addEventListener("focus", function () {
 // CANCEL RIDE
 function cancelRide() {
     document.getElementById('rideOptions').style.display = 'none';
+    document.getElementById('paymentOptions').style.display = 'none';
+    document.getElementById("searchInput").value = "";
 
     if (marker) {
         map.removeLayer(marker);
@@ -190,10 +209,15 @@ function cancelRide() {
         routingControl = null;
     }
 
-    document.getElementById("searchInput").value = "";
+    if (rideTimeoutId) {
+        clearTimeout(rideTimeoutId);
+        rideTimeoutId = null;
+    }
+
+    rideInProgress = false;
 }
 
-// Tarife per km (în lei)
+// Tarife per km
 const RIDE_PRICES = {
     "Standard Ride": 2.5,
     "Eco Ride": 2.0,
@@ -202,7 +226,6 @@ const RIDE_PRICES = {
     "Women for Women": 2.8
 };
 
-// Creează ruta + calculează distanța
 function createRoute(startCoords, endCoords) {
     routingControl = L.Routing.control({
         waypoints: [L.latLng(startCoords[0], startCoords[1]), L.latLng(endCoords[0], endCoords[1])],
@@ -220,7 +243,6 @@ function createRoute(startCoords, endCoords) {
         .addTo(map);
 }
 
-// Actualizează prețurile în carduri
 function updateRidePrices(distanceKm) {
     document.querySelectorAll('.ride-option').forEach(card => {
         const title = card.querySelector('h6').innerText.replace(/^[^\w]+/, '').trim();
@@ -237,24 +259,27 @@ function updateRidePrices(distanceKm) {
         }
     });
 }
-function selectRide(rideType) {
-    document.querySelectorAll('.ride-option').forEach(card => {
-        card.classList.remove('selected');
-    });
 
+// RIDE SELECTION
+function selectRide(rideType) {
+    if (rideInProgress) return;
+
+    const selectedPayment = document.querySelector('input[name="paymentMethod"]:checked');
+    if (!selectedPayment) {
+        document.getElementById('paymentErrorModal').style.display = 'block';
+        return;
+    }
+
+    rideInProgress = true;
+
+    document.querySelectorAll('.ride-option').forEach(card => card.classList.remove('selected'));
     const selectedCard = Array.from(document.querySelectorAll('.ride-option')).find(card =>
         card.innerText.includes(rideType)
     );
+    if (selectedCard) selectedCard.classList.add('selected');
 
-    if (selectedCard) {
-        selectedCard.classList.add('selected');
-    }
-
-    // Afișează mesaj de confirmare
-    alert(`Ai selectat ${rideType}. Șoferul va ajunge în cel mai scurt timp.`);
-
-    // Resetare interfață
     document.getElementById('rideOptions').style.display = 'none';
+    document.getElementById('paymentOptions').style.display = 'none';
     document.getElementById("searchInput").value = "";
 
     if (marker) {
@@ -262,13 +287,102 @@ function selectRide(rideType) {
         marker = null;
     }
 
+    if (userCoords) {
+        map.setView(userCoords, 13);
+    }
+
+    document.getElementById("rideConfirmText").innerText =
+        `You selected ${rideType}. Payment: ${selectedPayment.value.toUpperCase()}. Your driver will arrive shortly.`;
+    document.getElementById("rideConfirmationModal").style.display = "block";
+}
+
+function closePaymentModal(event) {
+    const modal = document.getElementById("paymentErrorModal");
+    if (event.target === modal || event.target.classList.contains("close-btn")) {
+        modal.style.display = "none";
+    }
+}
+
+function closeRideModal(event) {
+    const modal = document.getElementById("rideConfirmationModal");
+    if (event.target === modal || event.target.classList.contains("close-btn")) {
+        modal.style.display = "none";
+
+        // 🔒 Dezactivăm bara de search
+        document.getElementById("searchInput").disabled = true;
+
+        const waitTime = Math.floor(Math.random() * 21 + 10) * 1000;
+        rideTimeoutId = setTimeout(() => {
+            showRatingModal();
+        }, waitTime);
+    }
+}
+
+
+function showRatingModal() {
+    const modal = document.getElementById("rideRatingModal");
+    const starsContainer = document.getElementById("ratingStars");
+    const submitBtn = document.getElementById("submitRatingBtn");
+    starsContainer.innerHTML = "";
+    submitBtn.style.display = "none";
+
+    for (let i = 1; i <= 5; i++) {
+        const star = document.createElement("i");
+        star.classList.add("fa", "fa-star");
+        star.dataset.value = i;
+        star.addEventListener("click", () => {
+            document.querySelectorAll(".rating-stars i").forEach((s, idx) => {
+                s.classList.toggle("selected", idx < i);
+            });
+            submitBtn.dataset.rating = i;
+            submitBtn.style.display = "inline-block";
+        });
+        starsContainer.appendChild(star);
+    }
+
+    modal.style.display = "block";
+}
+
+function submitRating() {
+    const rating = document.getElementById("submitRatingBtn").dataset.rating;
+    document.getElementById("rideRatingModal").style.display = "none";
+
     if (routingControl) {
         map.removeControl(routingControl);
         routingControl = null;
     }
 
-    if (userCoords) {
-        map.setView(userCoords, 13);
+    if (rideTimeoutId) {
+        clearTimeout(rideTimeoutId);
+        rideTimeoutId = null;
+    }
+
+    document.getElementById("searchInput").disabled = false;
+
+    rideInProgress = false;
+
+}
+
+
+function closeRatingModal(event) {
+    const modal = document.getElementById("rideRatingModal");
+    if (event.target === modal || event.target.classList.contains("close-btn")) {
+        modal.style.display = "none";
+    }
+}
+function isWithinServiceArea(lat, lon) {
+    return lat >= SERVICE_AREA.minLat &&
+        lat <= SERVICE_AREA.maxLat &&
+        lon >= SERVICE_AREA.minLon &&
+        lon <= SERVICE_AREA.maxLon;
+}
+function showServiceAreaError() {
+    document.getElementById("serviceAreaModal").style.display = "block";
+}
+function closeServiceAreaModal(event) {
+    const modal = document.getElementById("serviceAreaModal");
+    if (event.target === modal || event.target.classList.contains("close-btn")) {
+        modal.style.display = "none";
     }
 }
 
