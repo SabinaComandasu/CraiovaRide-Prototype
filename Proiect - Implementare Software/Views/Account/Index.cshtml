@@ -10,7 +10,6 @@
     <!-- Profile Header -->
     <div class="text-center profile-header">
         <div class="avatar-wrapper">
-            <!-- Use the Avatar from the database -->
             <img src="@ViewBag.AvatarPath" alt="Avatar" class="avatar-img" />
         </div>
         <h4 class="username">@ViewBag.FullName</h4>
@@ -27,8 +26,8 @@
         <a href="/Account/TripSafety" class="section-item">
             <i class="bi bi-shield-lock-fill"></i> Safety
         </a>
-        <a href="#" class="section-item disabled">
-            <i class="bi bi-lock-fill"></i> Login & Security
+        <a href="/Account/ChangePassword" class="section-item">
+            <i class="bi bi-key-fill"></i> Change Password
         </a>
         <a href="#" class="section-item disabled">
             <i class="bi bi-shield-slash-fill"></i> Privacy
@@ -51,7 +50,6 @@
 
     <!-- Final Settings -->
     <div class="section">
-        <!-- Logout button as a POST form -->
         <form method="post" asp-area="Identity" asp-page="/Account/Logout" class="d-inline">
             <button type="submit" class="section-item text-danger btn btn-link p-0 m-0 align-baseline">
                 <i class="bi bi-box-arrow-right"></i> Log Out

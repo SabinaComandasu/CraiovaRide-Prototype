@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Proiect_Implementare_Software.Data;
 using Proiect_Implementare_Software.Models;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,7 +31,6 @@ namespace Proiect_Implementare_Software.Controllers
                 return RedirectToAction("Error", "Home");
 
             ViewBag.AvatarPath = "/images/" + (string.IsNullOrEmpty(person.Avatar) ? "default-avatar.png" : person.Avatar);
-
             ViewBag.FullName = person.FullName;
             ViewBag.Rating = person.Rating.ToString("0.0");
 
@@ -47,9 +47,8 @@ namespace Proiect_Implementare_Software.Controllers
             var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
             if (person == null) return NotFound();
 
-            return View(person); // <-- aici trimitem modelul complet
+            return View(person);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> EditInfo(Person model)
@@ -60,15 +59,12 @@ namespace Proiect_Implementare_Software.Controllers
             var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
             if (person == null) return NotFound();
 
-            // ✅ Actualizăm doar câmpurile relevante
             person.FullName = model.FullName;
             person.PhoneNumber = model.PhoneNumber;
 
             await _accountRepository.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-
-
 
         [HttpPost]
         public async Task<IActionResult> UploadAvatar(IFormFile avatarFile)
@@ -89,7 +85,6 @@ namespace Proiect_Implementare_Software.Controllers
                     await avatarFile.CopyToAsync(stream);
                 }
 
-                // ✅ Setează doar avatarul fără să atingi alte date
                 person.Avatar = fileName;
                 await _accountRepository.SaveChangesAsync();
             }
@@ -97,9 +92,44 @@ namespace Proiect_Implementare_Software.Controllers
             return RedirectToAction("EditInfo");
         }
 
+        // GET: /Account/ChangePassword
+        [HttpGet]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
 
+        // POST: /Account/ChangePassword
+        [HttpPost]
+        [ActionName("ChangePassword")]
+        public async Task<IActionResult> ChangePasswordPost()
+        {
+            var currentPassword = Request.Form["currentPassword"];
+            var newPassword = Request.Form["newPassword"];
+            var confirmPassword = Request.Form["confirmPassword"];
 
+            if (newPassword != confirmPassword)
+            {
+                ViewBag.StatusMessage = "New password and confirmation do not match.";
+                return View();
+            }
 
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
 
+            var result = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
+
+            if (result.Succeeded)
+            {
+                ViewBag.StatusMessage = "Password changed successfully.";
+                return View();
+            }
+
+            ViewBag.StatusMessage = string.Join(" ", result.Errors.Select(e => e.Description));
+            return View();
+        }
     }
 }
