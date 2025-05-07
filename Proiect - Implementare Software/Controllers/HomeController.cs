@@ -59,19 +59,19 @@ namespace Proiect_Implementare_Software.Controllers
                         await _context.SaveChangesAsync();
 
                     // 🔔 Upcoming ride notification
-                    var upcomingRide = await _context.Rides
-                        .Where(r =>
-                            r.UserID == person.PersonID &&
-                            r.RideStatus == "Scheduled" &&
-                            r.Date >= windowStart &&
-                            r.Date <= windowEnd)
-                        .OrderBy(r => r.Date)
-                        .FirstOrDefaultAsync();
+                    var upcomingRides = await _context.Rides
+    .Where(r =>
+        r.UserID == person.PersonID &&
+        r.RideStatus == "Scheduled" &&
+        r.Date >= windowStart &&
+        r.Date <= windowEnd)
+    .OrderBy(r => r.Date)
+    .ToListAsync();
 
-                    if (upcomingRide != null)
-                    {
-                        ViewBag.RideNotification = $"🚕 You have a scheduled ride at {upcomingRide.Date:HH:mm}. Get ready!";
-                    }
+                    ViewBag.RideNotifications = upcomingRides
+                        .Select(r => $"🚕 You have a scheduled ride at {r.Date:HH:mm}. Get ready!")
+                        .ToList();
+
 
                     ViewBag.FullName = person.FullName;
                     ViewBag.AvatarPath = string.IsNullOrEmpty(person.Avatar) ? "/images/default-avatar.png" : person.Avatar;

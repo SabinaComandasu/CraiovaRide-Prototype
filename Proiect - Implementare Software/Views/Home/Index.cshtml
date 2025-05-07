@@ -22,14 +22,23 @@
     <script src="/js/home.js" defer></script>
 </head>
 <body>
- @if (ViewBag.RideNotification != null)
+@{
+    var notifications = ViewBag.RideNotifications as List<string> ?? new List<string>();
+}
+
+@if (notifications.Count > 0)
 {
-    <div id="rideNotificationBox" class="ride-alert"
-         style="display: none; position: fixed; top: 20px; right: 20px; z-index: 1050;
-                background-color: #2f8f9d; color: white; padding: 16px 24px;
-                border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-                max-width: 300px; font-weight: 500;">
-        @ViewBag.RideNotification
+    <div id="rideNotificationsContainer" style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
+        @for (int i = 0; i < notifications.Count; i++)
+        {
+            <div class="ride-alert stacked-alert"
+                 style="display: none; background-color: #2f8f9d; color: white;
+                        padding: 16px 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                        margin-top: @(i * 12)px;
+ max-width: 300px; font-weight: 500;">
+                @notifications[i]
+            </div>
+        }
     </div>
 
     <audio id="rideAlertSound">
@@ -43,21 +52,23 @@
         document.addEventListener("click", () => {
             if (notificationShown) return;
 
-            const alert = document.getElementById("rideNotificationBox");
-            const audio = document.getElementById("rideAlertSound");
+            const alerts = document.querySelectorAll(".stacked-alert");
+            alerts.forEach(alert => alert.style.display = "block");
 
-            if (alert) alert.style.display = "block";
+            const audio = document.getElementById("rideAlertSound");
             if (audio) {
                 audio.play().catch(e => console.warn("Autoplay blocked:", e));
             }
 
             setTimeout(() => {
-                if (alert) alert.style.display = "none";
+                alerts.forEach(alert => alert.style.display = "none");
             }, 10000);
 
             notificationShown = true;
         });
     </script>
+}
+
 }
 
 
