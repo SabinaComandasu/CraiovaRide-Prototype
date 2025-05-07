@@ -7,14 +7,14 @@ using Proiect_Implementare_Software.Models;
 
 namespace Proiect_Implementare_Software.Repositories
 {
-    public class RideRepository : IRideRepository
-    {
-        private readonly AppDbContext _context;
+public class RideRepository : IRideRepository
+{
+    private readonly AppDbContext _context;
 
-        public RideRepository(AppDbContext context)
-        {
-            _context = context;
-        }
+    public RideRepository(AppDbContext context)
+    {
+        _context = context;
+    }
 
         public async Task<List<Ride>> GetRidesForUserAsync(int userId)
         {
@@ -24,11 +24,12 @@ namespace Proiect_Implementare_Software.Repositories
                 .ToListAsync();
         }
 
-        public async Task AddRideAsync(Ride ride)
-        {
+    public async Task AddRideAsync(Ride ride)
+    {
+        await _context.Rides.AddAsync(ride);
             _context.Rides.Add(ride);
-            await _context.SaveChangesAsync();
-        }
+        await _context.SaveChangesAsync();
+    }
 
         public async Task<IEnumerable<Ride>> GetUpcomingRidesAsync()
         {

@@ -294,6 +294,17 @@ function selectRide(rideType) {
     document.getElementById("rideConfirmText").innerText =
         `You selected ${rideType}. Payment: ${selectedPayment.value.toUpperCase()}. Your driver will arrive shortly.`;
     document.getElementById("rideConfirmationModal").style.display = "block";
+    const trustedEmail = localStorage.getItem("trustedContactEmail");
+    if (trustedEmail) {
+        fetch("/Account/SendTrustedContactEmail", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email: trustedEmail })
+        });
+    }
+
 }
 
 function closePaymentModal(event) {
