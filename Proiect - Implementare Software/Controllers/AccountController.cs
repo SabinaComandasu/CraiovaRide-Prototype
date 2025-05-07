@@ -60,7 +60,6 @@ namespace Proiect_Implementare_Software.Controllers
 
             return View(person);
         }
-
         [HttpPost]
         public async Task<IActionResult> EditInfo(Person model)
         {
@@ -69,6 +68,17 @@ namespace Proiect_Implementare_Software.Controllers
 
             var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
             if (person == null) return NotFound();
+
+            // Dacă s-a modificat telefonul, trimitem email
+            if (model.PhoneNumber != person.PhoneNumber)
+            {
+                var identityUser = await _userManager.FindByIdAsync(userId);
+                string subject = "CraiovaRide - Confirm phone number update";
+                string message = $"Hi {person.FullName},\n\nWe received a request to change your phone number to {model.PhoneNumber}. " +
+                                 $"If this was not you, please contact support.";
+
+                await _emailService.SendEmailAsync(identityUser.Email, subject, message);
+            }
 
             person.FullName = model.FullName;
             person.PhoneNumber = model.PhoneNumber;
