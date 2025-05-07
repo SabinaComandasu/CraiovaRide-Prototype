@@ -1,10 +1,11 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Proiect_Implementare_Software.Models;
 using Proiect_Implementare_Software.Data;
 using Proiect_Implementare_Software.Services;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace Proiect_Implementare_Software.Controllers
 {
@@ -61,6 +62,40 @@ namespace Proiect_Implementare_Software.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> SaveRide([FromBody] Ride ride)
+        {
+            var identityUser = await _userManager.GetUserAsync(User);
+            if (identityUser == null) return Unauthorized();
+
+            var user = await _context.Persons
+                .FirstOrDefaultAsync(p => p.IdentityUserId == identityUser.Id);
+            if (user == null) return NotFound("User not found.");
+
+            var driver = await _context.Persons
+                .Where(p => p.DriverStatus == "Driver" && p.Role == "User")
+                .OrderBy(r => Guid.NewGuid())
+                .FirstOrDefaultAsync();
+            if (driver == null) return BadRequest("No available driver.");
+
+            var vehicle = await _context.Vehicles
+                .FirstOrDefaultAsync(v => v.DriverID == driver.PersonID);
+            if (vehicle == null) return BadRequest("No vehicle for driver.");
+
+            // Completăm restul valorilor
+            ride.UserID = user.PersonID;
+            ride.DriverID = driver.PersonID;
+            ride.VehicleID = vehicle.VehicleID;
+            ride.RideStatus = "Completed";
+            ride.Date = DateTime.Now;
+
+            _context.Rides.Add(ride);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Ride saved successfully" });
+        }
+
 
     }
 }
