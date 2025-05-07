@@ -13,10 +13,12 @@
 
     <!-- Custom CSS -->
     <link href="/css/home.css" rel="stylesheet">
+    <link href="~/css/driver-popup.css" rel="stylesheet" />
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+    <script src="/js/driver-popup.js"></script>
 
     <!-- Your JS -->
     <script src="/js/home.js" defer></script>
@@ -25,6 +27,22 @@
 @{
     var notifications = ViewBag.RideNotifications as List<string> ?? new List<string>();
 }
+    @using Microsoft.AspNetCore.Identity
+    @using Proiect_Implementare_Software.Data
+    @using Proiect_Implementare_Software.Models
+    @inject UserManager<IdentityUser> UserManager
+    @inject AppDbContext DbContext
+
+    @{
+        var userId = UserManager.GetUserId(User);
+        var person = DbContext.Persons.FirstOrDefault(p => p.IdentityUserId == userId);
+    }
+
+    @if (person != null && person.Role == "Driver")
+    {
+        <div id="isDriverFlag" style="display:none;"></div>
+    }
+
 
 @if (notifications.Count > 0)
 {

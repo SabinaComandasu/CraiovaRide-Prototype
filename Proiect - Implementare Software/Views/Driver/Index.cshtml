@@ -1,0 +1,49 @@
+﻿@model List<Proiect_Implementare_Software.Models.Ride>
+
+@section Scripts {
+    <script src="~/js/driver.js"></script>
+}
+
+
+<h2 class="text-center mb-4">Driver Zone</h2>
+
+<div id="waiting" class="text-center">
+    <div class="spinner-border text-primary" role="status"></div>
+    <p class="mt-2">Waiting for ride requests...</p>
+</div>
+
+<div id="accepted" class="text-center" style="display:none;">
+    <h4 class="text-success">Ride accepted! Navigating to destination...</h4>
+</div>
+
+<div id="finished" class="text-center" style="display:none;">
+    <h3 class="text-primary">Ride completed! 🎉</h3>
+</div>
+
+<div id="ridesTable" style="display:none;">
+    <table class="table table-bordered mt-4">
+        <thead class="table-dark">
+            <tr>
+                <th>Pickup</th>
+                <th>Destination</th>
+                <th>Fare (RON)</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ride in Model)
+            {
+                <tr>
+                    <td>@ride.PickupLocation</td>
+                    <td>@ride.Destination</td>
+                    <td>@ride.Fare</td>
+                    <td>@ride.Date.ToString("dd.MM.yyyy HH:mm")</td>
+                    <td>
+                        <button class="btn btn-success" onclick="acceptRide(this)">Accept Ride</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

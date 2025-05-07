@@ -1,4 +1,14 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity
+@using Proiect_Implementare_Software.Data
+@using Proiect_Implementare_Software.Models
+@inject UserManager<IdentityUser> UserManager
+@inject AppDbContext DbContext
+
+@{
+    var userId = UserManager.GetUserId(User);
+    var isDriver = DbContext.Persons.FirstOrDefault(p => p.IdentityUserId == userId)?.Role == "Driver";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +25,13 @@
             <a href="/Home" class="btn btn-outline-secondary mx-2">Home</a>
             <a href="/Rides" class="btn btn-outline-primary mx-2">Rides</a>
             <a href="/Account" class="btn btn-outline-success mx-2">Account</a>
+
+       
+
         </nav>
     }
     @RenderSection("Scripts", required: false)
+    
     
 
 </body>
