@@ -16,6 +16,7 @@ namespace Proiect_Implementare_Software.Controllers
         private readonly AppDbContext _context;
         private readonly UserManager<IdentityUser> _userManager;
 
+
         public HomeController(
             ILogger<HomeController> logger,
             IHomeService homeService,
@@ -30,57 +31,55 @@ namespace Proiect_Implementare_Software.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var identityUser = await _userManager.GetUserAsync(User);
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+                return RedirectToAction("Login", "Account");
 
-            if (identityUser != null)
-            {
-                var person = await _context.Persons
-                    .FirstOrDefaultAsync(p => p.IdentityUserId == identityUser.Id);
+            var person = await _context.Persons.FirstOrDefaultAsync(p => p.IdentityUserId == user.Id);
+            if (person == null)
+                return RedirectToAction("Error", "Home");
 
-                if (person != null)
-                {
-                    var now = DateTime.Now;
-                    var windowStart = now.AddMinutes(-10);
-                    var windowEnd = now.AddMinutes(10);
+            // ✅ Info pentru sidebar (inclusiv poza)
+            ViewBag.FullName = person.FullName;
+            ViewBag.PersonID = person.PersonID;
+            ViewBag.Rating = person.Rating.ToString("0.0");
+            ViewBag.AvatarPath = string.IsNullOrEmpty(person.Avatar)
+                ? "/images/default-avatar.png"
+                : "/images/" + person.Avatar;
 
-                    // 🔄 Update expired scheduled rides
-                    var expiredRides = await _context.Rides
-                        .Where(r => r.UserID == person.PersonID &&
-                                    r.RideStatus == "Scheduled" &&
-                                    r.Date < now)
-                        .ToListAsync();
+            // ✅ Ride notifications
+            var now = DateTime.Now;
+            var windowStart = now.AddMinutes(-10);
+            var windowEnd = now.AddMinutes(10);
 
-                    foreach (var ride in expiredRides)
-                    {
-                        ride.RideStatus = "Finished";
-                    }
+            var expiredRides = await _context.Rides
+                .Where(r => r.UserID == person.PersonID &&
+                            r.RideStatus == "Scheduled" &&
+                            r.Date < now)
+                .ToListAsync();
 
-                    if (expiredRides.Count > 0)
-                        await _context.SaveChangesAsync();
+            foreach (var ride in expiredRides)
+                ride.RideStatus = "Finished";
 
-                    // 🔔 Upcoming ride notification
-                    var upcomingRides = await _context.Rides
-    .Where(r =>
-        r.UserID == person.PersonID &&
-        r.RideStatus == "Scheduled" &&
-        r.Date >= windowStart &&
-        r.Date <= windowEnd)
-    .OrderBy(r => r.Date)
-    .ToListAsync();
+            if (expiredRides.Count > 0)
+                await _context.SaveChangesAsync();
 
-                    ViewBag.RideNotifications = upcomingRides
-                        .Select(r => $"🚕 You have a scheduled ride at {r.Date:HH:mm}. Get ready!")
-                        .ToList();
+            var upcomingRides = await _context.Rides
+                .Where(r => r.UserID == person.PersonID &&
+                            r.RideStatus == "Scheduled" &&
+                            r.Date >= windowStart &&
+                            r.Date <= windowEnd)
+                .OrderBy(r => r.Date)
+                .ToListAsync();
 
-
-                    ViewBag.FullName = person.FullName;
-                    ViewBag.AvatarPath = string.IsNullOrEmpty(person.Avatar) ? "/images/default-avatar.png" : person.Avatar;
-                    ViewBag.Rating = person.Rating;
-                }
-            }
+            ViewBag.RideNotifications = upcomingRides
+                .Select(r => $"🚕 You have a scheduled ride at {r.Date:HH:mm}. Get ready!")
+                .ToList();
 
             return View();
         }
+
+
 
         public IActionResult Privacy()
         {
@@ -131,6 +130,15 @@ namespace Proiect_Implementare_Software.Controllers
             return Ok(new { message = "Ride saved successfully" });
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAvatar(int id)
+        {
+            var person = await _context.Persons.FindAsync(id);
+            if (person == null || person.Avatar == null)
+                return NotFound();
 
+            var imageBytes = Convert.FromBase64String(person.Avatar); // sau dacă e deja binar, returnezi direct
+            return File(imageBytes, "image/png"); // sau image/jpeg
+        }
     }
 }

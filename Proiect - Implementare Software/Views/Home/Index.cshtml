@@ -89,7 +89,8 @@
 
         <!-- ✅ Avatar, Name, and Rating -->
         <div class="d-flex align-items-start gap-3 mb-3">
-            <img src="@ViewBag.AvatarPath" class="avatar-img" alt="Profile photo">
+            <img src="@ViewBag.AvatarPath" class="avatar-img" alt="Profile photo" />
+
             <div class="text-start">
                 <div class="fw-bold">@ViewBag.FullName</div>
                 <div>⭐ @ViewBag.Rating</div>
@@ -100,8 +101,12 @@
         <ul class="nav flex-column">
             <li class="nav-item"><a href="/Account#profile" class="nav-link">Profile</a></li>
             <li class="nav-item"><a href="/Payments" class="nav-link">Payments</a></li>
+
             <li class="nav-item"><a href="/PromoCodes" class="nav-link">Promo Codes</a></li>
-            <li class="nav-item"><a href="/Rides/History" class="nav-link">History of Rides</a></li>
+            <li class="nav-item">
+                <a href="/Rides#completed" class="nav-link">History of Rides</a>
+            </li>
+
             <li class="nav-item">
                 <a asp-controller="Home" asp-action="About" class="nav-link">About</a>
             </li>

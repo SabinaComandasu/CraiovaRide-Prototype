@@ -21,13 +21,15 @@ namespace Proiect_Implementare_Software.Controllers
 
 
         public AccountController(
-            UserManager<IdentityUser> userManager,
-            IAccountRepository accountRepository,
-            IEmailService emailService)
+     UserManager<IdentityUser> userManager,
+     IAccountRepository accountRepository,
+     IEmailService emailService,
+     AppDbContext context) // 👈 Adaugă și asta
         {
             _userManager = userManager;
             _accountRepository = accountRepository;
             _emailService = emailService;
+            _context = context; // 👈 Și aici
         }
 
         // GET: /Account/Index
@@ -231,6 +233,22 @@ namespace Proiect_Implementare_Software.Controllers
         {
             public string Email { get; set; }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAvatar(int id)
+        {
+            var person = await _context.Persons.FindAsync(id);
+            if (person == null || person.Avatar == null)
+                return NotFound();
+
+            // Convertim stringul base64 în bytes
+            byte[] imageBytes = Convert.FromBase64String(person.Avatar);
+
+            // Returnăm imaginea ca fișier de tip jpeg
+            return File(imageBytes, "image/jpeg");
+        }
+
+
+
     }
 
 }
