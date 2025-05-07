@@ -1,0 +1,74 @@
+﻿.safety-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.safety-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.safety-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #198754;
+}
+
+.safety-form label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.safety-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.safety-form button {
+    width: 100%;
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+    .safety-form button:hover {
+        background-color: #146c43;
+    }
+
+.message-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.message-error {
+    color: #842029;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}

@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Proiect___Implementare_Software.Services;
 using Proiect_Implementare_Software.Data;
 using Proiect_Implementare_Software.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Proiect_Implementare_Software.Controllers
 {
@@ -11,11 +13,16 @@ namespace Proiect_Implementare_Software.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IAccountRepository _accountRepository;
+        private readonly IEmailService _emailService;
 
-        public AccountController(UserManager<IdentityUser> userManager, IAccountRepository accountRepository)
+        public AccountController(
+            UserManager<IdentityUser> userManager,
+            IAccountRepository accountRepository,
+            IEmailService emailService)
         {
             _userManager = userManager;
             _accountRepository = accountRepository;
+            _emailService = emailService;
         }
 
         // GET: /Account/Index
@@ -30,7 +37,6 @@ namespace Proiect_Implementare_Software.Controllers
                 return RedirectToAction("Error", "Home");
 
             ViewBag.AvatarPath = "/images/" + (string.IsNullOrEmpty(person.Avatar) ? "default-avatar.png" : person.Avatar);
-
             ViewBag.FullName = person.FullName;
             ViewBag.Rating = person.Rating.ToString("0.0");
 
@@ -47,9 +53,8 @@ namespace Proiect_Implementare_Software.Controllers
             var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
             if (person == null) return NotFound();
 
-            return View(person); // <-- aici trimitem modelul complet
+            return View(person);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> EditInfo(Person model)
@@ -60,15 +65,12 @@ namespace Proiect_Implementare_Software.Controllers
             var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
             if (person == null) return NotFound();
 
-            // ✅ Actualizăm doar câmpurile relevante
             person.FullName = model.FullName;
             person.PhoneNumber = model.PhoneNumber;
 
             await _accountRepository.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-
-
 
         [HttpPost]
         public async Task<IActionResult> UploadAvatar(IFormFile avatarFile)
@@ -89,7 +91,6 @@ namespace Proiect_Implementare_Software.Controllers
                     await avatarFile.CopyToAsync(stream);
                 }
 
-                // ✅ Setează doar avatarul fără să atingi alte date
                 person.Avatar = fileName;
                 await _accountRepository.SaveChangesAsync();
             }
@@ -97,9 +98,53 @@ namespace Proiect_Implementare_Software.Controllers
             return RedirectToAction("EditInfo");
         }
 
+        // TRIP SAFETY - GET
+        [HttpGet]
+        public IActionResult TripSafety()
+        {
+            return View();
+        }
 
+        // TRIP SAFETY - POST: trimite email
+        [HttpPost]
+        public async Task<IActionResult> TripSafety(string trustedEmail)
+        {
+            try
+            {
+                var subject = "🚨 CraiovaRide Safety Alert";
+                var body = "Your friend just started a ride using CraiovaRide. Please stay available in case they need help.";
 
+                await _emailService.SendEmailAsync(trustedEmail, subject, body);
+                ViewBag.Success = "Trusted contact has been notified successfully.";
+            }
+            catch
+            {
+                ViewBag.Error = "Failed to send alert. Please try again.";
+            }
 
+            return View();
+        }
+
+        // Optional - POST pentru alt tip de email (ex. confirmare)
+        [HttpPost]
+        public async Task<IActionResult> SendTrustedContactEmail([FromBody] EmailDto dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Email)) return BadRequest();
+
+            var user = await _userManager.GetUserAsync(User);
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(user.Id);
+
+            string subject = "CraiovaRide - Trusted Contact Alert";
+            string message = $"{person.FullName} just started a ride using CraiovaRide. Stay available in case of emergency.";
+
+            await _emailService.SendEmailAsync(dto.Email, subject, message);
+            return Ok();
+        }
+
+        public class EmailDto
+        {
+            public string Email { get; set; }
+        }
 
     }
 }
