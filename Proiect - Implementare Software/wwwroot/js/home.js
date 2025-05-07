@@ -1,5 +1,6 @@
 ﻿let rideTimeoutId = null;
 let rideInProgress = false;
+let selectedDestinationText = ""; // variabilă globală
 const SERVICE_AREA = {
     minLat: 44.25,
     maxLat: 44.40,
@@ -118,7 +119,7 @@ function updateMap(loc) {
     if (userCoords) {
         createRoute(userCoords, [lat, lon]);
     }
-
+    selectedDestinationText = loc.display_name;
     const rideOptions = document.getElementById('rideOptions');
     document.getElementById('paymentOptions').style.display = 'flex';
     rideOptions.style.display = 'block';
@@ -261,7 +262,7 @@ function updateRidePrices(distanceKm) {
 }
 
 // RIDE SELECTION
-function selectRide(rideType) {
+async function selectRide(rideType) {
     if (rideInProgress) return;
 
     const selectedPayment = document.querySelector('input[name="paymentMethod"]:checked');
@@ -294,6 +295,8 @@ function selectRide(rideType) {
     document.getElementById("rideConfirmText").innerText =
         `You selected ${rideType}. Payment: ${selectedPayment.value.toUpperCase()}. Your driver will arrive shortly.`;
     document.getElementById("rideConfirmationModal").style.display = "block";
+
+    // 🔔 Trimite notificare către contactul de încredere
     const trustedEmail = localStorage.getItem("trustedContactEmail");
     if (trustedEmail) {
         fetch("/Account/SendTrustedContactEmail", {
@@ -305,7 +308,33 @@ function selectRide(rideType) {
         });
     }
 
+    // 📍 Adresa de plecare (coordonate → adresă)
+    const pickup = userCoords ? await getAddressFromCoords(userCoords[0], userCoords[1]) : "Unknown";
+
+    // 🎯 Destinația (salvată global)
+    const destination = selectedDestinationText || "Unknown";
+
+    // 💰 Tariful
+    const priceText = selectedCard.querySelector(".card-price").innerText;
+    const fare = parseFloat(priceText.replace("Price: ", "").replace(" lei", ""));
+
+    // 💾 Salvează cursa în baza de date
+    fetch("/Home/SaveRide", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            pickupLocation: pickup,
+            destination: destination,
+            fare: fare
+        })
+    })
+        .then(res => res.ok ? res.json() : Promise.reject("Ride not saved"))
+        .then(data => console.log("✅ Ride added:", data))
+        .catch(err => console.error("❌ Error saving ride:", err));
 }
+
 
 function closePaymentModal(event) {
     const modal = document.getElementById("paymentErrorModal");
@@ -394,6 +423,17 @@ function closeServiceAreaModal(event) {
     const modal = document.getElementById("serviceAreaModal");
     if (event.target === modal || event.target.classList.contains("close-btn")) {
         modal.style.display = "none";
+    }
+}
+async function getAddressFromCoords(lat, lon) {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data.display_name;
+    } catch (err) {
+        console.error("Failed to reverse geocode:", err);
+        return `Lat: ${lat}, Lon: ${lon}`; // fallback
     }
 }
 
