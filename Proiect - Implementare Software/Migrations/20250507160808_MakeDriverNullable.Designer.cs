@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Proiect_Implementare_Software.Data;
 
@@ -11,9 +12,11 @@ using Proiect_Implementare_Software.Data;
 namespace Proiect___Implementare_Software.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250507160808_MakeDriverNullable")]
+    partial class MakeDriverNullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -397,7 +400,7 @@ namespace Proiect___Implementare_Software.Migrations
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("VehicleID")
+                    b.Property<int>("VehicleID")
                         .HasColumnType("int");
 
                     b.HasKey("RideID");
@@ -587,7 +590,9 @@ namespace Proiect___Implementare_Software.Migrations
 
                     b.HasOne("Proiect_Implementare_Software.Models.Vehicle", "Vehicle")
                         .WithMany()
-                        .HasForeignKey("VehicleID");
+                        .HasForeignKey("VehicleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Driver");
 

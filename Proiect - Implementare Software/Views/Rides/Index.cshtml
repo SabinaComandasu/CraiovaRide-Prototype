@@ -1,12 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Rides";
-}
+﻿@model List<Proiect_Implementare_Software.Models.Ride>
+
 @{
+    ViewData["Title"] = "Rides";
     ViewData["ShowMainNav"] = true;
+
+    var now = DateTime.Now;
+    var upcomingRides = Model.Where(r => r.RideStatus == "Scheduled" && r.Date > now).ToList();
+    var completedRides = Model.Where(r => r.RideStatus == "Completed").ToList();
 }
 
-<!-- Butoane tab-uri -->
 <div class="container mt-5">
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <!-- Tabs -->
     <ul class="nav nav-tabs" id="ridesTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab">Upcoming Rides</button>
@@ -17,24 +30,81 @@
     </ul>
 
     <div class="tab-content mt-3" id="ridesTabContent">
-        <!-- Upcoming Rides -->
+        <!-- Upcoming Tab -->
         <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
-            <div class="d-flex justify-content-end mb-3">
-                <a href="#" class="btn btn-success">Schedule a New Ride</a>
-            </div>
-            <div class="card shadow-sm p-3">
-                <p>No upcoming rides yet.</p>
-            </div>
-        </div>
+            <!-- Schedule Ride Form -->
+            <div class="card mb-4 p-4 shadow-sm">
+                <h5>Schedule a New Ride</h5>
+                <form action="/Rides/Index" method="post">
+                    <input type="hidden" name="RideID" value="0" />
 
-        <div class="tab-pane fade" id="completed" role="tabpanel">
-            <div class="card shadow-sm p-3 text-center">
-                <p class="text-muted">No completed rides yet.</p>
-            </div>
-        </div>
+                    <div class="mb-3">
+                        <label for="PickupLocation" class="form-label">Pickup Location</label>
+                        <input type="text" name="PickupLocation" id="PickupLocation" class="form-control" required />
+                    </div>
 
-    </div>
+                    <div class="mb-3">
+                        <label for="Destination" class="form-label">Destination</label>
+                        <input type="text" name="Destination" id="Destination" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+    <label for="Date" class="form-label">Date & Time</label>
+    <input type="datetime-local" name="Date" id="Date"
+           class="form-control"
+           value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")"
+           required />
 </div>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <!-- Upcoming Rides -->
+            @if (upcomingRides.Any())
+            {
+                @foreach (var ride in upcomingRides)
+                {
+                    <div class="card shadow-sm mb-3 p-3">
+                        <h5>@ride.PickupLocation → @ride.Destination</h5>
+                        <p>Scheduled for: @ride.Date.ToString("f")</p>
+                        <p>Status: @ride.RideStatus</p>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="card shadow-sm p-3">
+                    <p>No upcoming rides yet.</p>
+                </div>
+            }
+        </div>
+
+        <!-- Completed Tab -->
+        <div class="tab-pane fade" id="completed" role="tabpanel">
+            @if (completedRides.Any())
+            {
+                @foreach (var ride in completedRides)
+                {
+                    <div class="card shadow-sm mb-3 p-3">
+                        <h5>@ride.PickupLocation → @ride.Destination</h5>
+                        <p>Completed on: @ride.Date.ToString("f")</p>
+                        <p>Fare: @ride.Fare.ToString("C")</p>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="card shadow-sm p-3 text-center">
+                    <p class="text-muted">No completed rides yet.</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <a asp-action="DebugAddRide" class="btn btn-sm btn-secondary mt-3">Add Test Ride</a>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <link href="/css/rides.css" rel="stylesheet" />
-<script src="/js/rides.js" defer></script>

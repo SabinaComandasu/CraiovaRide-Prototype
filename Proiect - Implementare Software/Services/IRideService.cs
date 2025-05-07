@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using Proiect_Implementare_Software.Models;
+﻿using Proiect_Implementare_Software.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Proiect_Implementare_Software.Services
 {
@@ -7,5 +8,9 @@ namespace Proiect_Implementare_Software.Services
     {
         IEnumerable<Ride> GetUpcomingRides();
         IEnumerable<Ride> GetCompletedRides();
+
+        Task<List<Ride>> GetRidesForUserAsync(int userId);
+        Task CreateRideAsync(Ride ride);
+        Task<Person?> GetPersonByIdentityUserIdAsync(string identityUserId); // 👈 Add this
     }
 }

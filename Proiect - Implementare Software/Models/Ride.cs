@@ -4,8 +4,8 @@
     {
         public int RideID { get; set; }
         public int UserID { get; set; }
-        public int DriverID { get; set; }
-        public int VehicleID { get; set; }
+        public int? DriverID { get; set; }
+        public int? VehicleID { get; set; }
         public string PickupLocation { get; set; }
         public string Destination { get; set; }
         public string RideStatus { get; set; }
