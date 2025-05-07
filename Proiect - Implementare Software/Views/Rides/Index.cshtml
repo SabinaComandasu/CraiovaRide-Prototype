@@ -49,13 +49,12 @@
                     </div>
 
                     <div class="mb-3">
-    <label for="Date" class="form-label">Date & Time</label>
-    <input type="datetime-local" name="Date" id="Date"
-           class="form-control"
-           value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")"
-           required />
-</div>
-
+                        <label for="Date" class="form-label">Date & Time</label>
+                        <input type="datetime-local" name="Date" id="Date"
+                               class="form-control"
+                               min="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")"
+                               required />
+                    </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

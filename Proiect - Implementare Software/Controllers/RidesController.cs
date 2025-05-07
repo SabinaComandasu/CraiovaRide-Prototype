@@ -33,6 +33,14 @@ namespace Proiect_Implementare_Software.Controllers
         [HttpPost]
         public async Task<IActionResult> Index([FromForm] string PickupLocation, [FromForm] string Destination, [FromForm] DateTime Date)
         {
+            var now = DateTime.Now;
+
+            if (Date < now)
+            {
+                TempData["Error"] = "Date and time cannot be in the past.";
+                return RedirectToAction("Index");
+            }
+
             var identityUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var user = await _rideService.GetPersonByIdentityUserIdAsync(identityUserId);
             if (user == null) return Unauthorized();
