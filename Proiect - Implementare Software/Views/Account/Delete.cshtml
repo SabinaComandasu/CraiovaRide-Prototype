@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Delete Account";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var isSuccess = ViewBag.StatusMessage?.ToString().Contains("success") == true;
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #40E0D0, #2f8f9d);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+    .delete-account-card {
+        background-color: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 420px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease-in, transform 1s ease-in;
+    }
+
+    .delete-account-card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    h2 {
+        color: #dc3545;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: #333;
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-danger:hover {
+        background-color: #b02a37;
+        transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+        background-color: #40E0D0;
+        border: none;
+        margin-left: 10px;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+        background-color: #2f8f9d;
+        color: white;
+    }
+
+    .alert-success,
+    .text-danger.mt-3 {
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .text-danger.mt-3 {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+</style>
+
+<div class="delete-account-card" id="deleteCard">
+    <h2>Are you sure you want to delete your account?</h2>
+    <p>This action is <strong>permanent</strong> and cannot be undone.</p>
+
+    <form method="post" asp-action="DeleteConfirmed">
+        <button type="submit" class="btn btn-danger">Yes, Delete My Account</button>
+        <a href="/Account/Index" class="btn btn-secondary">Cancel</a>
+    </form>
+
+    @if (ViewBag.StatusMessage != null)
+    {
+        <div class="@(isSuccess ? "alert-success" : "text-danger mt-3")" id="deleteMessage">
+            @ViewBag.StatusMessage
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        window.onload = function () {
+            const card = document.getElementById("deleteCard");
+            card.classList.add("show");
+
+            const message = document.getElementById("deleteMessage");
+            if (message && message.innerText.toLowerCase().includes("success")) {
+                setTimeout(() => {
+                    window.location.href = "/Identity/Account/Login";
+                }, 4000);
+            }
+        };
+    </script>
+}

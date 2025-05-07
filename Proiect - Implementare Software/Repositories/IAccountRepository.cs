@@ -10,5 +10,7 @@ namespace Proiect_Implementare_Software.Data
         Task<Person?> GetUserByIdentityUserIdAsync(string identityUserId);
         Task<IEnumerable<Person>> GetAllUsersAsync();
         Task SaveChangesAsync();
+        void Delete(Person person);
+
     }
 }

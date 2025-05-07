@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Proiect_Implementare_Software.Data;
 using Proiect_Implementare_Software.Models;
 using System.IO;
@@ -12,6 +14,7 @@ namespace Proiect_Implementare_Software.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IAccountRepository _accountRepository;
+        private readonly AppDbContext _context;
 
         public AccountController(UserManager<IdentityUser> userManager, IAccountRepository accountRepository)
         {
@@ -131,5 +134,41 @@ namespace Proiect_Implementare_Software.Controllers
             ViewBag.StatusMessage = string.Join(" ", result.Errors.Select(e => e.Description));
             return View();
         }
+
+
+        // GET: /Account/Delete
+        [HttpGet]
+        public IActionResult Delete()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Redirect("/Identity/Account/Login");
+
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(user.Id);
+            if (person != null)
+            {
+                _accountRepository.Delete(person);
+                await _accountRepository.SaveChangesAsync();
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+            {
+                ViewBag.StatusMessage = "Error deleting account.";
+                return View("Delete");
+            }
+
+            await HttpContext.SignOutAsync();
+            return Redirect("/Identity/Account/Login"); // ✅ Redirects to login page
+        }
+
+
     }
+
 }

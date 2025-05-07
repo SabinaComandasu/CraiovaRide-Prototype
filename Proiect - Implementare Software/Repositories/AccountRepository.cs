@@ -28,6 +28,10 @@ namespace Proiect_Implementare_Software.Data
         {
             return await _context.Persons.ToListAsync();
         }
+        public void Delete(Person person)
+        {
+            _context.Persons.Remove(person);
+        }
 
         public async Task SaveChangesAsync()
         {
