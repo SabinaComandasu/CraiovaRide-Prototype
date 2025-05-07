@@ -19,6 +19,7 @@ namespace Proiect_Implementare_Software.Controllers
         private readonly IEmailService _emailService;
         private readonly AppDbContext _context;
 
+
         public AccountController(
             UserManager<IdentityUser> userManager,
             IAccountRepository accountRepository,
@@ -129,51 +130,11 @@ namespace Proiect_Implementare_Software.Controllers
                 ViewBag.StatusMessage = "New password and confirmation do not match.";
                 return View();
             }
-        // TRIP SAFETY - POST: trimite email
-        [HttpPost]
-        public async Task<IActionResult> TripSafety(string trustedEmail)
-        {
-            try
-            {
-                var subject = "🚨 CraiovaRide Safety Alert";
-                var body = "Your friend just started a ride using CraiovaRide. Please stay available in case they need help.";
-
-                await _emailService.SendEmailAsync(trustedEmail, subject, body);
-                ViewBag.Success = "Trusted contact has been notified successfully.";
-            }
-            catch
-            {
-                ViewBag.Error = "Failed to send alert. Please try again.";
-            }
-
-            return View();
-        }
-
-        // Optional - POST pentru alt tip de email (ex. confirmare)
-        [HttpPost]
-        public async Task<IActionResult> SendTrustedContactEmail([FromBody] EmailDto dto)
-        {
-            if (string.IsNullOrWhiteSpace(dto.Email)) return BadRequest();
-
-            var user = await _userManager.GetUserAsync(User);
-            var person = await _accountRepository.GetUserByIdentityUserIdAsync(user.Id);
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
                 return RedirectToAction("Login", "Account");
             }
-
-            string subject = "CraiovaRide - Trusted Contact Alert";
-            string message = $"{person.FullName} just started a ride using CraiovaRide. Stay available in case of emergency.";
-
-            await _emailService.SendEmailAsync(dto.Email, subject, message);
-            return Ok();
-        }
-
-        public class EmailDto
-        {
-            public string Email { get; set; }
-        }
             var result = await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
 
             if (result.Succeeded)
@@ -219,7 +180,47 @@ namespace Proiect_Implementare_Software.Controllers
             return Redirect("/Identity/Account/Login"); // ✅ Redirects to login page
         }
 
+        [HttpPost]
+        public async Task<IActionResult> TripSafety(string trustedEmail)
+        {
+            try
+            {
+                var subject = "🚨 CraiovaRide Safety Alert";
+                var body = "Your friend just started a ride using CraiovaRide. Please stay available in case they need help.";
 
+                await _emailService.SendEmailAsync(trustedEmail, subject, body);
+                ViewBag.Success = "Trusted contact has been notified successfully.";
+            }
+            catch
+            {
+                ViewBag.Error = "Failed to send alert. Please try again.";
+            }
+
+            return View();
+        }
+        // Optional - POST pentru alt tip de email (ex. confirmare)
+        [HttpPost]
+        public async Task<IActionResult> SendTrustedContactEmail([FromBody] EmailDto dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Email)) return BadRequest();
+
+            var user = await _userManager.GetUserAsync(User);
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(user.Id);
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            string subject = "CraiovaRide - Trusted Contact Alert";
+            string message = $"{person.FullName} just started a ride using CraiovaRide. Stay available in case of emergency.";
+
+            await _emailService.SendEmailAsync(dto.Email, subject, message);
+            return Ok();
+        }
+        public class EmailDto
+        {
+            public string Email { get; set; }
+        }
     }
 
 }
