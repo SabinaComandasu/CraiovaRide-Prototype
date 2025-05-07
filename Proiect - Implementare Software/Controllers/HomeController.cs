@@ -1,10 +1,11 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Proiect_Implementare_Software.Models;
 using Proiect_Implementare_Software.Data;
 using Proiect_Implementare_Software.Services;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace Proiect_Implementare_Software.Controllers
 {
@@ -29,19 +30,54 @@ namespace Proiect_Implementare_Software.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var user = await _userManager.GetUserAsync(User);
+            var identityUser = await _userManager.GetUserAsync(User);
 
-            if (user != null)
+            if (identityUser != null)
             {
-                var person = _context.Persons.FirstOrDefault(p => p.IdentityUserId == user.Id);
+                var person = await _context.Persons
+                    .FirstOrDefaultAsync(p => p.IdentityUserId == identityUser.Id);
+
                 if (person != null)
                 {
-                    ViewBag.AvatarPath = "/images/" + person.Avatar;
+                    var now = DateTime.Now;
+                    var windowStart = now.AddMinutes(-10);
+                    var windowEnd = now.AddMinutes(10);
+
+                    // 🔄 Update expired scheduled rides
+                    var expiredRides = await _context.Rides
+                        .Where(r => r.UserID == person.PersonID &&
+                                    r.RideStatus == "Scheduled" &&
+                                    r.Date < now)
+                        .ToListAsync();
+
+                    foreach (var ride in expiredRides)
+                    {
+                        ride.RideStatus = "Finished";
+                    }
+
+                    if (expiredRides.Count > 0)
+                        await _context.SaveChangesAsync();
+
+                    // 🔔 Upcoming ride notification
+                    var upcomingRide = await _context.Rides
+                        .Where(r =>
+                            r.UserID == person.PersonID &&
+                            r.RideStatus == "Scheduled" &&
+                            r.Date >= windowStart &&
+                            r.Date <= windowEnd)
+                        .OrderBy(r => r.Date)
+                        .FirstOrDefaultAsync();
+
+                    if (upcomingRide != null)
+                    {
+                        ViewBag.RideNotification = $"🚕 You have a scheduled ride at {upcomingRide.Date:HH:mm}. Get ready!";
+                    }
+
                     ViewBag.FullName = person.FullName;
-                    ViewBag.Rating = person.Rating.ToString("0.0") ?? "N/A";
+                    ViewBag.AvatarPath = string.IsNullOrEmpty(person.Avatar) ? "/images/default-avatar.png" : person.Avatar;
+                    ViewBag.Rating = person.Rating;
                 }
             }
-
 
             return View();
         }

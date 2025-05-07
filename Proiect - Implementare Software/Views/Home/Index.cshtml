@@ -22,6 +22,45 @@
     <script src="/js/home.js" defer></script>
 </head>
 <body>
+ @if (ViewBag.RideNotification != null)
+{
+    <div id="rideNotificationBox" class="ride-alert"
+         style="display: none; position: fixed; top: 20px; right: 20px; z-index: 1050;
+                background-color: #2f8f9d; color: white; padding: 16px 24px;
+                border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                max-width: 300px; font-weight: 500;">
+        @ViewBag.RideNotification
+    </div>
+
+    <audio id="rideAlertSound">
+        <source src="~/audio/tethys.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        let notificationShown = false;
+
+        document.addEventListener("click", () => {
+            if (notificationShown) return;
+
+            const alert = document.getElementById("rideNotificationBox");
+            const audio = document.getElementById("rideAlertSound");
+
+            if (alert) alert.style.display = "block";
+            if (audio) {
+                audio.play().catch(e => console.warn("Autoplay blocked:", e));
+            }
+
+            setTimeout(() => {
+                if (alert) alert.style.display = "none";
+            }, 10000);
+
+            notificationShown = true;
+        });
+    </script>
+}
+
+
     <!-- Toggle Sidebar -->
     <button id="toggleBtn" class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
 
