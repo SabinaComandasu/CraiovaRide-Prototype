@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Payment Method";
+    ViewData["ShowMainNav"] = true;
+}
+
+<link rel="stylesheet" href="~/css/payments.css" />
+<script src="~/js/payments.js" defer></script>
+
+<div class="container mt-5" style="max-width: 500px;">
+    <h3 class="mb-4 text-center">Save Your Card</h3>
+
+    <form id="cardForm">
+        <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" maxlength="19" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="cardHolder" class="form-label">Cardholder Name</label>
+            <input type="text" class="form-control" id="cardHolder" required />
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required />
+            </div>
+            <div class="col">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" maxlength="4" required />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Save Card</button>
+    </form>
+
+    <div id="successMsg" class="alert alert-success mt-4" style="display:none;">
+        ✅ Card saved!
+    </div>
+    <div id="savedCardDetails"></div>
+
+</div>
