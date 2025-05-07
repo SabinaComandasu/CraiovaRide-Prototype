@@ -1,45 +1,41 @@
 ﻿@model Proiect_Implementare_Software.Models.Person
+
 @{
-    ViewData["Title"] = "Informații personale";
+    ViewData["Title"] = "Personal Information";
     ViewData["ShowMainNav"] = true;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link rel="stylesheet" href="~/css/account.css" />
-<script src="~/js/editinfo.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 <div class="container mt-4" style="max-width: 500px;">
 
-    <!-- Card avatar -->
+    <!-- Avatar Upload -->
     <div class="text-center mb-4">
-        <div class="position-relative d-inline-block">
-            <img src="@Model.Avatar" class="avatar-img shadow" />
-            <button class="btn btn-light btn-sm position-absolute bottom-0 end-0 rounded-circle">
-                <i class="bi bi-plus-circle-fill text-success"></i>
-            </button>
-        </div>
-        <p class="text-muted mt-2">Adaugă o poză de profil</p>
+        <form asp-action="UploadAvatar" asp-controller="Account" method="post" enctype="multipart/form-data" class="d-inline-block">
+            <div class="position-relative d-inline-block">
+                <img src="@(string.IsNullOrEmpty(Model.Avatar) ? "/images/default-avatar.png" : "/images/" + Model.Avatar)" class="avatar-img shadow" />
+                <label class="btn btn-light btn-sm position-absolute bottom-0 end-0 rounded-circle mb-0" style="cursor:pointer;">
+                    <i class="bi bi-plus-circle-fill text-success"></i>
+                    <input type="file" name="avatarFile" accept="image/*" class="d-none" onchange="this.form.submit()" />
+                </label>
+            </div>
+        </form>
+        <p class="text-muted mt-2">Add a profile picture</p>
     </div>
 
-    <!-- Nume -->
-    <div class="info-item d-flex justify-content-between align-items-center mb-3">
-        <div>
-            <label class="form-label"><i class="bi bi-person-fill me-2"></i> Nume complet</label>
-            <div id="name-display">@Model.FullName</div>
-            <input type="text" class="form-control d-none" id="name-input" value="@Model.FullName" />
+    <!-- Personal Info Form -->
+    <form asp-action="EditInfo" asp-controller="Account" method="post">
+        <div class="info-item mb-3">
+            <label class="form-label"><i class="bi bi-person-fill me-2"></i> Full Name</label>
+            <input type="text" name="FullName" class="form-control" value="@Model.FullName" required />
         </div>
-        <button class="btn btn-link text-success" onclick="toggleEdit('name')">Editează</button>
-    </div>
 
-    <!-- Telefon -->
-    <div class="info-item d-flex justify-content-between align-items-center mb-3">
-        <div>
-            <label class="form-label"><i class="bi bi-phone-fill me-2"></i> Telefon</label>
-            <div id="phone-display">@Model.PhoneNumber</div>
-            <input type="tel" class="form-control d-none" id="phone-input" value="@Model.PhoneNumber" />
+        <div class="info-item mb-3">
+            <label class="form-label"><i class="bi bi-phone-fill me-2"></i> Phone</label>
+            <input type="tel" name="PhoneNumber" class="form-control" value="@Model.PhoneNumber" />
         </div>
-        <button class="btn btn-link text-success" onclick="toggleEdit('phone')">Editează</button>
-    </div>
 
-    <!-- Buton Salvare -->
-    <button class="btn btn-success w-100 mt-4">Salvează modificările</button>
+        <button type="submit" class="btn btn-success w-100 mt-4">Save Changes</button>
+    </form>
 </div>
