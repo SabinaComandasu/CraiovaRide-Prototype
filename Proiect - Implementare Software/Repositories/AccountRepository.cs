@@ -1,5 +1,7 @@
 ﻿using Proiect_Implementare_Software.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Proiect_Implementare_Software.Data
 {
@@ -15,6 +17,11 @@ namespace Proiect_Implementare_Software.Data
         public async Task<Person?> GetUserByIdAsync(int id)
         {
             return await _context.Persons.FindAsync(id);
+        }
+
+        public async Task<Person?> GetUserByIdentityUserIdAsync(string identityUserId)
+        {
+            return await _context.Persons.FirstOrDefaultAsync(p => p.IdentityUserId == identityUserId);
         }
 
         public async Task<IEnumerable<Person>> GetAllUsersAsync()

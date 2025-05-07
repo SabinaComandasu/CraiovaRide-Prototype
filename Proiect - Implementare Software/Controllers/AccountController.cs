@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Identity;
-using Proiect_Implementare_Software.Models;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Proiect_Implementare_Software.Data;
+using Proiect_Implementare_Software.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -10,58 +10,96 @@ namespace Proiect_Implementare_Software.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
-        private readonly AppDbContext _context;
+        private readonly IAccountRepository _accountRepository;
 
-        public AccountController(UserManager<IdentityUser> userManager, AppDbContext context)
+        public AccountController(UserManager<IdentityUser> userManager, IAccountRepository accountRepository)
         {
             _userManager = userManager;
-            _context = context;
+            _accountRepository = accountRepository;
         }
 
         // GET: /Account/Index
-        // GET: /Account/EditInfo
-        public IActionResult EditInfo()
+        public async Task<IActionResult> Index()
         {
-            var user = _userManager.GetUserAsync(User).Result; // Get the logged-in user
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account"); // Redirect to login if the user is not found
-            }
+            var identityUser = await _userManager.GetUserAsync(User);
+            if (identityUser == null)
+                return RedirectToAction("Login", "Account");
 
-            // Fetch the user's information from the database
-            var person = _context.Persons.FirstOrDefault(p => p.IdentityUserId == user.Id);
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(identityUser.Id);
             if (person == null)
-            {
-                return RedirectToAction("Error"); // Handle error if Person not found
-            }
+                return RedirectToAction("Error", "Home");
 
-            // Return the EditInfo view with the user data
+            ViewBag.AvatarPath = "/images/" + (string.IsNullOrEmpty(person.Avatar) ? "default-avatar.png" : person.Avatar);
+
+            ViewBag.FullName = person.FullName;
+            ViewBag.Rating = person.Rating.ToString("0.0");
+
             return View(person);
         }
 
-        public async Task<IActionResult> Index()
+        // GET: /Account/EditInfo
+        [HttpGet]
+        public async Task<IActionResult> EditInfo()
         {
-            var user = await _userManager.GetUserAsync(User); // Get the logged-in user
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account"); // Redirect to login if the user is not found
-            }
+            var userId = _userManager.GetUserId(User);
+            if (userId == null) return RedirectToAction("Login", "Account");
 
-            // Fetch additional user info from the Person table
-            var person = _context.Persons.FirstOrDefault(p => p.IdentityUserId == user.Id);
-            if (person == null)
-            {
-                return RedirectToAction("Error"); // Handle error if Person not found
-            }
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
+            if (person == null) return NotFound();
 
-            // Pass the user data, including avatar, to the view
-            ViewBag.AvatarPath = "/images/" + person.Avatar; // Avatar image path stored in 'wwwroot/images/'
-            ViewBag.FullName = person.FullName;
-            ViewBag.Rating = person.Rating.ToString("0.0") ?? "N/A"; // Provide a default if rating is null
-
-            return View(person); // Pass the person data to the view
+            return View(person); // <-- aici trimitem modelul complet
         }
 
-        // Other actions like EditInfo(), etc.
+
+        [HttpPost]
+        public async Task<IActionResult> EditInfo(Person model)
+        {
+            var userId = _userManager.GetUserId(User);
+            if (string.IsNullOrEmpty(userId)) return RedirectToAction("Login", "Account");
+
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
+            if (person == null) return NotFound();
+
+            // ✅ Actualizăm doar câmpurile relevante
+            person.FullName = model.FullName;
+            person.PhoneNumber = model.PhoneNumber;
+
+            await _accountRepository.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> UploadAvatar(IFormFile avatarFile)
+        {
+            var userId = _userManager.GetUserId(User);
+            if (string.IsNullOrEmpty(userId)) return RedirectToAction("Login", "Account");
+
+            var person = await _accountRepository.GetUserByIdentityUserIdAsync(userId);
+            if (person == null) return NotFound();
+
+            if (avatarFile != null && avatarFile.Length > 0)
+            {
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(avatarFile.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await avatarFile.CopyToAsync(stream);
+                }
+
+                // ✅ Setează doar avatarul fără să atingi alte date
+                person.Avatar = fileName;
+                await _accountRepository.SaveChangesAsync();
+            }
+
+            return RedirectToAction("EditInfo");
+        }
+
+
+
+
+
     }
 }

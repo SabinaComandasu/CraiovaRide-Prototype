@@ -1,19 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Contul meu";
+    ViewData["ShowMainNav"] = true;
+    ViewData["Title"] = "My Account";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link rel="stylesheet" href="~/css/account.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 <div class="account-bolt container">
-    <!-- Header profil -->
+    <!-- Profile Header -->
     <div class="text-center profile-header">
         <div class="avatar-wrapper">
             <!-- Use the Avatar from the database -->
             <img src="@ViewBag.AvatarPath" alt="Avatar" class="avatar-img" />
-            <button class="avatar-edit-btn" aria-label="Schimbă avatar">
-                <i class="bi bi-plus-circle-fill"></i>
-            </button>
         </div>
         <h4 class="username">@ViewBag.FullName</h4>
         <p class="rating text-success">
@@ -21,47 +19,47 @@
         </p>
     </div>
 
-    <!-- Opțiuni cont -->
+    <!-- Account Options -->
     <div class="section">
         <a href="/Account/EditInfo" class="section-item">
-            <i class="bi bi-person-lines-fill"></i> Informații personale
+            <i class="bi bi-person-lines-fill"></i> Personal Information
         </a>
         <a href="/Account/TripSafety" class="section-item">
-            <i class="bi bi-shield-lock-fill"></i> Siguranță
+            <i class="bi bi-shield-lock-fill"></i> Safety
         </a>
         <a href="#" class="section-item disabled">
-            <i class="bi bi-lock-fill"></i> Login & Securitate
+            <i class="bi bi-lock-fill"></i> Login & Security
         </a>
         <a href="#" class="section-item disabled">
-            <i class="bi bi-shield-slash-fill"></i> Confidențialitate
+            <i class="bi bi-shield-slash-fill"></i> Privacy
         </a>
     </div>
 
-    <!-- Locații salvate -->
+    <!-- Saved Locations -->
     <div class="section">
-        <div class="section-title">Locații salvate</div>
+        <div class="section-title">Saved Locations</div>
         <a href="/Account/SavedPlaces/AddHome" class="section-item">
-            <i class="bi bi-house-door"></i> Adresă acasă
+            <i class="bi bi-house-door"></i> Home Address
         </a>
         <a href="/Account/SavedPlaces/AddWork" class="section-item">
-            <i class="bi bi-briefcase"></i> Adresă muncă
+            <i class="bi bi-briefcase"></i> Work Address
         </a>
         <a href="#" class="section-item">
-            <i class="bi bi-plus-circle"></i> Adaugă alt loc
+            <i class="bi bi-plus-circle"></i> Add Another Place
         </a>
     </div>
 
-    <!-- Setări finale -->
+    <!-- Final Settings -->
     <div class="section">
         <!-- Logout button as a POST form -->
         <form method="post" asp-area="Identity" asp-page="/Account/Logout" class="d-inline">
             <button type="submit" class="section-item text-danger btn btn-link p-0 m-0 align-baseline">
-                <i class="bi bi-box-arrow-right"></i> Deconectare
+                <i class="bi bi-box-arrow-right"></i> Log Out
             </button>
         </form>
 
         <a href="/Account/Delete" class="section-item text-danger">
-            <i class="bi bi-trash"></i> Șterge contul
+            <i class="bi bi-trash"></i> Delete Account
         </a>
     </div>
 </div>
