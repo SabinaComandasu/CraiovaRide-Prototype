@@ -67,7 +67,7 @@ public class LoginModel : PageModel
             return new JsonResult(new
             {
                 success = false,
-                errors = new[] { "Invalid login attempt." }
+                errors = new[] { "This account does not exist. Please use the 'Register as new user' button down below." }
             });
         }
 
@@ -110,7 +110,7 @@ public class LoginModel : PageModel
         return new JsonResult(new
         {
             success = false,
-            errors = new[] { "Incorrect username or password. Please enter correct credentials." }
+            errors = new[] { "Incorrect username or password. Please enter correct credentials.If you forgot your password, please use the 'Forgot passowrd' button down below "}
         });
     }
 
