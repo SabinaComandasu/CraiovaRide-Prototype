@@ -110,7 +110,7 @@ public class LoginModel : PageModel
         return new JsonResult(new
         {
             success = false,
-            errors = new[] { "Invalid login attempt." }
+            errors = new[] { "Incorrect username or password. Please enter correct credentials." }
         });
     }
 
