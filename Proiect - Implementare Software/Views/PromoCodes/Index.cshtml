@@ -1,0 +1,137 @@
+﻿@model List<Proiect_Implementare_Software.Models.PromoCode>
+@{
+    var isAdmin = (bool)(ViewBag.IsAdmin ?? false);
+    var users = ViewBag.Users as List<Proiect_Implementare_Software.Models.Person>;
+    ViewData["Title"] = "Promo Codes";
+}
+
+<style>
+    body {
+        background-color: #f9fcfd;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .promo-wrapper {
+        max-width: 700px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out;
+    }
+
+    h2 {
+        color: #2f8f9d;
+        font-weight: bold;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .form-group label {
+        font-weight: 500;
+        color: #135e67;
+    }
+
+    .btn-success {
+        background-color: #2f8f9d;
+        border-color: #2f8f9d;
+    }
+
+    .btn-success:hover {
+        background-color: #247884;
+        border-color: #247884;
+    }
+
+    .table thead {
+        background-color: #e0f7f9;
+        color: #135e67;
+    }
+
+    .table tbody tr:hover {
+        background-color: #f0fcfc;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<div class="promo-wrapper">
+    <h2>🎁 @(isAdmin ? "Manage" : "Your") Promo Codes</h2>
+
+    @if (isAdmin)
+    {
+        <form asp-action="Add" method="post" class="mb-4">
+            @Html.AntiForgeryToken()
+
+            <div class="form-group mb-3">
+                <label for="code">Promo Code</label>
+                <input type="text" name="code" class="form-control" placeholder="e.g., SPRING20" required />
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="discount">Discount (%)</label>
+                <input type="number" step="0.1" name="discount" class="form-control" placeholder="e.g., 15" required />
+            </div>
+
+            @if (users != null)
+            {
+                <div class="form-group mb-3">
+                    <label for="personId">Assign to User</label>
+                    <select name="personId" class="form-control" required>
+                        <option disabled selected value="">-- Select a user --</option>
+                        @foreach (var user in users)
+                        {
+                            <option value="@user.PersonID">@user.FullName (@user.Username)</option>
+                        }
+                    </select>
+                </div>
+            }
+
+            <button type="submit" class="btn btn-success w-100">➕ Assign Promo Code</button>
+        </form>
+    }
+
+    <table class="table table-bordered mt-4 text-center">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Discount (%)</th>
+                @if (isAdmin)
+                {
+                    <th>Assigned To</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="@(isAdmin ? 3 : 2)">No promo codes found.</td>
+                </tr>
+            }
+            else
+            {
+                foreach (var promo in Model)
+                {
+                    <tr>
+                        <td><strong>@promo.Code</strong></td>
+                        <td>@promo.Discount.ToString("0.0")%</td>
+                        @if (isAdmin)
+                        {
+                            <td>@promo.Person?.FullName</td>
+                        }
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
