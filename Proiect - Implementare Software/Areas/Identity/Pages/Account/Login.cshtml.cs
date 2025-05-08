@@ -71,6 +71,21 @@ public class LoginModel : PageModel
             });
         }
 
+        string userEmail = Input.Email;
+        var now = DateTime.UtcNow;
+
+        if (_failedLoginAttempts.TryGetValue(userEmail, out var entry))
+        {
+            if (entry.lockoutEnd.HasValue && entry.lockoutEnd.Value > now)
+            {
+                return new JsonResult(new
+                {
+                    success = false,
+                    errors = new[] { $"Too many failed attempts. Try again in {entry.lockoutEnd.Value.ToLocalTime():T} minutes." }
+                });
+            }
+        }
+
         var person = await _context.Persons.FirstOrDefaultAsync(p => p.IdentityUserId == user.Id);
         if (person != null && person.Rating < 2.0f)
         {
@@ -81,38 +96,52 @@ public class LoginModel : PageModel
             });
         }
 
-        var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: true);
+        var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
 
         if (result.Succeeded)
         {
             _logger.LogInformation("User logged in.");
+            _failedLoginAttempts.Remove(userEmail); // Reset on success
             return new JsonResult(new { success = true, redirectUrl = returnUrl });
         }
 
         if (result.IsLockedOut)
         {
-            return new JsonResult(new
-            {
-                success = false,
-                errors = new[] { "Your account is locked out." }
-            });
+            return new JsonResult(new { success = false, errors = new[] { "Your account is locked out." } });
         }
 
         if (result.RequiresTwoFactor)
         {
+            return new JsonResult(new { success = false, errors = new[] { "Two-factor authentication required." } });
+        }
+
+        // Failure logic
+        if (!_failedLoginAttempts.ContainsKey(userEmail))
+        {
+            _failedLoginAttempts[userEmail] = (1, null);
+        }
+        else
+        {
+            _failedLoginAttempts[userEmail] = (entry.failedAttempts + 1, null);
+        }
+
+        if (_failedLoginAttempts[userEmail].failedAttempts >= 5)
+        {
+            _failedLoginAttempts[userEmail] = (5, now.AddMinutes(5)); // lockout for 10 minutes
             return new JsonResult(new
             {
                 success = false,
-                errors = new[] { "Two-factor authentication required." }
+                errors = new[] { "Too many failed attempts. Please try again in 5 minutes." }
             });
         }
 
         return new JsonResult(new
         {
             success = false,
-            errors = new[] { "Incorrect username or password. Please enter correct credentials.If you forgot your password, please use the 'Forgot passowrd' button down below "}
+            errors = new[] { "Incorrect username or password. Please enter correct credentials. If you forgot your password, please use the 'Forgot password' button down below." }
         });
     }
+
 
 
 
