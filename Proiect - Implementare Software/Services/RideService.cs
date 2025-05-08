@@ -50,6 +50,11 @@ namespace Proiect_Implementare_Software.Services
                 .Where(r => r.RideStatus == "Scheduled" && r.Date > DateTime.Now)
                 .ToList();
         }
+        public async Task UpdateRidesAsync(List<Ride> rides)
+        {
+            _context.Rides.UpdateRange(rides);
+            await _context.SaveChangesAsync();
+        }
 
         public IEnumerable<Ride> GetCompletedRides()
         {

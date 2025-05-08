@@ -18,17 +18,36 @@ namespace Proiect_Implementare_Software.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+public async Task<IActionResult> Index()
+{
+    var identityUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    var user = await _rideService.GetPersonByIdentityUserIdAsync(identityUserId);
+
+    if (user == null)
+        return Unauthorized();
+
+    // ✅ Automatically mark past scheduled rides as completed
+    var allUserRides = await _rideService.GetRidesForUserAsync(user.PersonID);
+    var now = DateTime.Now;
+
+    var ridesToComplete = allUserRides
+        .Where(r => r.RideStatus == "Scheduled" && r.Date < now)
+        .ToList();
+
+    if (ridesToComplete.Any())
+    {
+        foreach (var ride in ridesToComplete)
         {
-            var identityUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var user = await _rideService.GetPersonByIdentityUserIdAsync(identityUserId);
-
-            if (user == null)
-                return Unauthorized();
-
-            var rides = await _rideService.GetRidesForUserAsync(user.PersonID);
-            return View(rides);
+            ride.RideStatus = "Completed";
         }
+
+        await _rideService.UpdateRidesAsync(ridesToComplete); // You need to implement this method in your service
+    }
+
+    var updatedRides = await _rideService.GetRidesForUserAsync(user.PersonID);
+    return View(updatedRides);
+}
+
 
         [HttpPost]
         public async Task<IActionResult> Index([FromForm] string PickupLocation, [FromForm] string Destination, [FromForm] DateTime Date)

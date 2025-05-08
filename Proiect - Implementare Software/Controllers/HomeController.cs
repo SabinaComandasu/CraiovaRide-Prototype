@@ -59,7 +59,7 @@ namespace Proiect_Implementare_Software.Controllers
                 .ToListAsync();
 
             foreach (var ride in expiredRides)
-                ride.RideStatus = "Finished";
+                ride.RideStatus = "Completed";
 
             if (expiredRides.Count > 0)
                 await _context.SaveChangesAsync();
@@ -117,7 +117,11 @@ namespace Proiect_Implementare_Software.Controllers
                 .FirstOrDefaultAsync(v => v.DriverID == driver.PersonID);
             if (vehicle == null) return BadRequest("No vehicle for driver.");
 
-            // Completăm restul valorilor
+            // ❗ Validate basic input
+            if (string.IsNullOrWhiteSpace(ride.PickupLocation) || string.IsNullOrWhiteSpace(ride.Destination))
+                return BadRequest("Pickup and Destination are required.");
+
+            // ✅ Complete ride details
             ride.UserID = user.PersonID;
             ride.DriverID = driver.PersonID;
             ride.VehicleID = vehicle.VehicleID;
@@ -129,6 +133,7 @@ namespace Proiect_Implementare_Software.Controllers
 
             return Ok(new { message = "Ride saved successfully" });
         }
+
 
         [HttpGet]
         public async Task<IActionResult> GetAvatar(int id)
