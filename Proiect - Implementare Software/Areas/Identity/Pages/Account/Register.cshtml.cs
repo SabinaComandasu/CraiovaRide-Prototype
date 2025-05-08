@@ -111,7 +111,7 @@ namespace Proiect___Implementare_Software.Areas.Identity.Pages.Account
                         Username = Input.Email,
                         FullName = Input.FullName,
                         PhoneNumber = Input.PhoneNumber,
-                        Rating = 0.0f,
+                        Rating = 5.0f,
                         Availability = true,
                         DriverStatus = "Not a driver",
                         Role = "User"
