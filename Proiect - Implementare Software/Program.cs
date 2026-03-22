@@ -345,7 +345,7 @@ app.MapGet("/", async context =>
     {
         context.Response.Redirect("/Home/Index");
     }
-
+    else
     {
         context.Response.Redirect("/Identity/Account/Login");
     }
