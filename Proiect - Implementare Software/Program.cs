@@ -25,6 +25,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>();
 
+// ✅ Lucene search (singleton — index lives in memory for the app lifetime)
+builder.Services.AddSingleton<Proiect_Implementare_Software.Services.LuceneIndexService>();
+
 // ✅ Custom services
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IEmailRepository, EmailRepository>();
@@ -321,6 +324,14 @@ using (var scope = app.Services.CreateScope())
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     var env = scope.ServiceProvider.GetRequiredService<IWebHostEnvironment>();
     await SeedProductsAsync(db, env);
+}
+
+// 🔍 Build Lucene index over all product PDFs (after seeding)
+using (var scope = app.Services.CreateScope())
+{
+    var db     = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var lucene = app.Services.GetRequiredService<Proiect_Implementare_Software.Services.LuceneIndexService>();
+    lucene.BuildIndex(db.Products.ToList());
 }
 
 // 🔧 Middleware
