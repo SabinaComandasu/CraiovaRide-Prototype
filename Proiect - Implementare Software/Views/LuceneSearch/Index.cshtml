@@ -1,7 +1,7 @@
 @model List<Proiect_Implementare_Software.Services.LuceneSearchResult>
 
 @{
-    ViewData["Title"]       = "Căutare avansată Lucene";
+    ViewData["Title"]       = "Cautare avansata";
     ViewData["ShowMainNav"] = true;
 
     string query       = ViewBag.Query ?? "";
@@ -9,9 +9,9 @@
     bool   hasQuery    = !string.IsNullOrWhiteSpace(query);
     int    resultCount = ViewBag.ResultCount ?? 0;
 
-    string oppSort     = sort == "asc" ? "desc" : "asc";
-    string oppLabel    = sort == "asc"  ? "Relevanță ↓ (desc)" : "Relevanță ↑ (asc)";
-    float  maxScore    = Model.Any() ? Model.Max(r => r.Score) : 1f;
+    string oppSort  = sort == "asc" ? "desc" : "asc";
+    string oppLabel = sort == "asc"  ? "Relevanta ↓ (desc)" : "Relevanta ↑ (asc)";
+    float  maxScore = Model.Any() ? Model.Max(r => r.Score) : 1f;
 }
 
 <style>
@@ -156,67 +156,11 @@
         color: #999;
     }
     .empty-state .big { font-size: 3rem; }
-
-    /* ── Info panel ── */
-    .info-panel {
-        margin-top: 36px;
-        background: #f0f8ff;
-        border: 1.5px solid #bee3f8;
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    .info-panel summary {
-        padding: 14px 18px;
-        font-weight: 700;
-        color: #1a5f7a;
-        cursor: pointer;
-        font-size: 0.95rem;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    .info-panel summary::-webkit-details-marker { display: none; }
-    .info-panel[open] summary { border-bottom: 1.5px solid #bee3f8; }
-    .info-panel-body { padding: 18px 20px; font-size: 0.88rem; color: #333; line-height: 1.65; }
-    .info-panel-body h4 { color: #005fa3; margin: 14px 0 4px; font-size: 0.9rem; }
-    .info-panel-body code {
-        background: #e0f0fa;
-        border-radius: 4px;
-        padding: 1px 6px;
-        font-size: 0.85rem;
-        color: #1a5f7a;
-    }
-    .formula-box {
-        background: #fff;
-        border: 1.5px solid #bee3f8;
-        border-radius: 8px;
-        padding: 12px 16px;
-        font-family: monospace;
-        font-size: 0.85rem;
-        color: #005fa3;
-        margin: 8px 0 14px;
-        white-space: pre-wrap;
-    }
-    table.score-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 8px;
-        font-size: 0.83rem;
-    }
-    table.score-table th {
-        background: #daeef7;
-        color: #1a5f7a;
-        padding: 6px 10px;
-        text-align: left;
-    }
-    table.score-table td { padding: 6px 10px; border-bottom: 1px solid #e8f4fb; vertical-align: top; }
-    table.score-table tr:last-child td { border-bottom: none; }
 </style>
 
 <div class="lucene-page">
-    <h1 class="lucene-title">🔬 Căutare avansată în fișele tehnice</h1>
-    <p class="lucene-subtitle">Motorul Apache Lucene indexează toate documentele PDF de specificații și returnează rezultate ordonate după scorul TF-IDF.</p>
+    <h1 class="lucene-title">🔬 Cautare avansata in fisele tehnice</h1>
+    <p class="lucene-subtitle">Cauta in documentele de specificatii ale tuturor serviciilor disponibile.</p>
 
     <!-- Search form -->
     <form method="get" action="/LuceneSearch" class="lucene-form">
@@ -226,7 +170,7 @@
                placeholder="ex: transfer aeroport, livrare express, animale, Wi-Fi..."
                autocomplete="off" />
         <input type="hidden" name="sort" value="@sort" />
-        <button type="submit">🔍 Caută</button>
+        <button type="submit">🔍 Cauta</button>
     </form>
 
     @if (hasQuery)
@@ -246,11 +190,9 @@
 
             @if (resultCount > 1)
             {
-                <!-- current order label -->
                 <span class="sort-btn active" style="cursor:default;">
-                    @(sort == "asc" ? "Relevanță ↑ (asc)" : "Relevanță ↓ (desc)")
+                    @(sort == "asc" ? "Relevanta ↑ (asc)" : "Relevanta ↓ (desc)")
                 </span>
-                <!-- toggle button -->
                 <a class="sort-btn"
                    href="/LuceneSearch?q=@Uri.EscapeDataString(query)&sort=@oppSort">
                     @oppLabel
@@ -292,8 +234,8 @@
         {
             <div class="empty-state">
                 <div class="big">🔍</div>
-                <p>Niciun document nu conține termenul <strong>„@query"</strong>.</p>
-                <p style="font-size:0.85rem;">Încearcă un alt cuvânt-cheie (ex: <em>livrare, electric, transfer, bagaj</em>).</p>
+                <p>Niciun document nu contine termenul <strong>„@query"</strong>.</p>
+                <p style="font-size:0.85rem;">Incearca un alt cuvant-cheie (ex: <em>livrare, electric, transfer, bagaj</em>).</p>
             </div>
         }
     }
@@ -301,102 +243,7 @@
     {
         <div class="empty-state">
             <div class="big">📄</div>
-            <p>Introduceți un termen pentru a căuta în fișele tehnice ale serviciilor.</p>
+            <p>Introduceti un termen pentru a cauta in fisele tehnice ale serviciilor.</p>
         </div>
     }
-
-    <!-- ── Lucene scoring explanation ───────────────────────────────────── -->
-    <details class="info-panel" @(hasQuery ? "" : "open")>
-        <summary>📐 Cum calculează Lucene scorul? (TF-IDF / Classic Similarity)</summary>
-        <div class="info-panel-body">
-
-            <p>
-                Lucene.Net 4.8 folosește implicit modelul <strong>Classic Similarity</strong>, bazat pe
-                <strong>TF-IDF</strong> (Term Frequency – Inverse Document Frequency).
-                Formula completă a scorului pentru o interogare <em>q</em> față de un document <em>d</em> este:
-            </p>
-
-            <div class="formula-box">score(q, d) = coord(q,d) · queryNorm(q) · Σ_t [ tf(t,d) · idf(t)² · t.boost · norm(t,d) ]</div>
-
-            <h4>Componente principale</h4>
-            <table class="score-table">
-                <tr>
-                    <th>Factor</th>
-                    <th>Formulă</th>
-                    <th>Semnificație</th>
-                </tr>
-                <tr>
-                    <td><code>tf(t, d)</code></td>
-                    <td><code>√freq</code></td>
-                    <td>
-                        <strong>Term Frequency</strong> – rădăcina pătrată a numărului de apariții ale termenului
-                        <em>t</em> în documentul <em>d</em>.
-                        Un termen care apare de 4 ori contribuie cu <code>√4 = 2</code>.
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>idf(t)</code></td>
-                    <td><code>1 + log(N / (df+1))</code></td>
-                    <td>
-                        <strong>Inverse Document Frequency</strong> – penalizează termenii comuni
-                        (ex. „și", „la") și premiază termenii rari.
-                        <em>N</em> = numărul total de documente; <em>df</em> = câte documente conțin termenul.
-                        Intră în formulă la pătrat (<code>idf²</code>).
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>norm(t, d)</code></td>
-                    <td><code>1 / √numTerms</code></td>
-                    <td>
-                        <strong>Field length norm</strong> – documentele cu câmpuri mai scurte primesc scor mai mare
-                        (un termen dintr-un titlu de 3 cuvinte contează mai mult decât dintr-un paragraf lung).
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>coord(q, d)</code></td>
-                    <td><code>overlap / maxOverlap</code></td>
-                    <td>
-                        <strong>Coordonare</strong> – fracția termenilor din interogare găsiți în document.
-                        O potrivire pe toți termenii e premiată față de o potrivire parțială.
-                    </td>
-                </tr>
-                <tr>
-                    <td><code>queryNorm(q)</code></td>
-                    <td><code>1 / √Σ idf²</code></td>
-                    <td>
-                        Factor de normalizare al interogării, astfel că scorurile sunt comparabile
-                        între interogări diferite (nu afectează ordinea relativă).
-                    </td>
-                </tr>
-            </table>
-
-            <h4>Comparație cu BM25</h4>
-            <p>
-                BM25 (disponibil în Lucene ca <code>BM25Similarity</code>) adaugă parametrii
-                <code>k1</code> (saturație TF) și <code>b</code> (normalizare lungime):
-            </p>
-            <div class="formula-box">BM25(t,d) = idf(t) · [ tf · (k1+1) ] / [ tf + k1·(1 - b + b·|d|/avgdl) ]
-
-Implicit: k1 = 1.2, b = 0.75</div>
-            <p>
-                Spre deosebire de TF-IDF clasic unde <code>tf</code> crește nelimitat (√freq),
-                BM25 <em>saturează</em> contribuția TF: după un număr de apariții, câștigul suplimentar
-                devine neglijabil. Aceasta îl face mai robust pentru documente lungi.
-            </p>
-
-            <h4>Câmpurile indexate în acest proiect</h4>
-            <p>
-                Fiecare fișă tehnică este indexată cu câmpurile:
-                <code>name</code> · <code>category</code> · <code>description</code> · <code>pdfContent</code>.
-                Textul din PDF este extras cu biblioteca <strong>PdfPig</strong> și indexat fără stocare
-                (doar pentru căutare). Scorul afișat este scorul brut Lucene normalizat față de maximul din pagina curentă.
-            </p>
-
-            <p style="margin-top:12px;font-size:0.8rem;color:#888;">
-                Referință: <a href="https://lucene.apache.org/core/2_9_4/scoring.html" target="_blank" rel="noopener">
-                    lucene.apache.org/core/2_9_4/scoring.html
-                </a>
-            </p>
-        </div>
-    </details>
 </div>
