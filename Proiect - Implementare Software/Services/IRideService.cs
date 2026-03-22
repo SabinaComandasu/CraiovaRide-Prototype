@@ -12,7 +12,8 @@ namespace Proiect_Implementare_Software.Services
         Task<List<Ride>> GetRidesForUserAsync(int userId);
         Task CreateRideAsync(Ride ride);
         Task UpdateRidesAsync(List<Ride> rides);
+        Task CheckoutAsync(int userId);
 
-        Task<Person?> GetPersonByIdentityUserIdAsync(string identityUserId); // 👈 Add this
+        Task<Person?> GetPersonByIdentityUserIdAsync(string identityUserId);
     }
 }

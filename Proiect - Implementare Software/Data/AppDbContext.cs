@@ -20,6 +20,7 @@ namespace Proiect_Implementare_Software.Data
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<PromoCode> PromoCodes { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -82,6 +83,12 @@ namespace Proiect_Implementare_Software.Data
                 .WithMany(p => p.Drives)
                 .HasForeignKey(r => r.DriverID)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Ride>()
+                .HasOne(r => r.Product)
+                .WithMany(p => p.Rides)
+                .HasForeignKey(r => r.ProductID)
+                .OnDelete(DeleteBehavior.SetNull);
             modelBuilder.Entity<Person>()
                 .HasOne<IdentityUser>()
                 .WithMany()

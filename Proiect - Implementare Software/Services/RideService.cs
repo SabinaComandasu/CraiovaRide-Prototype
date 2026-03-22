@@ -40,6 +40,7 @@ namespace Proiect_Implementare_Software.Services
         {
             return await _context.Rides
                 .Where(r => r.UserID == userId)
+                .Include(r => r.Product)
                 .OrderBy(r => r.Date)
                 .ToListAsync();
         }
@@ -61,6 +62,15 @@ namespace Proiect_Implementare_Software.Services
             return _context.Rides
                 .Where(r => r.RideStatus == "Completed")
                 .ToList();
+        }
+
+        public async Task CheckoutAsync(int userId)
+        {
+            var rides = await _context.Rides
+                .Where(r => r.UserID == userId && r.RideStatus == "Scheduled")
+                .ToListAsync();
+            _context.Rides.RemoveRange(rides);
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -1,0 +1,105 @@
+/* products.css */
+
+body {
+    background: linear-gradient(to bottom right, #cce9f8, #e8f4fc);
+    color: #333;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+}
+
+.products-container {
+    padding: 30px 20px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.products-title {
+    text-align: center;
+    color: #005fa3;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-shadow: 1px 1px 2px #cce5ff;
+}
+
+.products-subtitle {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Category section */
+.category-section {
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 95, 163, 0.1);
+    padding: 24px 22px 20px;
+    margin-bottom: 32px;
+    transition: transform 0.2s ease;
+}
+
+.category-section:hover {
+    transform: translateY(-2px);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #d0eaf8;
+    padding-bottom: 10px;
+}
+
+.category-icon {
+    font-size: 26px;
+}
+
+.category-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #005fa3;
+    margin: 0;
+}
+
+/* Service cards grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+}
+
+.service-card {
+    background: #f5fbff;
+    border: 1.5px solid #c8e6f5;
+    border-radius: 12px;
+    padding: 16px 12px 14px;
+    text-align: center;
+    cursor: default;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    user-select: none;
+}
+
+.service-card:hover {
+    background: #e4f4fd;
+    box-shadow: 0 4px 12px rgba(47, 143, 157, 0.2);
+    transform: translateY(-3px);
+}
+
+.service-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: block;
+    line-height: 1;
+}
+
+.service-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a5f7a;
+    line-height: 1.3;
+}
+

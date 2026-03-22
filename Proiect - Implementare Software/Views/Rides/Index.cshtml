@@ -1,4 +1,5 @@
-﻿@model List<Proiect_Implementare_Software.Models.Ride>
+@model List<Proiect_Implementare_Software.Models.Ride>
+@using Proiect_Implementare_Software.Models
 
 @{
     ViewData["Title"] = "Rides";
@@ -7,6 +8,12 @@
     var now = DateTime.Now;
     var upcomingRides = Model.Where(r => r.RideStatus == "Scheduled" && r.Date > now).ToList();
     var completedRides = Model.Where(r => r.RideStatus == "Completed" || r.RideStatus == "Finished").ToList();
+
+    var products = ViewBag.Products as List<Product> ?? new List<Product>();
+
+    decimal totalAmount = upcomingRides
+        .Where(r => r.Product != null)
+        .Sum(r => r.Product!.Price);
 }
 
 <!-- Custom Turquoise Style -->
@@ -83,6 +90,49 @@
         background-color: #00c853;
         color: white;
     }
+
+    .total-box {
+        background-color: #e0f7f9;
+        border-radius: 1.25rem;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .total-amount {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #00838f;
+    }
+
+    .btn-checkout {
+        background-color: #00acc1;
+        border: none;
+        color: white;
+        font-weight: 600;
+        border-radius: 1rem;
+        padding: 0.6rem 1.5rem;
+        transition: background-color 0.2s ease;
+    }
+
+        .btn-checkout:hover {
+            background-color: #00838f;
+            color: white;
+        }
+
+    .ride-product-badge {
+        display: inline-block;
+        background-color: #b2ebf2;
+        color: #006064;
+        border-radius: 0.5rem;
+        padding: 0.2em 0.6em;
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-top: 4px;
+    }
 </style>
 
 <div class="container mt-5">
@@ -132,19 +182,61 @@
                                required />
                     </div>
 
+                    <div class="mb-3">
+                        <label for="ProductID" class="form-label">Ride Type</label>
+                        <select name="ProductID" id="ProductID" class="form-control">
+                            <option value="">-- Select a ride type --</option>
+                            @{
+                                var grouped = products.GroupBy(p => p.Category);
+                                foreach (var group in grouped)
+                                {
+                                    <optgroup label="@group.Key">
+                                        @foreach (var p in group)
+                                        {
+                                            <option value="@p.ProductID">@p.Icon @p.Name – @p.Price.ToString("F2") RON</option>
+                                        }
+                                    </optgroup>
+                                }
+                            }
+                        </select>
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
 
-            <!-- Upcoming Rides -->
+            <!-- Total & Checkout -->
             @if (upcomingRides.Any())
             {
+                <div class="total-box mb-3 shadow-sm">
+                    <div>
+                        <span class="text-muted">Total for scheduled rides:</span><br />
+                        <span class="total-amount">@totalAmount.ToString("F2") RON</span>
+                    </div>
+                    <form action="/Rides/Checkout" method="post">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn-checkout"
+                                onclick="return confirm('Confirm checkout? All scheduled rides will be cleared.')">
+                            🛒 Checkout
+                        </button>
+                    </form>
+                </div>
+
                 @foreach (var ride in upcomingRides)
                 {
                     <div class="card shadow-sm mb-3 p-3">
                         <h5>@ride.PickupLocation → @ride.Destination</h5>
-                        <p>Scheduled for: @ride.Date.ToString("f")</p>
-                        <span class="badge badge-scheduled">Scheduled</span>
+                        <p class="mb-1">Scheduled for: @ride.Date.ToString("f")</p>
+                        @if (ride.Product != null)
+                        {
+                            <div>
+                                <span class="ride-product-badge">@ride.Product.Icon @ride.Product.Name</span>
+                                <span class="ride-product-badge">@ride.Product.Price.ToString("F2") RON</span>
+                            </div>
+                        }
+                        <div class="mt-2">
+                            <span class="badge badge-scheduled">Scheduled</span>
+                        </div>
                     </div>
                 }
             }
@@ -157,7 +249,6 @@
         </div>
 
         <!-- Completed Tab -->
-        <!-- Completed Tab -->
         <div class="tab-pane fade" id="completed" role="tabpanel">
             @if (completedRides.Any())
             {
@@ -166,10 +257,15 @@
                     <div class="card shadow-sm mb-3 p-3">
                         <h5>@ride.PickupLocation → @ride.Destination</h5>
                         <p>Completed on: @ride.Date.ToString("f")</p>
-
-                        <span class="badge badge-completed">
-                            @(ride.RideStatus == "Finished" ? "Completed" : ride.RideStatus)
-                        </span>
+                        @if (ride.Product != null)
+                        {
+                            <span class="ride-product-badge">@ride.Product.Icon @ride.Product.Name – @ride.Product.Price.ToString("F2") RON</span>
+                        }
+                        <div class="mt-2">
+                            <span class="badge badge-completed">
+                                @(ride.RideStatus == "Finished" ? "Completed" : ride.RideStatus)
+                            </span>
+                        </div>
                     </div>
                 }
             }
