@@ -1,0 +1,220 @@
+@model Proiect_Implementare_Software.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+    ViewData["ShowMainNav"] = true;
+
+    var similar = ViewBag.SimilarProducts as List<Proiect_Implementare_Software.Models.Product>
+                  ?? new List<Proiect_Implementare_Software.Models.Product>();
+
+    var pdfFileName = string.IsNullOrEmpty(Model.PdfPath)
+        ? null
+        : Model.PdfPath.TrimStart('/').Replace("pdfs/", "");
+}
+
+<link rel="stylesheet" href="~/css/products.css" />
+
+<style>
+    /* ── Detail page ── */
+    .detail-wrapper {
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 0 20px 80px;
+    }
+
+    .detail-card {
+        background: rgba(255,255,255,0.92);
+        border-radius: 18px;
+        box-shadow: 0 6px 24px rgba(0,95,163,0.12);
+        padding: 36px 32px 28px;
+        text-align: center;
+    }
+
+    .detail-icon {
+        font-size: 56px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .detail-name {
+        font-size: 26px;
+        font-weight: 700;
+        color: #005fa3;
+        margin-bottom: 4px;
+    }
+
+    .detail-category {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .detail-description {
+        font-size: 15px;
+        color: #444;
+        line-height: 1.65;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .detail-price {
+        display: inline-block;
+        background: #e4f4fd;
+        color: #005fa3;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 8px 28px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+    .detail-actions {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+
+    .btn-pdf {
+        background: none;
+        border: 2px solid #2f8f9d;
+        color: #2f8f9d;
+        border-radius: 25px;
+        padding: 9px 22px;
+        font-size: 0.92rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-pdf:hover {
+        background: #2f8f9d;
+        color: white;
+    }
+
+    .btn-back {
+        background: #f0f8ff;
+        border: 2px solid #c8e6f5;
+        color: #1a5f7a;
+        border-radius: 25px;
+        padding: 9px 22px;
+        font-size: 0.92rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .btn-back:hover {
+        background: #d0eaf8;
+    }
+
+    /* ── Similar products section ── */
+    .similar-section {
+        margin-top: 40px;
+    }
+
+    .similar-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #005fa3;
+        margin-bottom: 4px;
+    }
+
+    .similar-subtitle {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 18px;
+    }
+
+    .similar-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 14px;
+    }
+
+    .similar-card {
+        background: #f5fbff;
+        border: 1.5px solid #c8e6f5;
+        border-radius: 14px;
+        padding: 18px 12px 14px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+    }
+
+    .similar-card:hover {
+        background: #e4f4fd;
+        box-shadow: 0 4px 14px rgba(47,143,157,0.22);
+        transform: translateY(-3px);
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .similar-badge {
+        font-size: 11px;
+        color: #aaa;
+        margin-top: 3px;
+        display: block;
+    }
+</style>
+
+<div class="detail-wrapper">
+
+    <!-- Back button -->
+    <div style="margin-bottom:18px;">
+        <a href="/Products/Index" class="btn-back">← Înapoi la servicii</a>
+    </div>
+
+    <!-- Main detail card -->
+    <div class="detail-card">
+        <span class="detail-icon">@Model.Icon</span>
+        <div class="detail-name">@Model.Name</div>
+        <div class="detail-category">@Model.Category</div>
+
+        @if (!string.IsNullOrEmpty(Model.Description))
+        {
+            <p class="detail-description">@Model.Description</p>
+        }
+
+        <div class="detail-price">@Model.Price.ToString("F2") RON</div>
+
+        <div class="detail-actions">
+            @if (pdfFileName != null)
+            {
+                <a href="/Products/DownloadPdf?fileName=@pdfFileName"
+                   class="btn-pdf"
+                   target="_blank">📄 Detalii PDF</a>
+            }
+            <a href="/Products/Index" class="btn-back">🏠 Toate serviciile</a>
+        </div>
+    </div>
+
+    <!-- Similar products -->
+    @if (similar.Any())
+    {
+        <div class="similar-section">
+            <div class="similar-title">Servicii similare</div>
+            <div class="similar-subtitle">
+                Recomandate pe baza similarității TF-IDF + Cosine Similarity
+            </div>
+            <div class="similar-grid">
+                @foreach (var p in similar)
+                {
+                    <a href="/Products/Details/@p.ProductID" class="similar-card">
+                        <span class="service-icon">@p.Icon</span>
+                        <span class="service-name">@p.Name</span>
+                        <span class="similar-badge">@p.Category</span>
+                        <span class="service-price" style="margin-top:6px;">@p.Price.ToString("F2") RON</span>
+                    </a>
+                }
+            </div>
+        </div>
+    }
+</div>
