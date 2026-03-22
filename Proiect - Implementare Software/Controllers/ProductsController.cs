@@ -16,6 +16,7 @@ namespace Proiect_Implementare_Software.Controllers
             _context = context;
         }
 
+        // GET /Products/Index[?q=...]
         public async Task<IActionResult> Index(string? q)
         {
             var all = await _context.Products
@@ -43,9 +44,60 @@ namespace Proiect_Implementare_Software.Controllers
             return View(display);
         }
 
+        // GET /Products/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            var all = await _context.Products
+                .OrderBy(p => p.Category)
+                .ThenBy(p => p.Name)
+                .ToListAsync();
+
+            var product = all.FirstOrDefault(p => p.ProductID == id);
+            if (product == null) return NotFound();
+
+            // Compute similar products via TF-IDF + Cosine Similarity
+            // Text = Name + Category + Description for richer vectorization
+            var similar = TfIdfSimilarity.GetSimilar(
+                all,
+                p => p.ProductID,
+                p => $"{p.Name} {p.Category} {p.Description}",
+                targetId: id,
+                topN: 4);
+
+            ViewBag.SimilarProducts = similar.Select(x => x.Item).ToList();
+            return View(product);
+        }
+
+        // GET /Products/Autocomplete?q=...  (returns JSON for predictive search)
+        [HttpGet]
+        public async Task<IActionResult> Autocomplete(string? q)
+        {
+            if (string.IsNullOrWhiteSpace(q) || q.Length < 1)
+                return Json(new List<object>());
+
+            var all = await _context.Products
+                .Select(p => new { p.ProductID, p.Name, p.Icon })
+                .ToListAsync();
+
+            var names = all.Select(p => p.Name).ToList();
+
+            var suggestions = TrigramAutocomplete.GetSuggestions(names, q, maxResults: 6);
+
+            // Return id + name + icon so JS can link directly to Details page
+            var result = all
+                .Where(p => suggestions.Contains(p.Name))
+                .OrderBy(p => suggestions.IndexOf(p.Name))
+                .Select(p => new { p.ProductID, p.Name, p.Icon });
+
+            return Json(result);
+        }
+
+        // GET /Products/DownloadPdf?fileName=...
         public IActionResult DownloadPdf(string fileName)
         {
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "pdfs", fileName);
+            var filePath = Path.Combine(
+                Directory.GetCurrentDirectory(), "wwwroot", "pdfs", fileName);
+
             if (!System.IO.File.Exists(filePath))
                 return NotFound();
 
